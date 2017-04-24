@@ -1,0 +1,10 @@
+- Prologue
+    - [Release Notes](/docs/{{version}}/releases)
+- Self Hosting
+    - [Configuration](/docs/{{version}}/configuration)
+- Commands
+    - [Administration](/docs/{{version}}/commands#administration)
+    - [Fun](/docs/{{version}}/commands#fun)
+    - [Music](/docs/{{version}}/commands#music)
+    - [System](/docs/{{version}}/commands#system)
+    - [Utility](/docs/{{version}}/commands#utility)
