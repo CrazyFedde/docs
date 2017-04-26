@@ -3,6 +3,7 @@
 - Self Hosting
     - [Configuration](/docs/{{version}}/configuration)
 - Commands
+    - [Help Command](/docs/{{version}}/commands#help)
     - [Administration](/docs/{{version}}/commands#administration)
     - [Fun](/docs/{{version}}/commands#fun)
     - [Music](/docs/{{version}}/commands#music)

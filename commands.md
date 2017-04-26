@@ -1,5 +1,6 @@
 # Commands
 
+- [Help Command](#help)
 - [Administration](#administration)
 - [Fun](#fun)
 - [Music](#music)
@@ -12,6 +13,33 @@
 This is the command reference for AvaIre. You can find more elaborative information here on each of the commands currently implemented.
 
 If you have need for any further info, you can send the message `.help <command>` to the bot to get info about command throtteling limits, permission requirements and so forth. Got any questions? Check out #support in [AvaIre Central](#).
+
+<a name="help"></a>
+## Help Command
+
+Displays a list of available modules, commands in a given module, or information about a specific command.
+
+#### Listing all modules
+
+Using the help command with no additional arguments will display a list of all the modules.
+
+    .help
+
+#### Listing commands in module
+
+Listing all commands in a module can be done by using the help command followed by a hyphen, followed by the name of the module.
+
+    .help -<module>
+
+> {tip} It is not required to type out the full name of the module, just typing a few characters will still list the commands in the module that starts with the given characters.<br>For example listing all the commands in the `Administration` module can be done by doing `.help -a` for short.
+
+#### Listing command information
+
+Displaying a given commands information can be done by using the help command followed by the command you want to get information about.
+
+    .help <command>
+
+> {tip} Command aliases can be used as well, for example `.help .sid` will displays help for the `.serverid` command.
 
 <a name="administration"></a>
 ## Administration
