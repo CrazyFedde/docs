@@ -665,6 +665,23 @@ Ping, Pong.
 
     !pingme
 
+<a name="remind"></a>
+### Remind
+
+Sets a message you would like to be reminded of later, the message can be anything while the format has to look something like **1h25m52s** to delay the message by 1 hour, 25 minutes and 52 seconds, you can combine or exclude any combination of the `number` followed by a `h` for hours, `m` for minutes or `s` for seconds, for example:
+
+ - **1h25m52s** = 1 hour, 25 minutes and 52 seconds delay.
+ - **2h16s** = 2 hours and 16 seconds delay.
+ - **30m** = 30 minutes delay.
+
+#### Usage
+
+    !remind <format> <message>
+
+#### Aliases
+
+    !rem
+
 <a name="source"></a>
 ### Source
 
