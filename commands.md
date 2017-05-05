@@ -27,11 +27,11 @@ Using the help command with no additional arguments will display a list of all t
 
 #### Listing commands in module
 
-Listing all commands in a module can be done by using the help command followed by a hyphen, followed by the name of the module.
+Listing all commands in a module can be done by using the help command followed by name of the module.
 
-    .help -<module>
+    .help <module>
 
-> {tip} It is not required to type out the full name of the module, just typing a few characters will still list the commands in the module that starts with the given characters.<br>For example listing all the commands in the `Administration` module can be done by doing `.help -a` for short.
+> {tip} It is not required to type out the full name of the module, just typing a few characters will still list the commands in the module that starts with the given characters.<br>For example listing all the commands in the `Administration` module can be done by doing `.help a` for short.
 
 #### Listing command information
 
