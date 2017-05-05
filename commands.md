@@ -27,7 +27,7 @@ Using the help command with no additional arguments will display a list of all t
 
 #### Listing commands in module
 
-Listing all commands in a module can be done by using the help command followed by name of the module.
+Listing all commands in a module can be done by using the help command followed by the name of the module.
 
     .help <module>
 
