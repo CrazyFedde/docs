@@ -28,7 +28,7 @@ In all of the following examples the **[AvaIre Central](https://discord.gg/gt2FW
 <a name="user"></a>
 ### %user%
 
-Tags the user that triggered the the message.
+Tags the user that triggered the message.
 
 #### Example
 
@@ -37,7 +37,7 @@ Tags the user that triggered the the message.
 <a name="userid"></a>
 ### %userid%
 
-Gets the id of the user that triggered the the message.
+Gets the id of the user that triggered the message.
 
 #### Example
 
@@ -46,7 +46,7 @@ Gets the id of the user that triggered the the message.
 <a name="username"></a>
 ### %username%
 
-Gets the username of the user that triggered the the message.
+Gets the username of the user that triggered the message.
 
 #### Example
 
@@ -55,7 +55,7 @@ Gets the username of the user that triggered the the message.
 <a name="userdisc"></a>
 ### %userdisc%
 
-Gets the discriminator of the user that triggered the the message.
+Gets the discriminator of the user that triggered the message.
 
 #### Example
 
@@ -67,7 +67,7 @@ Gets the discriminator of the user that triggered the the message.
 <a name="channel"></a>
 ### %channel%
 
-Tags the channel that triggered the the message.
+Tags the channel that triggered the message.
 
 #### Example
 
@@ -76,7 +76,7 @@ Tags the channel that triggered the the message.
 <a name="channelid"></a>
 ### %channelid%
 
-Gets the id of the channel that triggered the the message.
+Gets the id of the channel that triggered the message.
 
 #### Example
 
@@ -85,7 +85,7 @@ Gets the id of the channel that triggered the the message.
 <a name="channelname"></a>
 ### %channelname%
 
-Gets the name of the channel that triggered the the message.
+Gets the name of the channel that triggered the message.
 
 #### Example
 
