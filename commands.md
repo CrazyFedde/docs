@@ -109,7 +109,7 @@ The **general.manage_server** permission is required to run this command.
 <a name="goodbye-message"></a>
 ### Goodbye Message
 
-Sets the goodbye message to the given string, if no arguments is parsed to the command the goodbye message will be set back to the default goodbye message.
+Sets the goodbye message to the given string, if no arguments is parsed to the command the goodbye message will be set back to the default goodbye message, you can customize how the goodbye message looks using [placeholders](/docs/{{version}}/placeholders).
 
 The **general.manage_server** permission is required to run this command.
 
@@ -283,7 +283,7 @@ The **general.manage_server** permission is required to run this command.
 <a name="welcome-message"></a>
 ### Welcome Message
 
-Sets the welcome message to the given string, if no arguments is parsed to the command the welcome message will be set back to the default welcome message.
+Sets the welcome message to the given string, if no arguments is parsed to the command the welcome message will be set back to the default welcome message, you can customize how the welcome message looks using [placeholders](/docs/{{version}}/placeholders).
 
 The **general.manage_server** permission is required to run this command.
 

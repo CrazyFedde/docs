@@ -9,3 +9,5 @@
     - [Music](/docs/{{version}}/commands#music)
     - [System](/docs/{{version}}/commands#system)
     - [Utility](/docs/{{version}}/commands#utility)
+    <hr>
+    - [Placeholders](/docs/{{version}}/placeholders)
