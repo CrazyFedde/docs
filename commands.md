@@ -406,18 +406,19 @@ The **DJ** role is required to run this command.
 
     !pause
 
-<a name="playlist"></a>
-### Playlist
+<a name="queue"></a>
+### Queue
 
-Lists the song that is playing right now, who requested it, how much of the song is left and the volume the song is playing at, as well as all the songs currently in the playlist queue.
+Lists the song that is playing right now, who requested it, how much of the song is left and the volume the song is playing at, as well as all the songs currently in the music queue.
 
 #### Usage
 
-    !playlist
+    !queue
 
 #### Aliases
 
-    !list
+    !songs
+    !song
 
 <a name="request"></a>
 ### Request
