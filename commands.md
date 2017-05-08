@@ -502,6 +502,24 @@ System commands are limited to **Bot Administrators Only**, this refers to:
  - Bot Administrators is a person who is **hosting** their own bot, and their **ID** is inside of **config.json**.
  - You are **not** a bot admin if you invited the bot using **bots.discord.pw** or other invitation links.
 
+<a name="blacklistadd"></a>
+### Blacklist Add
+
+Add a user to the bot blacklist, this will prevent the user from using any of Avas features or interact with the bot in **any** server.
+
+#### Usage
+
+    ;bla <user id> [reason]
+
+<a name="blacklistremove"></a>
+### Blacklist Remove
+
+Removes a user from the bot blacklist, allowing them to interact with the bot again.
+
+#### Usage
+
+    ;blr <user id>
+
 <a name="botadminadd"></a>
 ### Bot Admin Add
 
