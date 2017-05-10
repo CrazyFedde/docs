@@ -138,9 +138,3 @@ Googles public API offers a lot of really cool features, within Ava the YouTube 
  3. Setup a AI agent name and description, you can also start adding some sample data and select that language you want the bot to use, once you're done click the **Save** button in the top right.
  4. Now that your agent is created you can start making some custom intents or enabled prebuilt agents.
  5. Once you're done adding intents you can head over to your agents settings in the top left, there you'll find your **Client access token**, you can copy that into the `config.json` file, the AI feature for Ava will now use your custom agent!
-
-#### Discord Stats
-
-The Discord stats field refers to the [https://bots.discord.pw/api](https://bots.discord.pw/api) API, if the bot has been added to the site, the API can be used to update the server count for the bot, however due to requirements and regulations for adding a bot to [https://bots.discord.pw/](https://bots.discord.pw/), using a carbon copy of Ava won't get the bot accepted, so if you're using a custom version of Ava you'll have to put in quite a few man-hours adding features that doesn't already exists within the project to use this API.
-
-If you're adding custom features to the project and you think other people might be interested in using the features you've made, feel free to send a [pull request on github](https://github.com/Senither/AvaIre) or come talk to the developers for the project in our [Discord server](/support).
