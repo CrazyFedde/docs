@@ -70,6 +70,32 @@ The **general.ban_members** permission is required to run this command.
 
     .ban <user> [reason]
 
+<a name="changeprefix"></a>
+### Change Prefix
+
+Sets the prefix that should be used for all commands in a given module, if no prefix is provided the modules prefix will be reset back to the default instead.
+
+The following modules can be affected by this command.
+
+ - [Administration](#administration)
+ - [Fun](#fun)
+ - [Help](#help)
+ - [Music](#music)
+ - [System](#system)
+ - [Utility](#utility)
+
+The **general.administrator** permission is required to run this command.
+
+> {tip} It is not required to type out the full name of the module, just typing a few characters will get the module that starts with the given characters.<br>For example changing the prefix all the commands in the `Administration` module can be done by doing `.changeprefix a [prefix]` for short.
+
+#### Usage
+
+    .changeprefix <module> [prefix]
+
+#### Aliases
+
+    .avaireprefix
+
 <a name="channel"></a>
 ### Channel
 
