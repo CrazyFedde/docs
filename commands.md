@@ -375,6 +375,19 @@ Gets a random cat image from the internet.
 
     >cat
 
+<a name="randomdog"></a>
+### RandomCat
+
+Gets a random dog image from the internet.
+
+#### Usage
+
+    >randomdog
+
+#### Aliases
+
+    >dog
+
 <a name="roll"></a>
 ### Roll
 
