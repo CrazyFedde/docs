@@ -27,7 +27,7 @@ The environment property should always return a single string that represents th
  - Production 
     - Limits error logging to the console as much as possible, and eables all features. Error logging is stile done to-file which will be stored in `storage/logs/*`.
  - Testing
-    - Used during tests, this environment will be dynamicly be set when tests are run, anything that might hit a database will use a in-memory SQLite database instead while this envioronment is set.
+    - Used during tests, this environment will be dynamicly set when tests are run, anything that might hit a database will use a in-memory SQLite database instead while this envioronment is set.
  - Development
     - Logs anything and everything to the console, some features like stats updates for the bot will also be disabled to prevent Avas development version stats to be listed publicly.
 
@@ -59,7 +59,7 @@ Just replace the `<your client id>` with your actually bot application id, you c
 <a name="database"></a>
 ### Database
 
-The database properties determines what type of database Ava and connection information that should used, out of the bot Ava supports three database types.
+The database properties determines what type of database Ava should used, out of the box Ava supports three database types.
 
  - MySQL
     - This should be used for any large bots where shards is required, using MySQL can also be a lot easier in many cases to setup since Ava comes with a MySQL setup out of the box.
@@ -93,7 +93,7 @@ The host should be the host the MySQL database is hosted on, you can add your po
 }
 ```
 
-Make sure to create a bank text file in the root of the application called `database.sqlite` for SQLite to work properly, if you want to use an in-memory database(Which seems kinda silly unless you're testing the database) you can use the following setup.
+Make sure to create a blank text file in the root of the application called `database.sqlite` for SQLite to work properly, if you want to use an in-memory database(Which seems kinda silly unless you're testing the database) you can use the following setup.
 
 ```json
 "database": {
@@ -105,7 +105,7 @@ Make sure to create a bank text file in the root of the application called `data
 <a name="playing"></a>
 ### Playing
 
-The playing property is a simple JSON string array, anything you put into the array will be randomly selected by Ava and a certain interval the selected item will be set as the bots playing status, out of the bot the array will only have one property, but any number of strings could be added to the array.
+The playing property is a simple JSON string array, anything you put into the array will be randomly selected by Ava and a certain interval the selected item will be set as the bots playing status, out of the box the array will only have one property, but any number of strings could be added to the array.
 
 <a name="botaccess"></a>
 ### Bot Access
@@ -131,7 +131,7 @@ Googles public API offers a lot of really cool features, within Ava the YouTube 
 
 #### API.AI
 
-[API.AI](https://api.ai/) is a really cool service that provides you with "AI agents" that can process text and voice and allows you to setup your own rules for different input, Ava uses a custom public agent that allows users to ask Discord related questions and data being used live, you can find all the AI intent handlers in [github.com/AvaIre/AvaIre/tree/master/app/services/ai/intents](https://github.com/AvaIre/AvaIre/tree/master/app/services/ai/intents), if you're using the smalltalk agent from [api.ai](https://api.ai/) the response will skip the intend handles and just be sent back directly to the user. If you don't already have a [api.ai](https://api.ai/) token you can create a simple AI agent in minutes by following these steps.
+[API.AI](https://api.ai/) is a really cool service that provides you with "AI Agents" that can process text and voice and allows you to setup your own rules for different input, Ava uses a custom public agent that allows users to ask Discord related questions and data being used live, you can find all the AI intent handlers in [github.com/AvaIre/AvaIre/tree/master/app/services/ai/intents](https://github.com/AvaIre/AvaIre/tree/master/app/services/ai/intents), if you're using the smalltalk agent from [api.ai](https://api.ai/) the response will skip the intend handles and just be sent back directly to the user. If you don't already have a [api.ai](https://api.ai/) token you can create a simple AI agent in minutes by following these steps.
 
  1. Head over to [api.ai](https://api.ai/) and signup using your email or google account, once you're logged in you can create a new AI agent.
  2. When creating the new agent you can either make a public or private agent, if the agient is public other people will be able to use your agent for their own projects.

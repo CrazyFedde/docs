@@ -449,7 +449,7 @@ Lists the song that is playing right now, who requested it, how much of the song
 <a name="request"></a>
 ### Request
 
-Requests a song via youtube, soundcloud, twitch, radio streams or by name, if the song was successfully found the song will be added to the playlist.
+Requests a song via youtube, soundcloud, twitch, radio streams or by name, if the song was successfully found the song will be added to the queue.
 
 #### Usage
 
@@ -462,7 +462,7 @@ Requests a song via youtube, soundcloud, twitch, radio streams or by name, if th
 <a name="resume"></a>
 ### Resume
 
-Pauses the song that is currently playing.
+Resumes the song that was playing before.
 
 The **DJ** role is required to run this command.
 
@@ -473,7 +473,7 @@ The **DJ** role is required to run this command.
 <a name="shuffle"></a>
 ### Shuffle
 
-Shuffles the songs waiting in the playlist queue.
+Shuffles the songs waiting in the queue.
 
 The **DJ** role is required to run this command.
 
@@ -526,7 +526,7 @@ System commands are limited to **Bot Administrators Only**, this refers to:
  - Bot Administrators Only commands refer to the commands only a bot admin can use.
  - Bot Administrators Only commands do **not** refer to the owner of the server.
  - Bot Administrators is a person who is **hosting** their own bot, and their **ID** is inside of **config.json**.
- - You are **not** a bot admin if you invited the bot using **bots.discord.pw** or other invitation links.
+ - You are **not** a bot admin if you invited the bot using **discordbots.org** or other invitation links.
 
 <a name="blacklistadd"></a>
 ### Blacklist Add
@@ -573,7 +573,7 @@ Removes a user id from the bot administrators list, if the users ID is in the co
 
 #### Usage
 
-    ;bal
+    ;bar
 
 <a name="broadcast"></a>
 ### Broadcast
@@ -604,7 +604,7 @@ Broadcasts the message linked to the given ID, if the ID is valid the message li
 <a name="eval"></a>
 ### Eval
 
-Evaluates and executes raw JS code.
+Evaluates and executes raw JavaScript code.
 
 > {tip} Messing around too much with this command can cause crashes and other funny things to happen since coding is being injected into the application during runtime.
 
@@ -639,7 +639,7 @@ Enables a given module. Modules are the command categories, for example [adminis
 <a name="reboot"></a>
 ### Reboot
 
-Restarts the bot. If there are any active voice connections all the music will be stoped, the playlist queue will be cleared and a voice maintenance message will be sent instead, once the message is over the rebooting process will continue.
+Restarts the bot. If there are any active voice connections all the music will be stoped, the queue will be cleared and a voice maintenance message will be sent instead, once the message is over the rebooting process will continue.
 
 #### Usage
 
