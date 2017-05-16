@@ -716,6 +716,19 @@ Tells you information about the bot, and other runtime statistics.
 
     ;stats
 
+<a name="safereboot"></a>
+### Safe Reboot
+
+Restarts the bot. However unlike the [reboot](#reboot) command, using the safe reboot will wait for all voice connections to drop before restarting.
+
+#### Usage
+
+    ;safereboot
+
+#### Aliases
+
+    ;sreboot
+
 <a name="utility"></a>
 ## Utility Commands
 
