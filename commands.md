@@ -434,6 +434,21 @@ Clap... Clap... Clap...
 
 All commands in the _Music_ module uses the `!` prefix.
 
+<a name="movehere"></a>
+### Move Here
+
+Moves the bot into the same voice channel you're in, this command can be used to move the bot to a diferent voice channel while it is playing music without having the permissions to move other users. 
+
+The **DJ** role is required to run this command.
+
+#### Usage
+
+    !movehere
+
+#### Aliases
+
+    !moveh
+
 <a name="pause"></a>
 ### Pause
 
