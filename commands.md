@@ -429,6 +429,15 @@ Clap... Clap... Clap...
 
     >slowcap
 
+<a name="xkcd"></a>
+### XKCD
+
+Gets the latest [xkcd](https://xkcd.com/) comic, or the comic with the given id.
+
+#### Usage
+
+    >xkcd [comic id]
+
 <a name="music"></a>
 ## Music Commands
 
