@@ -469,6 +469,115 @@ The **DJ** role is required to run this command.
 
     !pause
 
+<a name="playlist"></a>
+### Playlist
+
+Allows music DJs to create, list, update, and delete music playlists, the command has a bunch of sub-commands that are used to manage the playlists, so to make it a bit easier here is all the sub-commands with links.
+
+ - [Add song to Playlist](#playlist-add)
+ - [Create new Playlist](#playlist-create)
+ - [Delete existing Playlist](#playlist-delete)
+ - [Load Playlist into the Music queue](#playlist-load)
+ - [List Songs in the Playlist](#playlist-list)
+ - [Rename Playlist](#playlist-rename)
+
+The **DJ** role is required to run this command.
+
+#### Usage
+
+    !playlist [name] [arguments]
+
+#### Aliases
+
+    !list
+    !pl
+
+<a name="playlist-add"></a>
+### Playlist - Add song to Playlist
+
+Adds a song to the a existing playlist, if you don't already have playlist you can [create a new playlist](#playlist-create).
+
+#### Usage
+
+    !playlist <name> add <song url>
+
+#### Aliases
+
+    !playlist <name> a <song url>
+
+**You can replace the `!playlist` command with any of [playlist command aliases](#playlist).**
+
+<a name="playlist-create"></a>
+### Playlist - Create new Playlist
+
+Creates a new playlist for the server with the given name, after the playlist has been created to can start [adding songs to it](#playlist-add), if you misspelt the name you can [rename the playlist](#playlist-rename) without deleting all the songs in the playlist.
+
+#### Usage
+
+    !playlist <name> create
+
+#### Aliases
+
+    !playlist <name> c
+
+**You can replace the `!playlist` command with any of [playlist command aliases](#playlist).**
+
+<a name="playlist-delete"></a>
+### Playlist - Delete existing Playlist
+
+Deletes all playlist and all the songs in the playlist, keep in mind that deleting the playlist is a permanent action and can not be undone, there are **NO** confirmation if you are sure if you wanna delete the playlist, it will just be deleted if you use the command.
+
+> {tip} If the playlist is loaded into the music queue when the playlist is deleted, the music will still continue to play all the way through.
+
+#### Usage
+
+    !playlist <name> delete
+
+**You can replace the `!playlist` command with any of [playlist command aliases](#playlist).**
+
+<a name="playlist-load"></a>
+### Playlist - Load Playlist into the Music queue
+
+Loads the playlist into the music queue, if the bot is not already playing music this command will also connect the bot to the same voice channel you are in, and start the music. If the playlist is empty you can [add some songs here](#playlist-add).
+
+#### Usage
+
+    !playlist <name> load
+
+#### Aliases
+
+    !playlist <name> play
+    !playlist <name> l
+
+**You can replace the `!playlist` command with any of [playlist command aliases](#playlist).**
+
+<a name="playlist-list"></a>
+### Playlist - List Songs in the Playlists
+
+Lists the songs in the playlist with the given name, the command will paginate the songs to only show ten songs at a time, you can jump to different pages by giving the command the page number for the playlist you want to view, if you don't have any songs in the playlist you can [add songs here](#playlist-add).
+
+#### Usage
+
+    !playlist <name> [page number]
+
+**You can replace the `!playlist` command with any of [playlist command aliases](#playlist).**
+
+<a name="playlist-rename"></a>
+### Playlist - Rename Playlist
+
+Rename an existing playlist to the given name.
+
+#### Usage
+
+    !playlist <name> renameto <new name>
+
+#### Aliases
+
+    !playlist <name> rename <new name>
+    !playlist <name> r <new name>
+
+**You can replace the `!playlist` command with any of [playlist command aliases](#playlist).**
+
 <a name="queue"></a>
 ### Queue
 
