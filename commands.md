@@ -487,6 +487,21 @@ Gets the latest [xkcd](https://xkcd.com/) comic, or the comic with the given id.
 
 All commands in the _Music_ module uses the `!` prefix.
 
+<a name="flushqueue"></a>
+### Flush Queue
+
+Flushes the music queue, removing all songs currently waiting in the queue.
+
+The **DJ** role is required to run this command.
+
+#### Usage
+
+    !flushqueue
+
+#### Aliases
+
+    !fqueue
+
 <a name="movehere"></a>
 ### Move Here
 
