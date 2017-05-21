@@ -902,6 +902,19 @@ Restarts the bot. However unlike the [reboot](#reboot) command, using the safe r
 
 All commands in the _Utility_ module uses the `!` prefix.
 
+<a name="expandurl"></a>
+### Expand URL
+
+Expand a short URL to it's longform state.
+
+#### Usage
+
+    !expand [url]
+
+#### Aliases
+
+    !e
+
 <a name="invite"></a>
 ### Invite
 
@@ -944,6 +957,19 @@ Sets a message you would like to be reminded of later, the message can be anythi
 #### Aliases
 
     !rem
+
+<a name="shortenurl"></a>
+### Shorten URL
+
+Shorten a URL using [goo.gl](https://goo.gl/).
+
+#### Usage
+
+    !shorten [url]
+
+#### Aliases
+
+    !s
 
 <a name="source"></a>
 ### Source
