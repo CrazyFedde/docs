@@ -344,6 +344,20 @@ Can you not...?
 
     >canyounot
 
+<a name="chucknorris"></a>
+### Chuck Norris
+
+Gets a random 100% true, real facts about Chuck Norris using the "Internet Chuck Norris Database".
+
+#### Usage
+
+    >chucknorris
+
+#### Aliases
+
+    >chuck
+    >norris
+
 <a name="coin"></a>
 ### Coin
 
@@ -361,6 +375,19 @@ Rolls a set of dice, for example using `4d8` will roll four eight sided dice.
 #### Usage
 
     >dice [D&D Dice]
+
+<a name="gfycat"></a>
+### GFYCat
+
+Gets a random gif from [gfycat.com](https://gfycat.com/) with the given tags.
+
+#### Usage
+
+    >gfycat [tag]
+
+#### Aliases
+
+    >gif
 
 <a name="lenny"></a>
 ### Lenny
@@ -436,6 +463,15 @@ Clap... Clap... Clap...
 #### Usage
 
     >slowcap
+
+<a name="urbandictionary"></a>
+### Urban Dictionary    
+
+Get the defenition of a word or sentence from [urbandictionary.com](http://www.urbandictionary.com/)
+
+#### Usage
+
+    >urban [word or sentence]
 
 <a name="xkcd"></a>
 ### XKCD
