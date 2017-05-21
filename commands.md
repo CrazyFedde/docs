@@ -353,6 +353,15 @@ Flips a coin for heads or tails.
 
     >coin
 
+<a name="dice"></a>
+### Dice
+
+Rolls a set of dice, for example using `4d8` will roll four eight sided dice.
+
+#### Usage
+
+    >dice [D&D Dice]
+
 <a name="lenny"></a>
 ### Lenny
 
@@ -391,12 +400,11 @@ Gets a random dog image from the internet.
 <a name="roll"></a>
 ### Roll
 
-Rolls a random number or a set of D&D dice.
+Rolls a random number between 1 and 100, or between the numbers given.
 
 #### Usage
 
     >roll [min] [max]
-    >roll [D&D Dice]
 
 <a name="say"></a>
 ### Say
