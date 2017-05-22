@@ -12,7 +12,7 @@
 
 This is the command reference for AvaIre. You can find more elaborative information here on each of the commands currently implemented.
 
-If you have need for any further info, you can send the message `.help <command>` to the bot to get info about command throtteling limits, permission requirements and so forth. Got any questions? Check out #support in [AvaIre Central](#).
+If you need for any further info, you can use the [help command](#help) for the bot to get info about command throtteling limits, permission requirements and so forth. Got any questions? Check out #support in [AvaIre Central](#).
 
 <a name="help"></a>
 ## Help Command
