@@ -399,7 +399,7 @@ Gets a random gif from [gfycat.com](https://gfycat.com/) with the given tags.
     >lenny
 
 <a name="randomcat"></a>
-### RandomCat
+### Random Cat
 
 Gets a random cat image from the internet.
 
@@ -412,7 +412,7 @@ Gets a random cat image from the internet.
     >cat
 
 <a name="randomdog"></a>
-### RandomCat
+### Random Dog
 
 Gets a random dog image from the internet.
 
