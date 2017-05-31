@@ -53,9 +53,35 @@ Toggles the AI module on or off for the current channel, if the module is enable
 
 The **general.manage_server** permission is required to run this command.
 
+<a name="alias"></a>
+### Alias
+
+Creates and maps a custom aliase for a pre-existing command, if a alias that already exists is given with no additional command the alias will be unbinded.
+
+The **general.manage_server** permission is required to run this command.
+
 #### Usage
 
-    .ai
+    .alias <alias trigger> [command to bind to]
+
+#### Aliases
+
+    .cmdmap
+
+<a name="aliases"></a>
+### Aliases
+
+Lists all the existing command aliases and what they're bound to.
+
+The **general.manage_server** permission is required to run this command.
+
+#### Usage
+
+    .aliases [page]
+
+#### Aliases
+
+    .aliaslist
 
 <a name="ban"></a>
 ### Ban
