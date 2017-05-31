@@ -487,15 +487,11 @@ Rolls a random number between 1 and 100, or between the numbers given.
 <a name="say"></a>
 ### Say
 
-Makes Ava say whatever you want.
+Makes Ava say whatever you want, if Ava has permissions to delete messages, the original message will be deleted and Avas message will replace it.
 
 #### Usage
 
     >say [message]
-
-#### Aliases
-
-    >echo
 
 <a name="shrug"></a>
 ### Shrug
@@ -1034,7 +1030,22 @@ Gives you the source code for the Bot, or the code for a given command.
 <a name="stats"></a>
 ### Stats
 
-Displays information about Ava, like how many servers and people she knows about, how long she has been online for, commands run, memory usage, and the latest changes and version numbers.
+Displays information about Ava, and some stats about the bot, the following things will be shown:
+
+ - Bot ID
+ - Author of the bot
+ - The current version of the bot
+ - The last few changes to the latest version of Ava
+ - Library the bot is written in
+ - How many Database queries that has been run
+ - How mnay commands the bot has received
+ - How many servers Ava is playing music in right now
+ - How many servers Ava is in
+ - How many commands has been run
+ - How much memory Ava is using
+ - How many users Ava knows about(total, total online, unique and unique online)
+ - How many channels Ava knows about(total, text and voice)
+ - How long Ava has been online for
 
 #### Usage
 
