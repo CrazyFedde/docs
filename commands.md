@@ -263,6 +263,17 @@ Displays information about the server the command was ran in, like the servers I
 
     .sinfo
 
+<a name="setup"></a>
+### Setup
+
+Helps setup different features within Ava for the current server.
+
+The **general.administrator** permission is required to run this command.
+
+#### Usage
+
+    .setup [feature]
+
 <a name="slowmode"></a>
 ### Slowmode
 
