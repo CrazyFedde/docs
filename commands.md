@@ -461,6 +461,20 @@ Gets a random dog image from the internet.
 
     >dog
 
+<a name="repeat"></a>
+### Repeat
+
+Makes Ava repeat whatever you say.
+
+#### Usage
+
+    >repeat [message]
+
+#### Aliases
+
+    >echo
+
+
 <a name="roll"></a>
 ### Roll
 
