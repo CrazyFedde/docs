@@ -36,7 +36,7 @@ Below you'll find a list of all the commands that Ava has, along with a short de
 | [.kick <user\> [reason]](/docs/{{version}}/commands#kick)  | Kicks the tagged user from the server  |
 | [.language [local]](/docs/{{version}}/commands#language)  | Changes or list the languages Ava supports  |
 | [.modlog](/docs/{{version}}/commands#modlog)  | Toggles modlog on or off for the current channel  |
-| [.purge <amount\> [user]](/docs/{{version}}/commands#modlog)  | Purge old messages from the current channel  |
+| [.purge <amount\> [user]](/docs/{{version}}/commands#purge)  | Purge old messages from the current channel  |
 | [.serverid](/docs/{{version}}/commands#server-id)  | Shows the server id  |
 | [.serverinfo](/docs/{{version}}/commands#server-info)  | Shows information about the server  |
 | [.setup [feature]](/docs/{{version}}/commands#setup)  | Helps you setup features within Ava for the server  |
@@ -65,9 +65,9 @@ Below you'll find a list of all the commands that Ava has, along with a short de
 | [>roll [min] [max]](/docs/{{version}}/commands#roll)  | Rolls a random number between 1 and 100, or between the numbers given  |
 | [>say [message]](/docs/{{version}}/commands#say)  | Makes Ava say whatever you want  |
 | [>shrug](/docs/{{version}}/commands#shrug)  | ¯\\_(ツ)_/¯  |
-| [>slowclap](/docs/{{version}}/commands#shrug)  | Clap... Clap... Clap...  |
+| [>slowclap](/docs/{{version}}/commands#slowclap)  | Clap... Clap... Clap...  |
 | [>urban [word]](/docs/{{version}}/commands#urbandictionary)  | Get the defenition of a word or sentence from [urbandictionary.com](http://www.urbandictionary.com/)  |
-| [>xkcd [number]](/docs/{{version}}/commands#urbandictionary)  | Gets the latest [xkcd](https://xkcd.com/) comic, or the comic with the given id.  |
+| [>xkcd [number]](/docs/{{version}}/commands#xkcd)  | Gets the latest [xkcd](https://xkcd.com/) comic, or the comic with the given id.  |
 
 <a name="music"></a>
 ## Music
@@ -101,8 +101,8 @@ Below you'll find a list of all the commands that Ava has, along with a short de
 | [;eval <code\>](/docs/{{version}}/commands#eval)  | Evaluates and executes raw JavaScript code  |
 | [;md <module\>](/docs/{{version}}/commands#moduledisable)  | Disable the given command module for all servers  |
 | [;me <module\>](/docs/{{version}}/commands#moduleenable)  | Enable the given command module for all servers  |
-| [;reboot](/docs/{{version}}/commands#moduleenable)  | Restarts the bot instance  |
-| [;reload <property\>](/docs/{{version}}/commands#moduleenable)  | Reloads the given property  |
+| [;reboot](/docs/{{version}}/commands#reboot)  | Restarts the bot instance  |
+| [;reload <property\>](/docs/{{version}}/commands#reload)  | Reloads the given property  |
 | [;rstats](/docs/{{version}}/commands#runtimestats)  | Displays information about the bot, and other runtime statistics  |
 | [;safereboot](/docs/{{version}}/commands#safereboot)  | Restarts the bot instance safely |
 
@@ -116,7 +116,7 @@ Below you'll find a list of all the commands that Ava has, along with a short de
 | [!ping](/docs/{{version}}/commands#ping)  | Ping, Pong  |
 | [!remind <time\> <message\>](/docs/{{version}}/commands#remind)  | sets a message you would like to be reminded of later  |
 | [!shorten <url\>](/docs/{{version}}/commands#shortenurl)  | Shorten a URL using [goo.gl](https://goo.gl/)  |
-| [!source [command]](/docs/{{version}}/commands#shortenurl)  | Sends a link to the source code for the given command  |
-| [!stats](/docs/{{version}}/commands#shortenurl)  | Displays information and stats about Ava  |
+| [!source [command]](/docs/{{version}}/commands#source)  | Sends a link to the source code for the given command  |
+| [!stats](/docs/{{version}}/commands#stats)  | Displays information and stats about Ava  |
 | [!uptime](/docs/{{version}}/commands#uptime)  | Displays how long Ava has been online for  |
 | [!version](/docs/{{version}}/commands#version)  | Displays the current version of Ava  |
