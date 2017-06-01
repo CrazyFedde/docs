@@ -186,10 +186,6 @@ The **general.kick_members** permission is required to run this command.
 
     .kick <user> [reason]
 
-#### Aliases
-
-    .byemsg
-
 <a name="language"></a>
 ### Language
 
@@ -473,7 +469,6 @@ Makes Ava repeat whatever you say.
 #### Aliases
 
     >echo
-
 
 <a name="roll"></a>
 ### Roll
@@ -825,7 +820,7 @@ Removes a user id from the bot administrators list, if the users ID is in the co
 
 #### Usage
 
-    ;bar
+    ;bar <user id>
 
 <a name="broadcast"></a>
 ### Broadcast
