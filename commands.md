@@ -513,7 +513,11 @@ Get the defenition of a word or sentence from [urbandictionary.com](http://www.u
 
 #### Usage
 
-    >urban [word or sentence]
+    >urbandictionary [word or sentence]
+
+#### Aliases
+
+    >urban
 
 <a name="xkcd"></a>
 ### XKCD
