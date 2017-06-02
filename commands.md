@@ -582,6 +582,7 @@ Allows music DJs to create, list, update, and delete music playlists, the comman
  - [Add song to Playlist](#playlist-add)
  - [Create new Playlist](#playlist-create)
  - [Delete existing Playlist](#playlist-delete)
+ - [Remove a song from an existing Playlist](#playlist-remove)
  - [Load Playlist into the Music queue](#playlist-load)
  - [List Songs in the Playlist](#playlist-list)
  - [Rename Playlist](#playlist-rename)
@@ -637,6 +638,21 @@ Deletes all playlist and all the songs in the playlist, keep in mind that deleti
 #### Usage
 
     !playlist <name> delete
+
+**You can replace the `!playlist` command with any of [playlist command aliases](#playlist).**
+
+<a name="playlist-remove"></a>
+### Playlist - Remove a song from an existing Playlist 
+
+Removes the song with the given ID for the current playlist if it exists.
+
+#### Usage
+
+    !playlist <name> removesong <id>
+
+#### Aliases
+
+    !playlist <name> remove <id>
 
 **You can replace the `!playlist` command with any of [playlist command aliases](#playlist).**
 
