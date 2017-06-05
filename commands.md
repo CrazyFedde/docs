@@ -1091,3 +1091,17 @@ Displays the current version of Ava you're running, if the version is oudated th
 #### Usage
 
     !version
+
+<a name="yesnopoll"></a>
+### Yes/No Poll
+
+Creates a poll with a message, users can then vote yes or no on the poll, after the given amount of time the poll will automatically close and show the result of the poll. The time format has to look something like 25m52s to make the poll last for 25 minutes and 52 seconds, you can combine or exclude any combination of the number followed by a `m` for minutes and `s` for seconds.
+
+#### Usage
+
+    !yesnopoll <time> <message>
+
+#### Aliases
+
+    !ynpoll
+    !poll

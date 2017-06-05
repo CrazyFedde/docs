@@ -120,3 +120,4 @@ Below you'll find a list of all the commands that Ava has, along with a short de
 | [!stats](/docs/{{version}}/commands#stats)  | Displays information and stats about Ava  |
 | [!uptime](/docs/{{version}}/commands#uptime)  | Displays how long Ava has been online for  |
 | [!version](/docs/{{version}}/commands#version)  | Displays the current version of Ava  |
+| [!yesnopoll <time\> <poll\>](/docs/{{version}}/commands#yesnopoll)  | Creates a poll people can vote on  |
