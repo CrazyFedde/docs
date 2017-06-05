@@ -122,6 +122,10 @@ The **general.administrator** permission is required to run this command.
 
     .avaireprefix
 
+#### Tag Example
+
+    @AvaIre prefix <module> [prefix]
+
 <a name="channel"></a>
 ### Channel
 
