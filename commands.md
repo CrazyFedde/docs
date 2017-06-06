@@ -552,6 +552,22 @@ The **DJ** role is required to run this command.
 
     !fqueue
 
+<a name="repeatsongs"></a>
+### Repeat Music Queue
+
+Toggles music looping on or off, the [queue](#queue) command be used to get the muisic looping status.
+
+The **DJ** role is required to run this command.
+
+#### Usage
+
+    !repeatsongs
+
+#### Aliases
+
+    !repeat
+    !loop
+
 <a name="movehere"></a>
 ### Move Here
 

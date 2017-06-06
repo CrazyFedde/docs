@@ -79,6 +79,7 @@ Below you'll find a list of all the commands that Ava has, along with a short de
 | [!pause](/docs/{{version}}/commands#pause)  | Pauses the song that is currently playing  |
 | [!playlist](/docs/{{version}}/commands#playlist)  | Main command used to manage the custom music playlists  |
 | [!queue](/docs/{{version}}/commands#queue)  | Lists all the songs in the music queue  |
+| [!repeatsongs](/docs/{{version}}/commands#repeatsongs)  | Repeats the songs currently in the music queue  |
 | [!request [name/url]](/docs/{{version}}/commands#request)  | Request a song via youtube, soundcloud, twitch, radio streams or by name  |
 | [!resume](/docs/{{version}}/commands#resume)  | Resumes the song that was playing before  |
 | [!shuffle](/docs/{{version}}/commands#shuffle)  | Shuffles the songs waiting in the queue  |
