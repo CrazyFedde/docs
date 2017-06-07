@@ -746,6 +746,12 @@ Requests a song via youtube, soundcloud, twitch, radio streams or by name, if th
 
     !play
 
+
+#### Tag Example
+
+    @AvaIre play <name of song>
+    @AvaIre can you find me some chill music?
+
 <a name="resume"></a>
 ### Resume
 
