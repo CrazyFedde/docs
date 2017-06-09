@@ -985,6 +985,20 @@ Restarts the bot. However unlike the [reboot](#reboot) command, using the safe r
 
     ;sreboot
 
+<a name="setstatus"></a>
+### Set Status
+
+Sets the status of the bot instance for all servers the bot is on, if no status is set the bot status will go back to cycling status from the config.
+
+#### Usage
+
+    ;setstatus [status/twitch url]
+
+#### Aliases
+
+    ;status
+
+
 <a name="utility"></a>
 ## Utility Commands
 
