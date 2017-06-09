@@ -50,7 +50,7 @@ The bot token is the bot application token, if you don't already have a bot toke
 
 The oauth field should contain a valid invite link for the bot, the invite link should look like this:
 
-    https://discordapp.com/oauth2/authorize?&client_id=<your client id>&scope=bot&permissions=66186303
+    https://discordapp.com/oauth2/authorize?&client_id=<client id>&scope=bot
 
 Just replace the `<your client id>` with your actually bot application id, you can find your bot application id on the [discordapp.com/developers/applications](https://discordapp.com/developers/applications/me) page, just click on your application, the client ID is at the very top under the **App Details** section.
 
