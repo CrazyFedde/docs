@@ -2,6 +2,7 @@
     - [Release Notes](/docs/{{version}}/releases)
 - Self Hosting
     - [Windows Guide](/docs/{{version}}/windows-guide)
+    - [Linux Guide](/docs/{{version}}/linux-guide)
     - [Configuration](/docs/{{version}}/configuration)
 - Commands
     - [Command List](/docs/{{version}}/command-list)
