@@ -1,6 +1,7 @@
 - Prologue
     - [Release Notes](/docs/{{version}}/releases)
 - Self Hosting
+    - [Windows Guide](/docs/{{version}}/windows-guide)
     - [Configuration](/docs/{{version}}/configuration)
 - Commands
     - [Command List](/docs/{{version}}/command-list)
