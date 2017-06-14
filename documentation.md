@@ -15,3 +15,11 @@
     - [Utility](/docs/{{version}}/commands#utility)
     <hr>
     - [Placeholders](/docs/{{version}}/placeholders)
+- Developers Handbook
+    - [Commands](/docs/{{version}}/comming-soon)
+    - [Middleware](/docs/{{version}}/comming-soon)
+    - [Jobs](/docs/{{version}}/comming-soon)
+    - [Utilities](/docs/{{version}}/comming-soon)
+    - [Event Handlers](/docs/{{version}}/comming-soon)
+    - [Database & Migrations](/docs/{{version}}/comming-soon)
+    - [Helpers](/docs/{{version}}/comming-soon)
