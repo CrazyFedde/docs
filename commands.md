@@ -722,11 +722,11 @@ Rename an existing playlist to the given name.
 <a name="queue"></a>
 ### Queue
 
-Lists the song that is playing right now, who requested it, how much of the song is left and the volume the song is playing at, as well as all the songs currently in the music queue.
+Lists the song that is playing right now, who requested it, how much of the song is left and the volume the song is playing at, as well as all the songs currently in the music queue. If the command is used followed by the word **remove** and the id of the song, the song with the given ID will be removed from the music queue.
 
 #### Usage
 
-    !queue
+    !queue [remove] [id]
 
 #### Aliases
 
