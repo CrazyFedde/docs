@@ -113,6 +113,7 @@ Below you'll find a list of all the commands that Ava has, along with a short de
 | Command           | Short Description      |
 | ----------------- |:---------------------- |
 | [!expand <url\>](/docs/{{version}}/commands#expandurl)  | Expand a short URL to it's longform state  |
+| [!feedback <message\>](/docs/{{version}}/commands#feedback)  | Gives feedback about the bot  |
 | [!invite](/docs/{{version}}/commands#invite)  | Sends a link that can be used to invite Ava to your server with  |
 | [!ping](/docs/{{version}}/commands#ping)  | Ping, Pong  |
 | [!remind <time\> <message\>](/docs/{{version}}/commands#remind)  | sets a message you would like to be reminded of later  |

@@ -1017,6 +1017,15 @@ Expand a short URL to it's longform state.
 
     !e
 
+<a name="feedback"></a>
+### Feedback
+
+Send feedback about Ava back to the developers and the staff team, any message given to the command will be sent in the [#feedback](https://discord.gg/tAmWcbK) channel on the official [AvaIre Central Support server](https://discord.gg/gt2FWER).
+
+#### Usage
+
+    !feedback <message>
+
 <a name="invite"></a>
 ### Invite
 
