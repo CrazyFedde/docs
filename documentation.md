@@ -16,6 +16,7 @@
     <hr>
     - [Placeholders](/docs/{{version}}/placeholders)
 - Developers Handbook
+    - [Contribution Guide](/docs/{{version}}/contributions)
     - [Commands](/docs/{{version}}/comming-soon)
     - [Middleware](/docs/{{version}}/comming-soon)
     - [Jobs](/docs/{{version}}/comming-soon)
