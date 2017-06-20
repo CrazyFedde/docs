@@ -62,7 +62,6 @@ Below you'll find a list of all **84** commands that Ava has, along with a short
 | [>chucknorris](/docs/{{version}}/commands#chucknorris)  | Gets a random 100% true fact about Chuck Norris  |
 | [>coin](/docs/{{version}}/commands#coin)  | Flips a coin for heads or tails  |
 | [>dice [dice format]](/docs/{{version}}/commands#dice)  | Rolls a set of dice  |
-| [>gfycat [tags]](/docs/{{version}}/commands#gfycat)  | Gets a random gif from [gfycat.com](https://gfycat.com/)  |
 | [>lenny](/docs/{{version}}/commands#lenny)  | ( ͡° ͜ʖ ͡°)  |
 | [>randomcat](/docs/{{version}}/commands#randomcat)  | Gets a random cat image from the internet  |
 | [>randomdog](/docs/{{version}}/commands#randomdog)  | Gets a random dog image from the internet  |
@@ -71,8 +70,6 @@ Below you'll find a list of all **84** commands that Ava has, along with a short
 | [>say [message]](/docs/{{version}}/commands#say)  | Makes Ava say whatever you want  |
 | [>shrug](/docs/{{version}}/commands#shrug)  | ¯\\_(ツ)_/¯  |
 | [>slowclap](/docs/{{version}}/commands#slowclap)  | Clap... Clap... Clap...  |
-| [>urban [word]](/docs/{{version}}/commands#urbandictionary)  | Get the defenition of a word or sentence from [urbandictionary.com](http://www.urbandictionary.com/)  |
-| [>xkcd [number]](/docs/{{version}}/commands#xkcd)  | Gets the latest [xkcd](https://xkcd.com/) comic, or the comic with the given id.  |
 
 <a name="music"></a>
 ## Music
@@ -97,7 +94,10 @@ Below you'll find a list of all **84** commands that Ava has, along with a short
 
 | Command           | Short Description      |
 | ----------------- |:---------------------- |
+| [>gfycat [tags]](/docs/{{version}}/commands#gfycat)  | Gets a random gif from [gfycat.com](https://gfycat.com/)  |
 | [>search <query\>](/docs/{{version}}/commands#duckduckgo)  | Searches DuckDuckGo.com with your given query  |
+| [>urban [word]](/docs/{{version}}/commands#urbandictionary)  | Get the defenition of a word or sentence from [urbandictionary.com](http://www.urbandictionary.com/)  |
+| [>xkcd [number]](/docs/{{version}}/commands#xkcd)  | Gets the latest [xkcd](https://xkcd.com/) comic, or the comic with the given id.  |
 
 <a name="system"></a>
 ## System

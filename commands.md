@@ -477,19 +477,6 @@ Rolls a set of dice, for example using `4d8` will roll four eight sided dice.
 
     >dice [D&D Dice]
 
-<a name="gfycat"></a>
-### GFYCat
-
-Gets a random gif from [gfycat.com](https://gfycat.com/) with the given tags.
-
-#### Usage
-
-    >gfycat [tag]
-
-#### Aliases
-
-    >gif
-
 <a name="lenny"></a>
 ### Lenny
 
@@ -573,28 +560,6 @@ Clap... Clap... Clap...
 #### Usage
 
     >slowcap
-
-<a name="urbandictionary"></a>
-### Urban Dictionary    
-
-Get the defenition of a word or sentence from [urbandictionary.com](http://www.urbandictionary.com/)
-
-#### Usage
-
-    >urbandictionary [word or sentence]
-
-#### Aliases
-
-    >urban
-
-<a name="xkcd"></a>
-### XKCD
-
-Gets the latest [xkcd](https://xkcd.com/) comic, or the comic with the given id.
-
-#### Usage
-
-    >xkcd [comic id]
 
 <a name="music"></a>
 ## Music Commands
@@ -878,6 +843,19 @@ Votes to skip the song that is currently playing, if 50% or more of the people l
 
 All commands in the _Search_ module uses the `>` prefix.
 
+<a name="gfycat"></a>
+### GFYCat
+
+Gets a random gif from [gfycat.com](https://gfycat.com/) with the given tags.
+
+#### Usage
+
+    >gfycat [tag]
+
+#### Aliases
+
+    >gif
+
 <a name="duckduckgo"></a>
 ### Search
 
@@ -891,6 +869,29 @@ Searches DuckDuckGo.com with your given query and returns the first four results
 
     >ddg
     >g
+
+<a name="urbandictionary"></a>
+### Urban Dictionary    
+
+Get the defenition of a word or sentence from [urbandictionary.com](http://www.urbandictionary.com/)
+
+#### Usage
+
+    >urbandictionary [word or sentence]
+
+#### Aliases
+
+    >urban
+
+<a name="xkcd"></a>
+### XKCD
+
+Gets the latest [xkcd](https://xkcd.com/) comic, or the comic with the given id.
+
+#### Usage
+
+    >xkcd [comic id]
+
 
 <a name="system"></a>
 ## System Commands
