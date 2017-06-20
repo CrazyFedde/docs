@@ -8,6 +8,7 @@ Below you'll find a list of all the commands that Ava has, along with a short de
 - [Administration](#administration)
 - [Fun](#fun)
 - [Music](#music)
+- [Search](#search)
 - [System](#system)
 - [Utility](#utility)
 
@@ -90,6 +91,13 @@ Below you'll find a list of all the commands that Ava has, along with a short de
 | [!skip](/docs/{{version}}/commands#skip)  | Skips the song that is currently playing  |
 | [!volume <vol\>](/docs/{{version}}/commands#volume)  | Changes the volume of the music  |
 | [!voteskip](/docs/{{version}}/commands#voteskip)  | Votes to skip the song that is currently playing  |
+
+<a name="search"></a>
+## Search
+
+| Command           | Short Description      |
+| ----------------- |:---------------------- |
+| [>search <query\>](/docs/{{version}}/commands#duckduckgo)  | Searches DuckDuckGo.com with your given query  |
 
 <a name="system"></a>
 ## System

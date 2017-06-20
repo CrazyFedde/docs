@@ -4,6 +4,7 @@
 - [Administration](#administration)
 - [Fun](#fun)
 - [Music](#music)
+- [Search](#search)
 - [System](#system)
 - [Utility](#utility)
 
@@ -871,6 +872,25 @@ Votes to skip the song that is currently playing, if 50% or more of the people l
 #### Aliases
 
     !vskip
+
+<a name="search"></a>
+## Search Commands
+
+All commands in the _Search_ module uses the `>` prefix.
+
+<a name="duckduckgo"></a>
+### Search
+
+Searches DuckDuckGo.com with your given query and returns the first four results.
+
+#### Usage
+
+    >search <query>
+
+#### Aliases
+
+    >ddg
+    >g
 
 <a name="system"></a>
 ## System Commands
