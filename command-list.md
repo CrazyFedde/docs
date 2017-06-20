@@ -35,7 +35,10 @@ Below you'll find a list of all the commands that Ava has, along with a short de
 | [.goodbyemessage [message]](/docs/{{version}}/commands#goodbye-message)  | Sets the goodbye message for the current channel  |
 | [.kick <user\> [reason]](/docs/{{version}}/commands#kick)  | Kicks the tagged user from the server  |
 | [.language [local]](/docs/{{version}}/commands#language)  | Changes or list the languages Ava supports  |
+| [.level](/docs/{{version}}/commands#level)  | Toggles the level system on or off for the current server  |
+| [.levelalerts](/docs/{{version}}/commands#levelalerts)  | Toggles the level alerts system on or off for the current server  |
 | [.modlog](/docs/{{version}}/commands#modlog)  | Toggles modlog on or off for the current channel  |
+| [.modules](/docs/{{version}}/commands#modules)  | Shows the status of the given command modules for the current channel, and globally  |
 | [.purge <amount\> [user]](/docs/{{version}}/commands#purge)  | Purge old messages from the current channel  |
 | [.serverid](/docs/{{version}}/commands#server-id)  | Shows the server id  |
 | [.serverinfo](/docs/{{version}}/commands#server-info)  | Shows information about the server  |
@@ -114,8 +117,10 @@ Below you'll find a list of all the commands that Ava has, along with a short de
 | ----------------- |:---------------------- |
 | [!expand <url\>](/docs/{{version}}/commands#expandurl)  | Expand a short URL to it's longform state  |
 | [!feedback <message\>](/docs/{{version}}/commands#feedback)  | Gives feedback about the bot  |
+| [!leaderboard](/docs/{{version}}/commands#leaderboard)  | Sends the level leaderboard for the current server  |
 | [!invite](/docs/{{version}}/commands#invite)  | Sends a link that can be used to invite Ava to your server with  |
 | [!ping](/docs/{{version}}/commands#ping)  | Ping, Pong  |
+| [!rank](/docs/{{version}}/commands#rank)  | Displays the users rank, level and xp if Leveling is enabled  |
 | [!remind <time\> <message\>](/docs/{{version}}/commands#remind)  | sets a message you would like to be reminded of later  |
 | [!shorten <url\>](/docs/{{version}}/commands#shortenurl)  | Shorten a URL using [goo.gl](https://goo.gl/)  |
 | [!source [command]](/docs/{{version}}/commands#source)  | Sends a link to the source code for the given command  |

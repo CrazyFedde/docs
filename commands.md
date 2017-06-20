@@ -205,6 +205,36 @@ The **general.manage_server** permission is required to run this command.
 
     .lang
 
+<a name="level"></a>
+### Level
+
+Toggles the leveling system on or off for the current server, when the leveling system is enabled users will slowly accumulate XP from being active in the chat and using commands, every minute the user is active they will receive a random amount of XP between 10 and 15.
+
+The **general.manage_server** permission is required to run this command.
+
+#### Usage
+
+    .level
+
+#### Aliases
+
+    .lvl
+
+<a name="levelalerts"></a>
+### Level Alerts
+
+Toggles the level alerts system on or off for the current server, when the level alerts are enabled the bot will send a message each time a user levels up, letting them know they leveled up and what level they are now.
+
+The **general.manage_server** permission is required to run this command.
+
+#### Usage
+
+    .levelalerts
+
+#### Aliases
+
+    .lvlalert
+
 <a name="modlog"></a>
 ### Modlog
 
@@ -1039,6 +1069,22 @@ Displays the OAuth2 invite link that can be used to invite the bot with.
 
     !join
 
+<a name="leaderboard"></a>
+### Leaderboard
+
+Displays the servers level leaderboard with the users name, rank, level and xp, 10 people are shown per page.
+
+The **[Levels & Experience](#level)** feature must be enabled to run this command.
+
+#### Usage
+
+    !leaderboard [page]
+
+#### Aliases
+
+    !top
+
+
 <a name="ping"></a>
 ### Ping
 
@@ -1051,6 +1097,21 @@ Ping, Pong.
 #### Aliases
 
     !pingme
+
+<a name="rank"></a>
+### Rank
+
+Displays the users rank, level, xp and how much xp they need to level up.
+
+The **[Levels & Experience](#level)** feature must be enabled to run this command.
+
+#### Usage
+
+    !rank
+
+#### Aliases
+
+    !level
 
 <a name="remind"></a>
 ### Remind
