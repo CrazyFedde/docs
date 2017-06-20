@@ -1,6 +1,6 @@
 # Command List
 
-Below you'll find a list of all the commands that Ava has, along with a short description of what the command does, if you'd like to know more about the command, like what permissions or roles is required to run the command, different aliases or a more in depth description, et cetera, you can click on the command links and you'll be taken to a more descriptive version of the command.
+Below you'll find a list of all **84** commands that Ava has, along with a short description of what the command does, if you'd like to know more about the command, like what permissions or roles is required to run the command, different aliases or a more in depth description, et cetera, you can click on the command links and you'll be taken to a more descriptive version of the command.
 
 ## Table of Content
 
