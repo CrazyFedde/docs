@@ -1081,6 +1081,14 @@ Sets the status of the bot instance for all servers the bot is on, if no status 
 
     ;status
 
+<a name="setservertype"></a>
+### Set Server Type
+
+Sets the server to the given type, this allows self-hosters with little knowledge on SQL to set their server to the given server type, different server types gives the server more rewards and unlock slots for more aliases, playlists and other things.
+
+#### Usage
+
+    ;sst <type> [server id]
 
 <a name="utility"></a>
 ## Utility Commands

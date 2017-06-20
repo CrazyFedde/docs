@@ -118,6 +118,7 @@ Below you'll find a list of all the commands that Ava has, along with a short de
 | [;reload <property\>](/docs/{{version}}/commands#reload)  | Reloads the given property  |
 | [;rstats](/docs/{{version}}/commands#runtimestats)  | Displays information about the bot, and other runtime statistics  |
 | [;safereboot](/docs/{{version}}/commands#safereboot)  | Restarts the bot instance safely |
+| [;sst](/docs/{{version}}/commands#setservertype)  | Servers the current servers type, or the server with the given ID |
 
 <a name="utility"></a>
 ## Utility
