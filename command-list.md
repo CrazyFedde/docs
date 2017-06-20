@@ -45,6 +45,7 @@ Below you'll find a list of all the commands that Ava has, along with a short de
 | [.setup [feature]](/docs/{{version}}/commands#setup)  | Helps you setup features within Ava for the server  |
 | [.slowmode [limit] [decay]](/docs/{{version}}/commands#slowmode)  | Toggles slowmode on or off for the current channel  |
 | [.softban <user\> [reason]](/docs/{{version}}/commands#softban)  | Bans the taged user with the given reason  |
+| [.togglemodule <module\> [channel\|all]](/docs/{{version}}/commands#togglemodule)  | Toggles the given module on or off for the current channel or the whole server  |
 | [.userid [user]](/docs/{{version}}/commands#user-id)  | Shows the id for the tagged user  |
 | [.userinfo [user]](/docs/{{version}}/commands#user-info)  | Shows information about the tagged user  |
 | [.welcome](/docs/{{version}}/commands#welcome)  | Toggles the welcome module on or off for the current channel  |

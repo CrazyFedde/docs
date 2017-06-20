@@ -250,6 +250,22 @@ The **general.manage_server** permission is required to run this command.
 
     .mlog
 
+<a name="modules"></a>
+### Modules
+
+Shows the status of all the command modules for the current channel, and for the whole server if any commands are disabled globally, you can tag a channel if you wanna see the command module status for the given channel.
+
+The **general.administrator** permission is required to run this command.
+
+#### Usage
+
+    .modules [channel]
+
+#### Aliases
+
+    .module
+    .mod
+
 <a name="purge"></a>
 ### Purge
 
@@ -331,6 +347,23 @@ The **text.ban_members** permission is required to run this command.
 #### Aliases
 
     .sban
+
+<a name="togglemodule"></a>
+### Toggle Module
+
+Toggles the given command module on for the given channel, or for the whole server, when a command module is disabled no one can run any commands in the command module, you can disable commands on a per-channel basis by tagging the channel you wanna affect.
+
+The **general.administrator** permission is required to run this command.
+
+> {tip} If you wanna affect the whole server you can completely omit the channel argument and skip directly to the [on|off].
+
+#### Usage
+
+    .togglemodule <module> [channel|all] [on|off]
+
+#### Aliases
+
+    .tmod
 
 <a name="user-id"></a>
 ### User ID
