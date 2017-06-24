@@ -30,35 +30,35 @@
 <a name="install-requirements"></a>
 ## Installing Requirements
 
-**General note:** Quite a few steps in this guide will be using administrative permissions. Therefore we recommend that you are logged into an administrator account to not have to type the admin password every time you perform something.
+> {tip} A number of steps require administrative access to finish installing both Git and NodeJS correctly, because of this it is recommended that you're logged in as an administrator to not have to type the admin password a whole bunch of times.
 
 <a name="install-node"></a>
 ### Installing NodeJS & NPM
 
-We'll be using NodeJS to run Ava, if you don't already have NodeJS and NPM installed, head over to the [NodeJS download page](https://nodejs.org/en/download/) and download the version relevant to your OS bit version. It's pretty straight forward, just make sure that the features tab looks like this.
+AvaIre is a NodeJS application, because of this we'll need to install NodeJS to run Ava, if you don't already have NodeJS installed, head over to the [NodeJS download page](https://nodejs.org/en/download/) to get started, it's pretty straight forward from there, just make sure that the features tab looks like this.
 
-<img src="/assets/img/guides/nodejs-setup.png" alt="NodeJS Setup">
+<img src="https://avairebot.com/assets/img/guides/nodejs-setup.png" alt="NodeJS Setup"> 
 
 <a name="install-git"></a>
 ### Installing Git
 
-Next we'll install Git to be able to download and update Ava, git will also be used later on if you want to update Ava to the latest version.
+If you don't intend on updating Ava at any point you can skip this step, however, it is recommended that you install git since using it makes it a whole lot easier to keep Ava up to date.
 
-Start off by going to the [Git download page](https://git-scm.com/downloads) and download the Windows installer.
+If you don't already have git installed you can get started by going to the [git-scm download page](https://git-scm.com/downloads) and download the Windows installer.
 
- > {tip} **Note:** The installation process of Git has to go exactly as described below, otherwise you will have to take longer ways around!
+ > {tip} **Note:** The installation process for git is very particular, if you don't install it like described below you'll most likely run into issues down the road.
 
-Once downloaded, run the installer. Read the license and continue. Once you get to the component selection, **make sure that it looks at least like this!**
+Once downloaded, run the installer, read the license and continue, you can leave the component selection with its default settings, jue make sure that the **Windows Explorer Intergration** is ticked off.
 
-<img src="/assets/img/guides/git-setup-1.png" alt="Git Setup">
+<img src="https://avairebot.com/assets/img/guides/git-setup-1.png" alt="Git Setup - Components">
 
-After selecting the start menu folder, this is where things get precise. **Make sure that you tick the boxes exactly as follows!**
+> The next few steps a really particular, make sure you follow the steps as described below so you don't run into a roadblock later on.
 
-<img src="/assets/img/guides/git-setup-2.png" alt="Git Setup">
-<img src="/assets/img/guides/git-setup-3.png" alt="Git Setup">
-<img src="/assets/img/guides/git-setup-4.png" alt="Git Setup">
-<img src="/assets/img/guides/git-setup-5.png" alt="Git Setup">
-<img src="/assets/img/guides/git-setup-6.png" alt="Git Setup">
+<img src="https://avairebot.com/assets/img/guides/git-setup-2.png" alt="Git Setup - Path">
+<img src="https://avairebot.com/assets/img/guides/git-setup-3.png" alt="Git Setup - SHH">
+<img src="https://avairebot.com/assets/img/guides/git-setup-4.png" alt="Git Setup - HTTPS Transport">
+<img src="https://avairebot.com/assets/img/guides/git-setup-5.png" alt="Git Setup - Line Ending">
+<img src="https://avairebot.com/assets/img/guides/git-setup-6.png" alt="Git Setup - Terminal">
 
 From here on just continue with the installation process until Git is installed.
 
@@ -75,7 +75,7 @@ When you've found the location of your choice, hit `Shift+Right click` and selec
 
 Let it clone the Git repository. When it's done, you should have the following output.
 
-<img src="/assets/img/guides/ava-setup.png" alt="Git Setup">
+<img src="https://avairebot.com/assets/img/guides/ava-setup.png" alt="Git Setup">
 
 You have now successfully cloned the AvaIre Git repository, next we'll need to install all the dependencies, this is where NPM comes in, while the Console Window is still open run:
 
