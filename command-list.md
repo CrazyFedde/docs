@@ -63,6 +63,7 @@ Below you'll find a list of all **84** commands that Ava has, along with a short
 | [>coin](/docs/{{version}}/commands#coin)  | Flips a coin for heads or tails  |
 | [>dice [dice format]](/docs/{{version}}/commands#dice)  | Rolls a set of dice  |
 | [>lenny](/docs/{{version}}/commands#lenny)  | ( ͡° ͜ʖ ͡°)  |
+| [>meme <meme\> [top text] [bottom text]](/docs/{{version}}/commands#meme)  | Creates a custom meme of the given type  |
 | [>randomcat](/docs/{{version}}/commands#randomcat)  | Gets a random cat image from the internet  |
 | [>randomdog](/docs/{{version}}/commands#randomdog)  | Gets a random dog image from the internet  |
 | [>repeat [message]](/docs/{{version}}/commands#repeat)  | Makes Ava repeat whatever you say  |

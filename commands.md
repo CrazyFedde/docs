@@ -486,6 +486,16 @@ Rolls a set of dice, for example using `4d8` will roll four eight sided dice.
 
     >lenny
 
+<a name="meme"></a>
+### Meme
+
+Creates a meme of the given type, you can use the list keyword to see a full list of memes that can be generated via the bot, you can also tag a user to use the users avatar as a meme instead.
+
+#### Usage
+
+    >meme <meme|user|list> [top text] [bottom text]
+
+
 <a name="randomcat"></a>
 ### Random Cat
 
