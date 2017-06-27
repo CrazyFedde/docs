@@ -37,7 +37,7 @@ Below you'll find a list of all **84** commands that Ava has, along with a short
 | [.kick <user\> [reason]](/docs/{{version}}/commands#kick)  | Kicks the tagged user from the server  |
 | [.language [local]](/docs/{{version}}/commands#language)  | Changes or list the languages Ava supports  |
 | [.level](/docs/{{version}}/commands#level)  | Toggles the level system on or off for the current server  |
-| [.levelalerts](/docs/{{version}}/commands#levelalerts)  | Toggles the level alerts system on or off for the current server  |
+| [.levelalerts [channel]](/docs/{{version}}/commands#levelalerts)  | Toggles the level alerts system on or off for the current server  |
 | [.modlog](/docs/{{version}}/commands#modlog)  | Toggles modlog on or off for the current channel  |
 | [.modules](/docs/{{version}}/commands#modules)  | Shows the status of the given command modules for the current channel, and globally  |
 | [.purge <amount\> [user]](/docs/{{version}}/commands#purge)  | Purge old messages from the current channel  |

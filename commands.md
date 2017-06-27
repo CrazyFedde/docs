@@ -224,13 +224,13 @@ The **general.manage_server** permission is required to run this command.
 <a name="levelalerts"></a>
 ### Level Alerts
 
-Toggles the level alerts system on or off for the current server, when the level alerts are enabled the bot will send a message each time a user levels up, letting them know they leveled up and what level they are now.
+Toggles the level alerts system on or off for the current server, a channel can also be tagged make all level up alerts be sent in the tagged channel, when the level alerts are enabled the bot will send a message each time a user levels up, letting them know they leveled up and what level they are now.
 
 The **general.manage_server** permission is required to run this command.
 
 #### Usage
 
-    .levelalerts
+    .levelalerts [channel]
 
 #### Aliases
 
