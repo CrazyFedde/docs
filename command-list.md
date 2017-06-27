@@ -1,8 +1,8 @@
 # Command List
 
-Below you'll find a list of all **84** commands that Ava has, along with a short description of what the command does, if you'd like to know more about the command, like what permissions or roles is required to run the command, different aliases or a more in depth description, et cetera, you can click on the command links and you'll be taken to a more descriptive version of the command.
+Below you'll find a list of all **84** commands that Ava has, along with a short description of what each command does. If you'd like to know more about the command, like what permissions or roles are required to run the command, different aliases or anything similar you can click on the command links and you'll be taken to a more descriptive version of the command.
 
-## Table of Content
+## Table of Contents
 
 - [Help Command](#help)
 - [Administration](#administration)
@@ -17,7 +17,7 @@ Below you'll find a list of all **84** commands that Ava has, along with a short
 
 | Command           | Short Description      |
 | ----------------- |:---------------------- |
-| [.help](/docs/{{version}}/commands#help)  | Lits all the command modules  |
+| [.help](/docs/{{version}}/commands#help)  | Lists all the command modules  |
 | [.help [module]](/docs/{{version}}/commands#help)  | Lists all the commands in the given module  |
 | [.help [command]](/docs/{{version}}/commands#help)  | Displays information about the provided command  |
 
@@ -29,25 +29,25 @@ Below you'll find a list of all **84** commands that Ava has, along with a short
 | [.ai](/docs/{{version}}/commands#ai)  | Toggles the AI on or off for the current channel  |
 | [.alias [alias] [command]](/docs/{{version}}/commands#alias)  | Binds or unbinds custom command aliases  |
 | [.aliases [page]](/docs/{{version}}/commands#aliases)  | Lists all command aliases for the server  |
-| [.ban <user\> [reason]](/docs/{{version}}/commands#ban)  | Bans the taged user with the given reason  |
+| [.ban <user\> [reason]](/docs/{{version}}/commands#ban)  | Bans the tagged user with the given reason  |
 | [.changeprefix <module\> [prefix]](/docs/{{version}}/commands#changeprefix)  | Changes the prefix Ava uses  |
 | [.channel](/docs/{{version}}/commands#channel)  | Displays the status of modules for the current channel  |
 | [.goodbye](/docs/{{version}}/commands#goodbye)  | Toggles the goodbye module on or off for the current channel  |
 | [.goodbyemessage [message]](/docs/{{version}}/commands#goodbye-message)  | Sets the goodbye message for the current channel  |
 | [.kick <user\> [reason]](/docs/{{version}}/commands#kick)  | Kicks the tagged user from the server  |
-| [.language [local]](/docs/{{version}}/commands#language)  | Changes or list the languages Ava supports  |
+| [.language [local]](/docs/{{version}}/commands#language)  | Changes or lists the languages Ava supports  |
 | [.level](/docs/{{version}}/commands#level)  | Toggles the level system on or off for the current server  |
 | [.levelalerts [channel]](/docs/{{version}}/commands#levelalerts)  | Toggles the level alerts system on or off for the current server  |
 | [.modlog](/docs/{{version}}/commands#modlog)  | Toggles modlog on or off for the current channel  |
 | [.modules](/docs/{{version}}/commands#modules)  | Shows the status of the given command modules for the current channel, and globally  |
 | [.purge <amount\> [user]](/docs/{{version}}/commands#purge)  | Purge old messages from the current channel  |
-| [.serverid](/docs/{{version}}/commands#server-id)  | Shows the server id  |
+| [.serverid](/docs/{{version}}/commands#server-id)  | Shows the server ID |
 | [.serverinfo](/docs/{{version}}/commands#server-info)  | Shows information about the server  |
 | [.setup [feature]](/docs/{{version}}/commands#setup)  | Helps you setup features within Ava for the server  |
 | [.slowmode [limit] [decay]](/docs/{{version}}/commands#slowmode)  | Toggles slowmode on or off for the current channel  |
-| [.softban <user\> [reason]](/docs/{{version}}/commands#softban)  | Bans the taged user with the given reason  |
+| [.softban <user\> [reason]](/docs/{{version}}/commands#softban)  | Bans the tagged user with the given reason  |
 | [.togglemodule <module\> [channel\|all]](/docs/{{version}}/commands#togglemodule)  | Toggles the given module on or off for the current channel or the whole server  |
-| [.userid [user]](/docs/{{version}}/commands#user-id)  | Shows the id for the tagged user  |
+| [.userid [user]](/docs/{{version}}/commands#user-id)  | Shows the ID of the tagged user  |
 | [.userinfo [user]](/docs/{{version}}/commands#user-info)  | Shows information about the tagged user  |
 | [.welcome](/docs/{{version}}/commands#welcome)  | Toggles the welcome module on or off for the current channel  |
 | [.welcomemessage](/docs/{{version}}/commands#welcome-message)  | Sets the welcome message for the current channel  |
@@ -83,7 +83,7 @@ Below you'll find a list of all **84** commands that Ava has, along with a short
 | [!playlist](/docs/{{version}}/commands#playlist)  | Main command used to manage the custom music playlists  |
 | [!queue](/docs/{{version}}/commands#queue)  | Lists all the songs in the music queue  |
 | [!repeatsongs](/docs/{{version}}/commands#repeatsongs)  | Repeats the songs currently in the music queue  |
-| [!request [name/url]](/docs/{{version}}/commands#request)  | Request a song via youtube, soundcloud, twitch, radio streams or by name  |
+| [!request [name/url]](/docs/{{version}}/commands#request)  | Request a song via YouTube, SoundCloud, Twitch, radio streams or by name  |
 | [!resume](/docs/{{version}}/commands#resume)  | Resumes the song that was playing before  |
 | [!shuffle](/docs/{{version}}/commands#shuffle)  | Shuffles the songs waiting in the queue  |
 | [!skip](/docs/{{version}}/commands#skip)  | Skips the song that is currently playing  |
@@ -97,7 +97,7 @@ Below you'll find a list of all **84** commands that Ava has, along with a short
 | ----------------- |:---------------------- |
 | [>gfycat [tags]](/docs/{{version}}/commands#gfycat)  | Gets a random gif from [gfycat.com](https://gfycat.com/)  |
 | [>search <query\>](/docs/{{version}}/commands#duckduckgo)  | Searches DuckDuckGo.com with your given query  |
-| [>urban [word]](/docs/{{version}}/commands#urbandictionary)  | Get the defenition of a word or sentence from [urbandictionary.com](http://www.urbandictionary.com/)  |
+| [>urban [word]](/docs/{{version}}/commands#urbandictionary)  | Get the definition of a word or sentence from [urbandictionary.com](http://www.urbandictionary.com/)  |
 | [>xkcd [number]](/docs/{{version}}/commands#xkcd)  | Gets the latest [xkcd](https://xkcd.com/) comic, or the comic with the given id.  |
 
 <a name="system"></a>
@@ -106,10 +106,10 @@ Below you'll find a list of all **84** commands that Ava has, along with a short
 | Command           | Short Description      |
 | ----------------- |:---------------------- |
 | [;bla <user\> [reason]](/docs/{{version}}/commands#blacklistadd)  | Add a user to the bot blacklist  |
-| [;blr <user\>](/docs/{{version}}/commands#blacklistremove)  | Removes a user to the bot blacklist  |
-| [;baa <user\>](/docs/{{version}}/commands#botadminadd)  | Add a user id to the bot administrators list temporarily  |
-| [;bal](/docs/{{version}}/commands#botadminlist)  | Lists all the user ids that are currently in the bot administrators list  |
-| [;bar <user\>](/docs/{{version}}/commands#botadminremove)  | Removes a user id from the bot administrators list  |
+| [;blr <user\>](/docs/{{version}}/commands#blacklistremove)  | Removes a user from the bot blacklist  |
+| [;baa <user\>](/docs/{{version}}/commands#botadminadd)  | Add a user ID to the bot administrators list temporarily  |
+| [;bal](/docs/{{version}}/commands#botadminlist)  | Lists all the user IDs that are currently in the bot administrators list  |
+| [;bar <user\>](/docs/{{version}}/commands#botadminremove)  | Removes a user ID from the bot administrators list  |
 | [;broadcast <message\>](/docs/{{version}}/commands#broadcast)  | Prepares a broadcast message  |
 | [;broadcastsend <id\>](/docs/{{version}}/commands#broadcastsend)  | Broadcasts the message linked to the given ID  |
 | [;eval <code\>](/docs/{{version}}/commands#eval)  | Evaluates and executes raw JavaScript code  |
@@ -119,20 +119,20 @@ Below you'll find a list of all **84** commands that Ava has, along with a short
 | [;reload <property\>](/docs/{{version}}/commands#reload)  | Reloads the given property  |
 | [;rstats](/docs/{{version}}/commands#runtimestats)  | Displays information about the bot, and other runtime statistics  |
 | [;safereboot](/docs/{{version}}/commands#safereboot)  | Restarts the bot instance safely |
-| [;sst](/docs/{{version}}/commands#setservertype)  | Servers the current servers type, or the server with the given ID |
+| [;sst](/docs/{{version}}/commands#setservertype)  | Sets the type of the current server or by ID |
 
 <a name="utility"></a>
 ## Utility
 
 | Command           | Short Description      |
 | ----------------- |:---------------------- |
-| [!expand <url\>](/docs/{{version}}/commands#expandurl)  | Expand a short URL to it's longform state  |
+| [!expand <url\>](/docs/{{version}}/commands#expandurl)  | Unshorten an URL  |
 | [!feedback <message\>](/docs/{{version}}/commands#feedback)  | Gives feedback about the bot  |
 | [!leaderboard](/docs/{{version}}/commands#leaderboard)  | Sends the level leaderboard for the current server  |
-| [!invite](/docs/{{version}}/commands#invite)  | Sends a link that can be used to invite Ava to your server with  |
+| [!invite](/docs/{{version}}/commands#invite)  | Sends the link to invite Ava to your server  |
 | [!ping](/docs/{{version}}/commands#ping)  | Ping, Pong  |
-| [!rank](/docs/{{version}}/commands#rank)  | Displays the users rank, level and xp if Leveling is enabled  |
-| [!remind <time\> <message\>](/docs/{{version}}/commands#remind)  | sets a message you would like to be reminded of later  |
+| [!rank](/docs/{{version}}/commands#rank)  | Displays the users rank, level and XP if Leveling is enabled  |
+| [!remind <time\> <message\>](/docs/{{version}}/commands#remind)  | Sets a message you would like to be reminded of later  |
 | [!shorten <url\>](/docs/{{version}}/commands#shortenurl)  | Shorten a URL using [goo.gl](https://goo.gl/)  |
 | [!source [command]](/docs/{{version}}/commands#source)  | Sends a link to the source code for the given command  |
 | [!stats](/docs/{{version}}/commands#stats)  | Displays information and stats about Ava  |

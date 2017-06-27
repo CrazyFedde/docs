@@ -11,9 +11,9 @@
 <a name="introduction"></a>
 ## Introduction
 
-This is the command reference for AvaIre. You can find more elaborative information here on each of the commands currently implemented.
+This is the command reference for AvaIre. You can find more elaboration on each of the commands currently implemented here.
 
-If you need for any further info, you can use the [help command](#help) for the bot to get info about command throtteling limits, permission requirements and so forth. Got any questions? Check out #support in [AvaIre Central](#).
+If you need for any further info, you can use the [help command](#help) for the bot to get info about command throttling limits, permission requirements and so forth. Got any questions? Check out #support in [AvaIre Central](#).
 
 <a name="help"></a>
 ## Help Command
@@ -36,11 +36,11 @@ Listing all commands in a module can be done by using the help command followed 
 
 #### Listing command information
 
-Displaying a given commands information can be done by using the help command followed by the command you want to get information about.
+Displaying a given command's information can be done by using `help` followed by the command you want to get information about.
 
     .help <command>
 
-> {tip} Command aliases can be used as well, for example `.help .sid` will displays help for the `.serverid` command.
+> {tip} Command aliases can be used as well, for example `.help .sid` will display help for the `.serverid` command.
 
 <a name="administration"></a>
 ## Administration
@@ -50,14 +50,14 @@ All commands in the _Administration_ module uses the `.` prefix.
 <a name="ai"></a>
 ### AI
 
-Toggles the AI module on or off for the current channel, if the module is enabled users can tag the bot followed by a message or question and the bot will try and use its AI to process the message. By default AI messages will be enabled for all channels.
+Toggles the AI module on or off for the current channel. If the module is enabled, users can tag the bot followed by a message or question and the bot will try and use its AI to process the message. By default AI messages will be enabled for all channels.
 
 The **general.manage_server** permission is required to run this command.
 
 <a name="alias"></a>
 ### Alias
 
-Creates and maps a custom aliase for a pre-existing command, if a alias that already exists is given with no additional command the alias will be unbinded.
+Creates and maps a custom aliases for a pre-existing command. If an alias that already exists is given with no additional command the alias will be unbound.
 
 The **general.manage_server** permission is required to run this command.
 
@@ -87,11 +87,11 @@ The **general.manage_server** permission is required to run this command.
 <a name="ban"></a>
 ### Ban
 
-Bans the mentioned user off the server with the provided reason, all messages the user has sent in the last 7 days will also be deleted in the process.
+Bans the mentioned user from the server with the provided reason, all messages the user has sent in the last 7 days will also be deleted in the process.
 
 The **general.ban_members** permission is required to run this command.
 
-> This action will be reported to any channel that has [modloging](#modlog) enabled on the server.
+> This action will be reported to any channel that has [modlogging](#modlog) enabled on the server.
 
 #### Usage
 
@@ -100,7 +100,7 @@ The **general.ban_members** permission is required to run this command.
 <a name="changeprefix"></a>
 ### Change Prefix
 
-Sets the prefix that should be used for all commands in a given module, if no prefix is provided the modules prefix will be reset back to the default instead.
+Sets the prefix that should be used for all commands in a given module. If no prefix is provided the module's prefix will be reset to the default.
 
 The following modules can be affected by this command.
 
@@ -166,7 +166,7 @@ The **general.manage_server** permission is required to run this command.
 <a name="goodbye-message"></a>
 ### Goodbye Message
 
-Sets the goodbye message to the given string, if no arguments is parsed to the command the goodbye message will be set back to the default goodbye message, you can customize how the goodbye message looks using [placeholders](/docs/{{version}}/placeholders).
+Sets the goodbye message to the given string. If no arguments are passed, the goodbye message will be set back to the default goodbye message. You can customize how the goodbye message looks using [placeholders](/docs/{{version}}/placeholders).
 
 The **general.manage_server** permission is required to run this command.
 
@@ -185,7 +185,7 @@ Kicks the mentioned user off the server with the provided reason.
 
 The **general.kick_members** permission is required to run this command.
 
-> This action will be reported to any channel that has [modloging](#modlog) enabled on the server.
+> This action will be reported to any channel that has [modlogging](#modlog) enabled on the server.
 
 #### Usage
 
@@ -194,7 +194,7 @@ The **general.kick_members** permission is required to run this command.
 <a name="language"></a>
 ### Language
 
-Displays the local that is used on the server, you can also use this command to change the language that Ava will use to send messages with.
+Displays the localization that is used on the server, you can also use this command to change the language that Ava will use when sending messages.
 
 The **general.manage_server** permission is required to run this command.
 
@@ -209,7 +209,7 @@ The **general.manage_server** permission is required to run this command.
 <a name="level"></a>
 ### Level
 
-Toggles the leveling system on or off for the current server, when the leveling system is enabled users will slowly accumulate XP from being active in the chat and using commands, every minute the user is active they will receive a random amount of XP between 10 and 15.
+Toggles the leveling system on or off for the current server. When the leveling system is enabled users will slowly accumulate XP from being active in the chat and using commands, every minute the user is active they will receive 10-15 XP.
 
 The **general.manage_server** permission is required to run this command.
 
@@ -224,7 +224,7 @@ The **general.manage_server** permission is required to run this command.
 <a name="levelalerts"></a>
 ### Level Alerts
 
-Toggles the level alerts system on or off for the current server, a channel can also be tagged make all level up alerts be sent in the tagged channel, when the level alerts are enabled the bot will send a message each time a user levels up, letting them know they leveled up and what level they are now.
+Toggles the level alerts system on or off for the current server. If a channel tag is passed as an argument, all level up alerts be sent in that channel. When the level alerts are enabled the bot will send a message each time a user levels up, letting them know they leveled up and what level they are now.
 
 The **general.manage_server** permission is required to run this command.
 
@@ -239,7 +239,7 @@ The **general.manage_server** permission is required to run this command.
 <a name="modlog"></a>
 ### Modlog
 
-Toggles the ModLog module on or off for the current channel, if the module is enabled any action that will broadcast ModLog messages([Ban](#ban), [Softban](#softban), [Kick](#kick)...) will be sent to the channel. By default ModLoging will be disabled for all channels.
+Toggles the modlog module on or off for the current channel. If the module is enabled, any action that will broadcast modlog messages([Ban](#ban), [Softban](#softban), [Kick](#kick)...) will be sent to this channel. By default modlogging will be disabled for all channels.
 
 The **general.manage_server** permission is required to run this command.
 
@@ -254,7 +254,7 @@ The **general.manage_server** permission is required to run this command.
 <a name="modules"></a>
 ### Modules
 
-Shows the status of all the command modules for the current channel, and for the whole server if any commands are disabled globally, you can tag a channel if you wanna see the command module status for the given channel.
+Shows the status of all the command modules for the current channel and for the whole server if any commands are disabled globally. You can tag a channel if you want to see the command module status for the given channel.
 
 The **general.administrator** permission is required to run this command.
 
@@ -270,15 +270,15 @@ The **general.administrator** permission is required to run this command.
 <a name="purge"></a>
 ### Purge
 
-Deletes up to 1,000 chat messages in any channel, you can mention a user if you only want to delete messages by the mentioned user. Due to a restriction on the Discord API, the purge command will only work on messages sent in the last 14 days.
+Deletes up to 1,000 chat messages in any channel, you can pass a user mention as the second argument if you only want to delete messages sent by the mentioned user. Due to a restriction in the Discord API, the purge command will only work on messages sent in the last 14 days.
 
 The **text.manage_messages** permission is required to run this command.
 
-> {tip} Tagging a user will only delete any messages they have sent in the last `<amount>` of messages, for example `.purge 100 @JohnDoe#2854` will delete any messages the JohnDoe user has sent in the last 100 messages.
+> {tip} Tagging a user will only delete any messages they have sent in the last `<amount>` of messages, for example `.purge 100 @JohnDoe#2854` will delete any messages the JohnDoe user has sent within the last 100 messages.
 
 #### Usage
 
-    .purge <amount> [taged user]
+    .purge <amount> [tagged user]
 
 #### Aliases
 
@@ -300,7 +300,7 @@ Displays ID of the server the command was ran in.
 <a name="server-info"></a>
 ### Server Info
 
-Displays information about the server the command was ran in, like the servers ID, owner, text and voice channels, members, roles, region, avatar and when it was created.
+Displays information about the server the command was ran in. This includes the server's ID, owner, text and voice channels, members, roles, region, avatar and when it was created.
 
 #### Usage
 
@@ -324,7 +324,7 @@ The **general.administrator** permission is required to run this command.
 <a name="slowmode"></a>
 ### Slowmode
 
-Disables the slowmode module or enables it with the given settings, users with the **text.manage_messages** permission are exempt from slowmode limits. The slowmode module can be disabled by running the command with no arguments, if the `limit` and `decay` arguments are given the module will be enabled with the given settings.
+Disables the slowmode module or enables it with the given settings, users with the **text.manage_messages** permission are exempt from slowmode limits. The slowmode module can be disabled by running the command with no arguments; if the `limit` and `decay` arguments are given the module will be enabled with the given settings.
 
 The **general.manage_server** permission is required to run this command.
 
@@ -333,13 +333,13 @@ The **general.manage_server** permission is required to run this command.
     .slowmode [limit] [decay]
 
 <a name="softban"></a>
-### Soft Ban
+### Softban
 
-Bans the mentioned user off the server with the provided reason, any messages the user might've sent won't be deleted, if you want to force delete any old messages the user has sent checkout the [ban command](#ban).
+Bans the mentioned user from the server with the provided reason. Any messages the user might've sent won't be deleted, if you want to force delete any old messages the user has sent see the [ban command](#ban).
 
 The **text.ban_members** permission is required to run this command.
 
-> This action will be reported to any channel that has [modloging](#modlog) enabled on the server.
+> This action will be reported to any channel that has [modlogging](#modlog) enabled on the server.
 
 #### Usage
 
@@ -352,11 +352,11 @@ The **text.ban_members** permission is required to run this command.
 <a name="togglemodule"></a>
 ### Toggle Module
 
-Toggles the given command module on for the given channel, or for the whole server, when a command module is disabled no one can run any commands in the command module, you can disable commands on a per-channel basis by tagging the channel you wanna affect.
+Toggles the given command module on or off for the given channel, optionally for the whole server. When a command module is disabled no one can run any commands in the command module, you can disable commands on a per-channel basis by tagging the channel you want to affect.
 
 The **general.administrator** permission is required to run this command.
 
-> {tip} If you wanna affect the whole server you can completely omit the channel argument and skip directly to the [on|off].
+> {tip} If you want to affect the whole server, you can completely omit the channel argument and just pass [on|off].
 
 #### Usage
 
@@ -369,7 +369,7 @@ The **general.administrator** permission is required to run this command.
 <a name="user-id"></a>
 ### User ID
 
-Displays ID of the user who ran the command, or the ID of the tagged user.
+Displays ID of the user who ran the command or the ID of the tagged user.
 
 #### Usage
 
@@ -382,7 +382,7 @@ Displays ID of the user who ran the command, or the ID of the tagged user.
 <a name="user-info"></a>
 ### User Info
 
-Displays information about the user who ran the command, or the tagged user, like the users username, ID, roles, date they joined the server, date they created their account, and how many servers they're in(That Ava knows about)
+Displays information about the user who ran the command or the tagged user. This includes the users username, ID, roles, the date they joined the server, the date they created their account, and how many servers they're in (That Ava knows about).
 
 #### Usage
 
@@ -410,7 +410,7 @@ The **general.manage_server** permission is required to run this command.
 <a name="welcome-message"></a>
 ### Welcome Message
 
-Sets the welcome message to the given string, if no arguments is parsed to the command the welcome message will be set back to the default welcome message, you can customize how the welcome message looks using [placeholders](/docs/{{version}}/placeholders).
+Sets the welcome message to the given string. If no arguments are passed the welcome message will be set back to the default welcome message. You can customize how the welcome message looks using [placeholders](/docs/{{version}}/placeholders).
 
 The **general.manage_server** permission is required to run this command.
 
@@ -425,7 +425,7 @@ The **general.manage_server** permission is required to run this command.
 <a name="fun"></a>
 ## Fun Commands
 
-All commands in the _Fun_ module uses the `>` prefix.
+All commands in the _Fun_ module use the `>` prefix.
 
 <a name="blah"></a>
 ### Blah
@@ -448,7 +448,7 @@ Can you not...?
 <a name="chucknorris"></a>
 ### Chuck Norris
 
-Gets a random 100% true, real facts about Chuck Norris using the "Internet Chuck Norris Database".
+Gets a random 100% true, real fact about Chuck Norris using the "Internet Chuck Norris Database".
 
 #### Usage
 
@@ -489,7 +489,7 @@ Rolls a set of dice, for example using `4d8` will roll four eight sided dice.
 <a name="meme"></a>
 ### Meme
 
-Creates a meme of the given type, you can use the list keyword to see a full list of memes that can be generated via the bot, you can also tag a user to use the users avatar as a meme instead.
+Creates a meme of the given type. Passing list as an argument sends a full list of memes that can be generated via the bot. You can also tag a user to use that user's avatar as a meme instead.
 
 #### Usage
 
@@ -547,7 +547,7 @@ Rolls a random number between 1 and 100, or between the numbers given.
 <a name="say"></a>
 ### Say
 
-Makes Ava say whatever you want, if Ava has permissions to delete messages, the original message will be deleted and Avas message will replace it.
+Makes Ava say whatever you want. If Ava has permissions to delete messages, the original message will be deleted and Ava's message will replace it.
 
 #### Usage
 
@@ -556,7 +556,7 @@ Makes Ava say whatever you want, if Ava has permissions to delete messages, the 
 <a name="shrug"></a>
 ### Shrug
 
-¯\\_(ツ)_/¯
+¯\\\_(ツ)\_/¯
 
 #### Usage
 
@@ -574,7 +574,7 @@ Clap... Clap... Clap...
 <a name="music"></a>
 ## Music Commands
 
-All commands in the _Music_ module uses the `!` prefix.
+All commands in the _Music_ module use the `!` prefix.
 
 <a name="flushqueue"></a>
 ### Flush Queue
@@ -594,7 +594,7 @@ The **DJ** role is required to run this command.
 <a name="repeatsongs"></a>
 ### Repeat Music Queue
 
-Toggles music looping on or off, the [queue](#queue) command be used to get the muisic looping status.
+Toggles music looping on or off, the [queue](#queue) command be used to get the music looping status.
 
 The **DJ** role is required to run this command.
 
@@ -610,7 +610,7 @@ The **DJ** role is required to run this command.
 <a name="movehere"></a>
 ### Move Here
 
-Moves the bot into the same voice channel you're in, this command can be used to move the bot to a diferent voice channel while it is playing music without having the permissions to move other users. 
+Moves the bot into the same voice channel you're in. This command can be used to move the bot to a different voice channel while it's playing music without having the permissions to move other users. 
 
 The **DJ** role is required to run this command.
 
@@ -636,7 +636,7 @@ The **DJ** role is required to run this command.
 <a name="playlist"></a>
 ### Playlist
 
-Allows music DJs to create, list, update, and delete music playlists, the command has a bunch of sub-commands that are used to manage the playlists, so to make it a bit easier here is all the sub-commands with links.
+Allows music DJs to create, list, update, and delete music playlists. This command has a bunch of sub-commands that are used to manage the playlists; to make it a bit easier, here are all the sub-commands.
 
  - [Add song to Playlist](#playlist-add)
  - [Create new Playlist](#playlist-create)
@@ -658,7 +658,7 @@ The **DJ** role is required to run this command.
     !pl
 
 <a name="playlist-add"></a>
-### Playlist - Add song to Playlist
+### Playlist - Add a song to a playlist
 
 Adds a song to the a existing playlist, if you don't already have playlist you can [create a new playlist](#playlist-create).
 
@@ -673,9 +673,9 @@ Adds a song to the a existing playlist, if you don't already have playlist you c
 **You can replace the `!playlist` command with any of [playlist command aliases](#playlist).**
 
 <a name="playlist-create"></a>
-### Playlist - Create new Playlist
+### Playlist - Create new playlist
 
-Creates a new playlist for the server with the given name, after the playlist has been created to can start [adding songs to it](#playlist-add), if you misspelt the name you can [rename the playlist](#playlist-rename) without deleting all the songs in the playlist.
+Creates a new playlist for the server with the given name. When the playlist has been created you can start [adding songs to it](#playlist-add), if you butchered the name you can [rename the playlist](#playlist-rename) without deleting all the songs in it.
 
 #### Usage
 
@@ -688,9 +688,9 @@ Creates a new playlist for the server with the given name, after the playlist ha
 **You can replace the `!playlist` command with any of [playlist command aliases](#playlist).**
 
 <a name="playlist-delete"></a>
-### Playlist - Delete existing Playlist
+### Playlist - Delete a playlist
 
-Deletes all playlist and all the songs in the playlist, keep in mind that deleting the playlist is a permanent action and can not be undone, there are **NO** confirmation if you are sure if you wanna delete the playlist, it will just be deleted if you use the command.
+Deletes a playlist and all the songs in it. **Keep in mind that deleting the playlist is a permanent action and can not be undone!** There is **NO** confirmation if you are sure that you want to delete it; the playlist will just be deleted if you use the command.
 
 > {tip} If the playlist is loaded into the music queue when the playlist is deleted, the music will still continue to play all the way through.
 
@@ -701,24 +701,24 @@ Deletes all playlist and all the songs in the playlist, keep in mind that deleti
 **You can replace the `!playlist` command with any of [playlist command aliases](#playlist).**
 
 <a name="playlist-remove"></a>
-### Playlist - Remove a song from an existing Playlist 
+### Playlist - Remove a song from an existing playlist 
 
-Removes the song with the given ID for the current playlist if it exists.
+Removes the song with the given ID for the current playlist if it's in queue.
 
 #### Usage
 
-    !playlist <name> removesong <id>
+    !playlist <name> removesong <ID>
 
 #### Aliases
 
-    !playlist <name> remove <id>
+    !playlist <name> remove <ID>
 
 **You can replace the `!playlist` command with any of [playlist command aliases](#playlist).**
 
 <a name="playlist-load"></a>
-### Playlist - Load Playlist into the Music queue
+### Playlist - Load a playlist into the queue
 
-Loads the playlist into the music queue, if the bot is not already playing music this command will also connect the bot to the same voice channel you are in, and start the music. If the playlist is empty you can [add some songs here](#playlist-add).
+Loads the playlist into the music queue. If the bot is not already playing music this command will also connect the bot to the same voice channel you are in and initialize music playback. If the playlist is empty you can [add some songs](#playlist-add).
 
 #### Usage
 
@@ -732,9 +732,9 @@ Loads the playlist into the music queue, if the bot is not already playing music
 **You can replace the `!playlist` command with any of [playlist command aliases](#playlist).**
 
 <a name="playlist-list"></a>
-### Playlist - List Songs in the Playlists
+### Playlist - List songs in the playlist
 
-Lists the songs in the playlist with the given name, the command will paginate the songs to only show ten songs at a time, you can jump to different pages by giving the command the page number for the playlist you want to view, if you don't have any songs in the playlist you can [add songs here](#playlist-add).
+Lists the songs in the playlist with the given name. The response will be paginated to only show ten songs at a time; you can jump to different pages by passing a page number for the playlist as an additional argument. If you don't have any songs in the playlist you can [add songs](#playlist-add).
 
 #### Usage
 
@@ -743,9 +743,9 @@ Lists the songs in the playlist with the given name, the command will paginate t
 **You can replace the `!playlist` command with any of [playlist command aliases](#playlist).**
 
 <a name="playlist-rename"></a>
-### Playlist - Rename Playlist
+### Playlist - Rename a playlist
 
-Rename an existing playlist to the given name.
+Rename an existing playlist. The string passed to the command will be used as the new name.
 
 #### Usage
 
@@ -761,11 +761,11 @@ Rename an existing playlist to the given name.
 <a name="queue"></a>
 ### Queue
 
-Lists the song that is playing right now, who requested it, how much of the song is left and the volume the song is playing at, as well as all the songs currently in the music queue. If the command is used followed by the word **remove** and the id of the song, the song with the given ID will be removed from the music queue.
+Returns the song that is playing right now and some attached information. This includes who requested it, how much of the song is left and the volume the song is playing at plus the rest of the songs currently in queue. If the **remove** argument and the ID of the song are passed to the command, the song with the given ID will be removed from the music queue.
 
 #### Usage
 
-    !queue [remove] [id]
+    !queue [remove] [ID]
 
 #### Aliases
 
@@ -775,7 +775,7 @@ Lists the song that is playing right now, who requested it, how much of the song
 <a name="request"></a>
 ### Request
 
-Requests a song via youtube, soundcloud, twitch, radio streams or by name, if the song was successfully found the song will be added to the queue.
+Requests a song via YouTube, SoundCloud, Twitch, radio streams or by name. If the song was successfully found the song will be added to the queue.
 
 #### Usage
 
@@ -827,7 +827,7 @@ The **DJ** role is required to run this command.
 <a name="volume"></a>
 ### Volume
 
-Changes the volume of the music, by default the music will be playing at 50%.
+Changes the volume of the music, by default the music will be playing at 50% volume.
 
 The **DJ** role is required to run this command.
 
@@ -838,7 +838,7 @@ The **DJ** role is required to run this command.
 <a name="voteskip"></a>
 ### Vote Skip
 
-Votes to skip the song that is currently playing, if 50% or more of the people listening have voted to skip, the song will be skipped.
+Votes to skip the song that is currently playing. If 50% or more of the people listening vote to skip, the song will be skipped.
 
 #### Usage
 
@@ -851,10 +851,10 @@ Votes to skip the song that is currently playing, if 50% or more of the people l
 <a name="search"></a>
 ## Search Commands
 
-All commands in the _Search_ module uses the `>` prefix.
+All commands in the _Search_ module use the `>` prefix.
 
 <a name="gfycat"></a>
-### GFYCat
+### Gfycat
 
 Gets a random gif from [gfycat.com](https://gfycat.com/) with the given tags.
 
@@ -869,7 +869,7 @@ Gets a random gif from [gfycat.com](https://gfycat.com/) with the given tags.
 <a name="duckduckgo"></a>
 ### Search
 
-Searches DuckDuckGo.com with your given query and returns the first four results.
+Searches DuckDuckGo.com with the given query and returns the first four results.
 
 #### Usage
 
@@ -883,7 +883,7 @@ Searches DuckDuckGo.com with your given query and returns the first four results
 <a name="urbandictionary"></a>
 ### Urban Dictionary    
 
-Get the defenition of a word or sentence from [urbandictionary.com](http://www.urbandictionary.com/)
+Get the definition of a word or sentence from [urbandictionary.com](http://www.urbandictionary.com/).
 
 #### Usage
 
@@ -896,19 +896,19 @@ Get the defenition of a word or sentence from [urbandictionary.com](http://www.u
 <a name="xkcd"></a>
 ### XKCD
 
-Gets the latest [xkcd](https://xkcd.com/) comic, or the comic with the given id.
+Gets the latest [xkcd](https://xkcd.com/) comic, or the comic with the given ID.
 
 #### Usage
 
-    >xkcd [comic id]
+    >xkcd [comic ID]
 
 
 <a name="system"></a>
 ## System Commands
 
-All commands in the _System_ module uses the `;` prefix.
+All commands in the _System_ module use the `;` prefix.
 
-System commands are limited to **Bot Administrators Only**, this refers to:
+System commands are limited to **Bot Administrators only**, which means to say the following.
 
  - Bot Administrators Only commands refer to the commands only a bot admin can use.
  - Bot Administrators Only commands do **not** refer to the owner of the server.
@@ -918,11 +918,11 @@ System commands are limited to **Bot Administrators Only**, this refers to:
 <a name="blacklistadd"></a>
 ### Blacklist Add
 
-Add a user to the bot blacklist, this will prevent the user from using any of Avas features or interact with the bot in **any** server.
+Adds a user to the bot blacklist. This will prevent the user from using any of Ava's features and interacting with the bot in **any** server.
 
 #### Usage
 
-    ;bla <user id> [reason]
+    ;bla <user ID> [reason]
 
 <a name="blacklistremove"></a>
 ### Blacklist Remove
@@ -931,23 +931,23 @@ Removes a user from the bot blacklist, allowing them to interact with the bot ag
 
 #### Usage
 
-    ;blr <user id>
+    ;blr <user ID>
 
 <a name="botadminadd"></a>
 ### Bot Admin Add
 
-Add a user id to the bot administrators list temporarily, if the users ID isn't in the config.json file when the bot restarts, the user will be removed from the bot admin list.
+Add a user ID to the bot administrators list temporarily. If the user's ID isn't in config.json when the bot restarts, the user will be removed from the list.
 
 > {tip} This allows the user to run all system commands, this includes the [;bar](#botadminremove) command.
 
 #### Usage
 
-    ;baa <user id>
+    ;baa <user ID>
 
 <a name="botadminlist"></a>
 ### Bot Admin List
 
-Lists all the user ids that are currently in the bot administrators list.
+Lists all user IDs currently in the bot administrators list.
 
 #### Usage
 
@@ -956,16 +956,16 @@ Lists all the user ids that are currently in the bot administrators list.
 <a name="botadminremove"></a>
 ### Bot Admin Remove
 
-Removes a user id from the bot administrators list, if the users ID is in the config.json file, their ID will be added back to the administrators list when the bot restarts.
+Removes a user ID from the bot administrators list. If the user's ID is in config.json, their ID will be added back to the administrators list when the bot restarts.
 
 #### Usage
 
-    ;bar <user id>
+    ;bar <user ID>
 
 <a name="broadcast"></a>
 ### Broadcast
 
-Prepares a broadcast message and returns a unique ID for the message, as well as how it's going to look like, to send the message use the [broadcast send](#broadcastsend) command. Broadcast message IDs are stored for two minutes before being deleted.
+Prepares a broadcast message and returns a unique ID for the message as well as how it's going to look like. To send the message use the [broadcast send](#broadcastsend) command. Broadcast message IDs are stored for two minutes before being deleted.
 
 #### Usage
 
@@ -978,11 +978,11 @@ Prepares a broadcast message and returns a unique ID for the message, as well as
 <a name="broadcastsend"></a>
 ### Broadcast Send
 
-Broadcasts the message linked to the given ID, if the ID is valid the message linked to the ID will be broadcasted to every server the bot is apart of, it will send the message to five servers at a time, with half a second interval.
+Broadcasts the message linked to the given ID. If the ID is valid the message linked to that ID will be broadcasted to every server the bot is in. The message will be sent to five servers at a time, with 0.5 second delay.
 
 #### Usage
 
-    ;broadcastsend <id>
+    ;broadcastsend <ID>
 
 #### Aliases
 
@@ -993,7 +993,7 @@ Broadcasts the message linked to the given ID, if the ID is valid the message li
 
 Evaluates and executes raw JavaScript code.
 
-> {tip} Messing around too much with this command can cause crashes and other funny things to happen since coding is being injected into the application during runtime.
+> {tip} Messing around too much with this command can cause crashes and other funny things to happen since code is being evaluated within the bot while it's running.
 
 #### Usage
 
@@ -1002,11 +1002,11 @@ Evaluates and executes raw JavaScript code.
 <a name="moduledisable"></a>
 ### Module Disable
 
-Disable a given module, this prevents anyone that isn't a bot administrator to run any commands in that module until the bot is restarted or the module is enabled again. Modules are the command categories, for example [administration](#administration), [fun](#fun), [music](#music), etc...
+Disabling a module prevents anyone that isn't a bot administrator from running any commands in that module until the bot is restarted or the module is enabled again. Modules are the command categories, for example [administration](#administration), [fun](#fun), [music](#music) and so forth.
 
-**Note:** It's impossible to disable the system module.
+**Note:** The system module cannot be disabled.
 
-> {tip} You don't have to type out the full module/category name, simpley typing the first few characters are fine.
+> {tip} You don't have to type out the full module/category name, simply typing the first few characters are fine.
 
 #### Usage
 
@@ -1015,9 +1015,9 @@ Disable a given module, this prevents anyone that isn't a bot administrator to r
 <a name="moduleenable"></a>
 ### Module Enable
 
-Enables a given module. Modules are the command categories, for example [administration](#administration), [fun](#fun), [music](#music), etc...
+Enables a given module. Modules are the command categories, for example [administration](#administration), [fun](#fun), [music](#music) and so forth.
 
-> {tip} You don't have to type out the full module/category name, simpley typing the first few characters are fine.
+> {tip} You don't have to type out the full module/category name, simply typing the first few characters are fine.
 
 #### Usage
 
@@ -1026,7 +1026,7 @@ Enables a given module. Modules are the command categories, for example [adminis
 <a name="reboot"></a>
 ### Reboot
 
-Restarts the bot. If there are any active voice connections all the music will be stoped, the queue will be cleared and a voice maintenance message will be sent instead, once the message is over the rebooting process will continue.
+Restarts the bot. If there are any active voice connections all the music will be stopped, the queue will be cleared and a voice maintenance message will be sent instead. Once the message is over the rebooting process will continue.
 
 #### Usage
 
@@ -1056,7 +1056,7 @@ Reloads the given property.
 <a name="runtimestats"></a>
 ### Runtime Stats
 
-Tells you information about the bot, and other runtime statistics.
+Returns information about the bot and other runtime statistics.
 
 #### Usage
 
@@ -1069,7 +1069,7 @@ Tells you information about the bot, and other runtime statistics.
 <a name="safereboot"></a>
 ### Safe Reboot
 
-Restarts the bot. However unlike the [reboot](#reboot) command, using the safe reboot will wait for all voice connections to drop before restarting.
+Restarts the bot similar to the [reboot](#reboot) command. However unlike that command, using the safe reboot will wait for all voice connections to drop before restarting.
 
 #### Usage
 
@@ -1082,11 +1082,11 @@ Restarts the bot. However unlike the [reboot](#reboot) command, using the safe r
 <a name="setstatus"></a>
 ### Set Status
 
-Sets the status of the bot instance for all servers the bot is on, if no status is set the bot status will go back to cycling status from the config.
+Sets the status of the bot. If no status is provided, the bot will cycle config-defined status messages.
 
 #### Usage
 
-    ;setstatus [status/twitch url]
+    ;setstatus [status/Twitch URL]
 
 #### Aliases
 
@@ -1095,21 +1095,21 @@ Sets the status of the bot instance for all servers the bot is on, if no status 
 <a name="setservertype"></a>
 ### Set Server Type
 
-Sets the server to the given type, this allows self-hosters with little knowledge on SQL to set their server to the given server type, different server types gives the server more rewards and unlock slots for more aliases, playlists and other things.
+Sets the server to the given type. This allows selfhosters with little knowledge on SQL to set their server to a particular type. Server types control reward ratios, the amount of alias slots, playlists and so forth.
 
 #### Usage
 
-    ;sst <type> [server id]
+    ;sst <type> [server ID]
 
 <a name="utility"></a>
 ## Utility Commands
 
-All commands in the _Utility_ module uses the `!` prefix.
+All commands in the _Utility_ module use the `!` prefix.
 
 <a name="expandurl"></a>
 ### Expand URL
 
-Expand a short URL to it's longform state.
+Unshorten a shortened URL.
 
 #### Usage
 
@@ -1122,7 +1122,7 @@ Expand a short URL to it's longform state.
 <a name="feedback"></a>
 ### Feedback
 
-Send feedback about Ava back to the developers and the staff team, any message given to the command will be sent in the [#feedback](https://discord.gg/tAmWcbK) channel on the official [AvaIre Central Support server](https://discord.gg/gt2FWER).
+Send feedback about Ava back to the developers and the staff team, any message passed to the command will be sent in the [#feedback](https://discord.gg/tAmWcbK) channel on [AvaIre Central](https://discord.gg/gt2FWER).
 
 #### Usage
 
@@ -1131,7 +1131,7 @@ Send feedback about Ava back to the developers and the staff team, any message g
 <a name="invite"></a>
 ### Invite
 
-Displays the OAuth2 invite link that can be used to invite the bot with.
+Displays the OAuth2 invite link for the bot.
 
 #### Usage
 
@@ -1144,7 +1144,7 @@ Displays the OAuth2 invite link that can be used to invite the bot with.
 <a name="leaderboard"></a>
 ### Leaderboard
 
-Displays the servers level leaderboard with the users name, rank, level and xp, 10 people are shown per page.
+Displays the server's level leaderboard with the user's name, rank, level and XP. The response is paginated to show 10 users per page.
 
 The **[Levels & Experience](#level)** feature must be enabled to run this command.
 
@@ -1173,7 +1173,7 @@ Ping, Pong.
 <a name="rank"></a>
 ### Rank
 
-Displays the users rank, level, xp and how much xp they need to level up.
+Displays the user's rank, level, XP and how much XP they need to level up.
 
 The **[Levels & Experience](#level)** feature must be enabled to run this command.
 
@@ -1188,15 +1188,15 @@ The **[Levels & Experience](#level)** feature must be enabled to run this comman
 <a name="remind"></a>
 ### Remind
 
-Sets a message you would like to be reminded of later, the message can be anything while the format has to look something like **1h25m52s** to delay the message by 1 hour, 25 minutes and 52 seconds, you can combine or exclude any combination of the `number` followed by a `h` for hours, `m` for minutes or `s` for seconds, for example:
+Sets a message you would like to be reminded of later. The message can be anything while the time format has to follow suit with **XhXXmXXs** to delay the message where X represents a number. You can freely alter the time definition; available time units are hours (`h`), minutes (`m`) and seconds (`s`). Here are some examples.
 
- - **1h25m52s** = 1 hour, 25 minutes and 52 seconds delay.
- - **2h16s** = 2 hours and 16 seconds delay.
- - **30m** = 30 minutes delay.
+ - **1h25m52s** = 1 hour, 25 minutes and 52 seconds of delay.
+ - **2h16s** = 2 hours and 16 seconds of delay.
+ - **30m** = 30 minutes of delay.
 
 #### Usage
 
-    !remind <format> <message>
+    !remind <time> <message>
 
 #### Aliases
 
@@ -1218,7 +1218,7 @@ Shorten a URL using [goo.gl](https://goo.gl/).
 <a name="source"></a>
 ### Source
 
-Gives you the source code for the Bot, or the code for a given command.
+Gives you the source code for the bot, or the code for a given command.
 
 #### Usage
 
@@ -1227,22 +1227,22 @@ Gives you the source code for the Bot, or the code for a given command.
 <a name="stats"></a>
 ### Stats
 
-Displays information about Ava, and some stats about the bot, the following things will be shown:
+Displays information about Ava and some related stats. The following information will be returned.
 
  - Bot ID
  - Author of the bot
  - The current version of the bot
  - The last few changes to the latest version of Ava
  - Library the bot is written in
- - How many Database queries that has been run
- - How mnay commands the bot has received
+ - How many database queries have been run
+ - How many messages have been received
  - How many servers Ava is playing music in right now
  - How many servers Ava is in
- - How many commands has been run
+ - How many commands have been run
  - How much memory Ava is using
- - How many users Ava knows about(total, total online, unique and unique online)
- - How many channels Ava knows about(total, text and voice)
- - How long Ava has been online for
+ - How many users Ava knows about (total, total online, unique and unique online)
+ - How many channels Ava knows about (total, text and voice)
+ - How long Ava has been online
 
 #### Usage
 
@@ -1255,7 +1255,7 @@ Displays information about Ava, and some stats about the bot, the following thin
 <a name="uptime"></a>
 ### Uptime
 
-Displays how long Ava has been online for.
+Displays how long the bot has been online.
 
 #### Usage
 
@@ -1264,7 +1264,7 @@ Displays how long Ava has been online for.
 <a name="version"></a>
 ### Version
 
-Displays the current version of Ava you're running, if the version is oudated the new version will be shown, as well as what type of changes has been made.
+Displays the current version of Ava you're running. If the version is oudated the new version will be shown as well as what type of changes have been made.
 
 #### Usage
 
@@ -1273,7 +1273,7 @@ Displays the current version of Ava you're running, if the version is oudated th
 <a name="yesnopoll"></a>
 ### Yes/No Poll
 
-Creates a poll with a message, users can then vote yes or no on the poll, after the given amount of time the poll will automatically close and show the result of the poll. The time format has to look something like 25m52s to make the poll last for 25 minutes and 52 seconds, you can combine or exclude any combination of the number followed by a `m` for minutes and `s` for seconds.
+Creates a poll with a message. Users can then vote yes or no on the poll; when the given amount of time the poll will automatically close and show the result of the poll. The time format is the same as the one used with [remind](#remind).
 
 #### Usage
 
