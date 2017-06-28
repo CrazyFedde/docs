@@ -19,7 +19,7 @@ Remember, bug reports are created in the hope that others with the same problem 
 
 **All** bug fixes should be sent to the latest stable branch or to the current LTS branch (0.X). Bug fixes should never be sent to the master branch unless they fix features that exist only in the upcoming release.
 
-**Minor** features that are fully backwards compatible with the current AvaIre release may be sent to the latest stable branch.
+**Minor** features that are fully backward compatible with the current AvaIre release may be sent to the latest stable branch.
 
 **Major** new features should always be sent to the master branch, which contains the upcoming AvaIre release.
 
@@ -34,6 +34,7 @@ AvaIre follows a mix of the [PSR-2](https://github.com/php-fig/fig-standards/blo
 
 <a name="esdoc"></a>
 ### ESDoc
+
 Below is an example of a valid AvaIre documentation block. Note that the `@param` attribute is followed by two spaces, the argument type, followed by enough spaces to align the variable name with each other, followed by enough spaces to align the param description with each other.
 
 ```javascript
