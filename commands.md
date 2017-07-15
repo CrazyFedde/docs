@@ -15,7 +15,7 @@ This is the command reference for AvaIre. You can find more elaboration on each 
 
 If you need for any further info, you can use the [help command](#help) for the bot to get info about command throttling limits, permission requirements and so forth. Got any questions? Check out #support in [AvaIre Central](#).
 
-<a name="help"></a>
+<a name="HelpCommand"></a>
 ## Help Command
 
 Displays a list of available modules, commands in a given module, or information about a specific command.
@@ -47,14 +47,14 @@ Displaying a given command's information can be done by using `help` followed by
 
 All commands in the _Administration_ module uses the `.` prefix.
 
-<a name="ai"></a>
+<a name="AiCommand"></a>
 ### AI
 
 Toggles the AI module on or off for the current channel. If the module is enabled, users can tag the bot followed by a message or question and the bot will try and use its AI to process the message. By default AI messages will be enabled for all channels.
 
 The **general.manage_server** permission is required to run this command.
 
-<a name="alias"></a>
+<a name="AliasCommand"></a>
 ### Alias
 
 Creates and maps a custom aliases for a pre-existing command. If an alias that already exists is given with no additional command the alias will be unbound.
@@ -69,7 +69,7 @@ The **general.manage_server** permission is required to run this command.
 
     .cmdmap
 
-<a name="aliases"></a>
+<a name="AliasesCommand"></a>
 ### Aliases
 
 Lists all the existing command aliases and what they're bound to.
@@ -84,7 +84,7 @@ The **general.manage_server** permission is required to run this command.
 
     .aliaslist
 
-<a name="ban"></a>
+<a name="BanCommand"></a>
 ### Ban
 
 Bans the mentioned user from the server with the provided reason, all messages the user has sent in the last 7 days will also be deleted in the process.
@@ -97,7 +97,7 @@ The **general.ban_members** permission is required to run this command.
 
     .ban <user> [reason]
 
-<a name="changeprefix"></a>
+<a name="ChangePrefixCommand"></a>
 ### Change Prefix
 
 Sets the prefix that should be used for all commands in a given module. If no prefix is provided the module's prefix will be reset to the default.
@@ -108,6 +108,7 @@ The following modules can be affected by this command.
  - [Fun](#fun)
  - [Help](#help)
  - [Music](#music)
+ - [Search](#search)
  - [System](#system)
  - [Utility](#utility)
 
@@ -127,18 +128,18 @@ The **general.administrator** permission is required to run this command.
 
     @AvaIre prefix <module> [prefix]
 
-<a name="channel"></a>
+<a name="ChannelCommand"></a>
 ### Channel
 
 Displays what modules are enabled and disabled for the current channel, as-well as their settings if they're enabled. The following list of commands can change the behavior of the channel command:
 
- - [.ai](#ai)
- - [.goodbye](#goodbye)
- - [.goodbyemessage](#goodbye-message)
- - [.modlog](#modlog)
- - [.slowmode](#slowmode)
- - [.welcome](#welcome)
- - [.welcomemessage](#welcome-message)
+ - [.ai](#AiCommand)
+ - [.goodbye](#GoodbyeCommand)
+ - [.goodbyemessage](#GoodbyeMessageCommand)
+ - [.modlog](#ModlogCommand)
+ - [.slowmode](#SlowmodeCommand)
+ - [.welcome](#WelcomeCommand)
+ - [.welcomemessage](#WelcomeMessageCommand)
 
 #### Usage
 
@@ -148,7 +149,7 @@ Displays what modules are enabled and disabled for the current channel, as-well 
 
     .chl
 
-<a name="goodbye"></a>
+<a name="GoodbyeCommand"></a>
 ### Goodbye
 
 Toggles the goodbye module on or off for the current channel. When the goodbye module is enabled, a message will be sent in the channel every time someone leaves the server.
@@ -163,7 +164,7 @@ The **general.manage_server** permission is required to run this command.
 
     .bye
 
-<a name="goodbye-message"></a>
+<a name="GoodbyeMessageCommand"></a>
 ### Goodbye Message
 
 Sets the goodbye message to the given string. If no arguments are passed, the goodbye message will be set back to the default goodbye message. You can customize how the goodbye message looks using [placeholders](/docs/{{version}}/placeholders).
@@ -178,7 +179,7 @@ The **general.manage_server** permission is required to run this command.
 
     .byemsg
 
-<a name="kick"></a>
+<a name="KickCommand"></a>
 ### Kick
 
 Kicks the mentioned user off the server with the provided reason.
@@ -191,7 +192,7 @@ The **general.kick_members** permission is required to run this command.
 
     .kick <user> [reason]
 
-<a name="language"></a>
+<a name="LanguageCommand"></a>
 ### Language
 
 Displays the localization that is used on the server, you can also use this command to change the language that Ava will use when sending messages.
@@ -206,7 +207,7 @@ The **general.manage_server** permission is required to run this command.
 
     .lang
 
-<a name="level"></a>
+<a name="LevelCommand"></a>
 ### Level
 
 Toggles the leveling system on or off for the current server. When the leveling system is enabled users will slowly accumulate XP from being active in the chat and using commands, every minute the user is active they will receive 10-15 XP.
@@ -221,7 +222,7 @@ The **general.manage_server** permission is required to run this command.
 
     .lvl
 
-<a name="levelalerts"></a>
+<a name="LevelAlertsCommand"></a>
 ### Level Alerts
 
 Toggles the level alerts system on or off for the current server. If a channel tag is passed as an argument, all level up alerts be sent in that channel. When the level alerts are enabled the bot will send a message each time a user levels up, letting them know they leveled up and what level they are now.
@@ -236,7 +237,7 @@ The **general.manage_server** permission is required to run this command.
 
     .lvlalert
 
-<a name="modlog"></a>
+<a name="ModlogCommand"></a>
 ### Modlog
 
 Toggles the modlog module on or off for the current channel. If the module is enabled, any action that will broadcast modlog messages([Ban](#ban), [Softban](#softban), [Kick](#kick)...) will be sent to this channel. By default modlogging will be disabled for all channels.
@@ -251,7 +252,7 @@ The **general.manage_server** permission is required to run this command.
 
     .mlog
 
-<a name="modules"></a>
+<a name="CommandModulesCommand"></a>
 ### Modules
 
 Shows the status of all the command modules for the current channel and for the whole server if any commands are disabled globally. You can tag a channel if you want to see the command module status for the given channel.
@@ -267,7 +268,7 @@ The **general.administrator** permission is required to run this command.
     .module
     .mod
 
-<a name="purge"></a>
+<a name="PurgeCommand"></a>
 ### Purge
 
 Deletes up to 1,000 chat messages in any channel, you can pass a user mention as the second argument if you only want to delete messages sent by the mentioned user. Due to a restriction in the Discord API, the purge command will only work on messages sent in the last 14 days.
@@ -284,7 +285,7 @@ The **text.manage_messages** permission is required to run this command.
 
     .clear
 
-<a name="server-id"></a>
+<a name="ServerIdCommand"></a>
 ### Server ID
 
 Displays ID of the server the command was ran in.
@@ -297,7 +298,7 @@ Displays ID of the server the command was ran in.
 
     .sid
 
-<a name="server-info"></a>
+<a name="ServerInfoCommand"></a>
 ### Server Info
 
 Displays information about the server the command was ran in. This includes the server's ID, owner, text and voice channels, members, roles, region, avatar and when it was created.
@@ -310,7 +311,7 @@ Displays information about the server the command was ran in. This includes the 
 
     .sinfo
 
-<a name="setup"></a>
+<a name="SetupCommand"></a>
 ### Setup
 
 Helps setup different features within Ava for the current server.
@@ -321,7 +322,7 @@ The **general.administrator** permission is required to run this command.
 
     .setup [feature]
 
-<a name="slowmode"></a>
+<a name="SlowmodeCommand"></a>
 ### Slowmode
 
 Disables the slowmode module or enables it with the given settings, users with the **text.manage_messages** permission are exempt from slowmode limits. The slowmode module can be disabled by running the command with no arguments; if the `limit` and `decay` arguments are given the module will be enabled with the given settings.
@@ -332,7 +333,7 @@ The **general.manage_server** permission is required to run this command.
 
     .slowmode [limit] [decay]
 
-<a name="softban"></a>
+<a name="SoftbanCommand"></a>
 ### Softban
 
 Bans the mentioned user from the server with the provided reason. Any messages the user might've sent won't be deleted, if you want to force delete any old messages the user has sent see the [ban command](#ban).
@@ -349,7 +350,7 @@ The **text.ban_members** permission is required to run this command.
 
     .sban
 
-<a name="togglemodule"></a>
+<a name="ToggleModuleCommand"></a>
 ### Toggle Module
 
 Toggles the given command module on or off for the given channel, optionally for the whole server. When a command module is disabled no one can run any commands in the command module, you can disable commands on a per-channel basis by tagging the channel you want to affect.
@@ -366,7 +367,7 @@ The **general.administrator** permission is required to run this command.
 
     .tmod
 
-<a name="user-id"></a>
+<a name="UserIdCommand"></a>
 ### User ID
 
 Displays ID of the user who ran the command or the ID of the tagged user.
@@ -379,7 +380,7 @@ Displays ID of the user who ran the command or the ID of the tagged user.
 
     .uid
 
-<a name="user-info"></a>
+<a name="UserInfoCommand"></a>
 ### User Info
 
 Displays information about the user who ran the command or the tagged user. This includes the users username, ID, roles, the date they joined the server, the date they created their account, and how many servers they're in (That Ava knows about).
@@ -392,7 +393,7 @@ Displays information about the user who ran the command or the tagged user. This
 
     .uinfo
 
-<a name="welcome"></a>
+<a name="WelcomeCommand"></a>
 ### Welcome
 
 Toggles the welcome module on or off for the current channel. When the welcome module is enabled, a message will be sent in the channel every time someone joins the server.
@@ -407,7 +408,7 @@ The **general.manage_server** permission is required to run this command.
 
     .wel
 
-<a name="welcome-message"></a>
+<a name="WelcomeMessageCommand"></a>
 ### Welcome Message
 
 Sets the welcome message to the given string. If no arguments are passed the welcome message will be set back to the default welcome message. You can customize how the welcome message looks using [placeholders](/docs/{{version}}/placeholders).
@@ -427,7 +428,7 @@ The **general.manage_server** permission is required to run this command.
 
 All commands in the _Fun_ module use the `>` prefix.
 
-<a name="blah"></a>
+<a name="BlahCommand"></a>
 ### Blah
 
 Blah?
@@ -436,7 +437,7 @@ Blah?
 
     >blah
 
-<a name="canyounot"></a>
+<a name="CanYouNotCommand"></a>
 ### CanYouNot
 
 Can you not...?
@@ -445,7 +446,7 @@ Can you not...?
 
     >canyounot
 
-<a name="chucknorris"></a>
+<a name="ChuckNorrisCommand"></a>
 ### Chuck Norris
 
 Gets a random 100% true, real fact about Chuck Norris using the "Internet Chuck Norris Database".
@@ -459,7 +460,7 @@ Gets a random 100% true, real fact about Chuck Norris using the "Internet Chuck 
     >chuck
     >norris
 
-<a name="coin"></a>
+<a name="CoinCommand"></a>
 ### Coin
 
 Flips a coin for heads or tails.
@@ -468,7 +469,7 @@ Flips a coin for heads or tails.
 
     >coin
 
-<a name="dice"></a>
+<a name="DiceCommand"></a>
 ### Dice
 
 Rolls a set of dice, for example using `4d8` will roll four eight sided dice.
@@ -477,7 +478,7 @@ Rolls a set of dice, for example using `4d8` will roll four eight sided dice.
 
     >dice [D&D Dice]
 
-<a name="lenny"></a>
+<a name="LennyCommand"></a>
 ### Lenny
 
 ( ͡° ͜ʖ ͡°)
@@ -486,7 +487,7 @@ Rolls a set of dice, for example using `4d8` will roll four eight sided dice.
 
     >lenny
 
-<a name="meme"></a>
+<a name="MemeCommand"></a>
 ### Meme
 
 Creates a meme of the given type. Passing list as an argument sends a full list of memes that can be generated via the bot. You can also tag a user to use that user's avatar as a meme instead.
@@ -496,7 +497,7 @@ Creates a meme of the given type. Passing list as an argument sends a full list 
     >meme <meme|user|list> [top text] [bottom text]
 
 
-<a name="randomcat"></a>
+<a name="RandomCatCommand"></a>
 ### Random Cat
 
 Gets a random cat image from the internet.
@@ -509,7 +510,7 @@ Gets a random cat image from the internet.
 
     >cat
 
-<a name="randomdog"></a>
+<a name="RandomDogCommand"></a>
 ### Random Dog
 
 Gets a random dog image from the internet.
@@ -522,7 +523,7 @@ Gets a random dog image from the internet.
 
     >dog
 
-<a name="repeat"></a>
+<a name="RepeatCommand"></a>
 ### Repeat
 
 Makes Ava repeat whatever you say.
@@ -535,7 +536,7 @@ Makes Ava repeat whatever you say.
 
     >echo
 
-<a name="roll"></a>
+<a name="RollCommand"></a>
 ### Roll
 
 Rolls a random number between 1 and 100, or between the numbers given.
@@ -544,7 +545,7 @@ Rolls a random number between 1 and 100, or between the numbers given.
 
     >roll [min] [max]
 
-<a name="say"></a>
+<a name="SayCommand"></a>
 ### Say
 
 Makes Ava say whatever you want. If Ava has permissions to delete messages, the original message will be deleted and Ava's message will replace it.
@@ -553,7 +554,7 @@ Makes Ava say whatever you want. If Ava has permissions to delete messages, the 
 
     >say [message]
 
-<a name="shrug"></a>
+<a name="ShrugCommand"></a>
 ### Shrug
 
 ¯\\\_(ツ)\_/¯
@@ -562,7 +563,7 @@ Makes Ava say whatever you want. If Ava has permissions to delete messages, the 
 
     >shrug
 
-<a name="slowclap"></a>
+<a name="SlowClapCommand"></a>
 ### Slowclap
 
 Clap... Clap... Clap...
@@ -576,7 +577,7 @@ Clap... Clap... Clap...
 
 All commands in the _Music_ module use the `!` prefix.
 
-<a name="flushqueue"></a>
+<a name="FlushQueueCommand"></a>
 ### Flush Queue
 
 Flushes the music queue, removing all songs currently waiting in the queue.
@@ -591,7 +592,7 @@ The **DJ** role is required to run this command.
 
     !fqueue
 
-<a name="repeatsongs"></a>
+<a name="RepeatMusicQueueCommand"></a>
 ### Repeat Music Queue
 
 Toggles music looping on or off, the [queue](#queue) command be used to get the music looping status.
@@ -607,7 +608,7 @@ The **DJ** role is required to run this command.
     !repeat
     !loop
 
-<a name="movehere"></a>
+<a name="MoveHereCommand"></a>
 ### Move Here
 
 Moves the bot into the same voice channel you're in. This command can be used to move the bot to a different voice channel while it's playing music without having the permissions to move other users. 
@@ -622,7 +623,7 @@ The **DJ** role is required to run this command.
 
     !moveh
 
-<a name="pause"></a>
+<a name="PauseCommand"></a>
 ### Pause
 
 Pauses the song that is currently playing.
@@ -633,7 +634,7 @@ The **DJ** role is required to run this command.
 
     !pause
 
-<a name="playlist"></a>
+<a name="PlaylistCommand"></a>
 ### Playlist
 
 Allows music DJs to create, list, update, and delete music playlists. This command has a bunch of sub-commands that are used to manage the playlists; to make it a bit easier, here are all the sub-commands.
@@ -758,7 +759,7 @@ Rename an existing playlist. The string passed to the command will be used as th
 
 **You can replace the `!playlist` command with any of [playlist command aliases](#playlist).**
 
-<a name="queue"></a>
+<a name="QueueCommand"></a>
 ### Queue
 
 Returns the song that is playing right now and some attached information. This includes who requested it, how much of the song is left and the volume the song is playing at plus the rest of the songs currently in queue. If the **remove** argument and the ID of the song are passed to the command, the song with the given ID will be removed from the music queue.
@@ -772,7 +773,7 @@ Returns the song that is playing right now and some attached information. This i
     !songs
     !song
 
-<a name="request"></a>
+<a name="RequestCommand"></a>
 ### Request
 
 Requests a song via YouTube, SoundCloud, Twitch, radio streams or by name. If the song was successfully found the song will be added to the queue.
@@ -791,7 +792,7 @@ Requests a song via YouTube, SoundCloud, Twitch, radio streams or by name. If th
     @AvaIre play <name of song>
     @AvaIre can you find me some chill music?
 
-<a name="resume"></a>
+<a name="ResumeCommand"></a>
 ### Resume
 
 Resumes the song that was playing before.
@@ -802,7 +803,7 @@ The **DJ** role is required to run this command.
 
     !resume
 
-<a name="shuffle"></a>
+<a name="ShuffleCommand"></a>
 ### Shuffle
 
 Shuffles the songs waiting in the queue.
@@ -813,7 +814,7 @@ The **DJ** role is required to run this command.
 
     !shuffle
 
-<a name="skip"></a>
+<a name="SkipCommand"></a>
 ### Skip
 
 Skips the song that is currently playing.
@@ -824,7 +825,7 @@ The **DJ** role is required to run this command.
 
     !skip
 
-<a name="volume"></a>
+<a name="VolumeCommand"></a>
 ### Volume
 
 Changes the volume of the music, by default the music will be playing at 50% volume.
@@ -835,7 +836,7 @@ The **DJ** role is required to run this command.
 
     !volume <volume>
 
-<a name="voteskip"></a>
+<a name="VoteSkipCommand"></a>
 ### Vote Skip
 
 Votes to skip the song that is currently playing. If 50% or more of the people listening vote to skip, the song will be skipped.
@@ -853,7 +854,7 @@ Votes to skip the song that is currently playing. If 50% or more of the people l
 
 All commands in the _Search_ module use the `>` prefix.
 
-<a name="gfycat"></a>
+<a name="GfycatCommand"></a>
 ### Gfycat
 
 Gets a random gif from [gfycat.com](https://gfycat.com/) with the given tags.
@@ -866,7 +867,7 @@ Gets a random gif from [gfycat.com](https://gfycat.com/) with the given tags.
 
     >gif
 
-<a name="duckduckgo"></a>
+<a name="DuckDuckGoCommand"></a>
 ### Search
 
 Searches DuckDuckGo.com with the given query and returns the first four results.
@@ -880,8 +881,8 @@ Searches DuckDuckGo.com with the given query and returns the first four results.
     >ddg
     >g
 
-<a name="urbandictionary"></a>
-### Urban Dictionary    
+<a name="UrbanDictionaryCommand"></a>
+### Urban Dictionary
 
 Get the definition of a word or sentence from [urbandictionary.com](http://www.urbandictionary.com/).
 
@@ -893,7 +894,7 @@ Get the definition of a word or sentence from [urbandictionary.com](http://www.u
 
     >urban
 
-<a name="xkcd"></a>
+<a name="XKCDCommand"></a>
 ### XKCD
 
 Gets the latest [xkcd](https://xkcd.com/) comic, or the comic with the given ID.
@@ -915,7 +916,7 @@ System commands are limited to **Bot Administrators only**, which means to say t
  - Bot Administrators is a person who is **hosting** their own bot, and their **ID** is inside of **config.json**.
  - You are **not** a bot admin if you invited the bot using **discordbots.org** or other invitation links.
 
-<a name="blacklistadd"></a>
+<a name="BlacklistAddCommand"></a>
 ### Blacklist Add
 
 Adds a user to the bot blacklist. This will prevent the user from using any of Ava's features and interacting with the bot in **any** server.
@@ -924,7 +925,7 @@ Adds a user to the bot blacklist. This will prevent the user from using any of A
 
     ;bla <user ID> [reason]
 
-<a name="blacklistremove"></a>
+<a name="BlacklistRemoveCommand"></a>
 ### Blacklist Remove
 
 Removes a user from the bot blacklist, allowing them to interact with the bot again.
@@ -933,7 +934,7 @@ Removes a user from the bot blacklist, allowing them to interact with the bot ag
 
     ;blr <user ID>
 
-<a name="botadminadd"></a>
+<a name="BotAdminAddCommand"></a>
 ### Bot Admin Add
 
 Add a user ID to the bot administrators list temporarily. If the user's ID isn't in config.json when the bot restarts, the user will be removed from the list.
@@ -944,7 +945,7 @@ Add a user ID to the bot administrators list temporarily. If the user's ID isn't
 
     ;baa <user ID>
 
-<a name="botadminlist"></a>
+<a name="BotAdminListCommand"></a>
 ### Bot Admin List
 
 Lists all user IDs currently in the bot administrators list.
@@ -953,7 +954,7 @@ Lists all user IDs currently in the bot administrators list.
 
     ;bal
 
-<a name="botadminremove"></a>
+<a name="BotAdminRemoveCommand"></a>
 ### Bot Admin Remove
 
 Removes a user ID from the bot administrators list. If the user's ID is in config.json, their ID will be added back to the administrators list when the bot restarts.
@@ -962,7 +963,7 @@ Removes a user ID from the bot administrators list. If the user's ID is in confi
 
     ;bar <user ID>
 
-<a name="broadcast"></a>
+<a name="BroadcastCommand"></a>
 ### Broadcast
 
 Prepares a broadcast message and returns a unique ID for the message as well as how it's going to look like. To send the message use the [broadcast send](#broadcastsend) command. Broadcast message IDs are stored for two minutes before being deleted.
@@ -975,7 +976,7 @@ Prepares a broadcast message and returns a unique ID for the message as well as 
 
     ;bc
 
-<a name="broadcastsend"></a>
+<a name="BroadcastSendCommand"></a>
 ### Broadcast Send
 
 Broadcasts the message linked to the given ID. If the ID is valid the message linked to that ID will be broadcasted to every server the bot is in. The message will be sent to five servers at a time, with 0.5 second delay.
@@ -988,7 +989,7 @@ Broadcasts the message linked to the given ID. If the ID is valid the message li
 
     ;bcsend
 
-<a name="eval"></a>
+<a name="EvalCommand"></a>
 ### Eval
 
 Evaluates and executes raw JavaScript code.
@@ -999,7 +1000,7 @@ Evaluates and executes raw JavaScript code.
 
     ;eval <code>
 
-<a name="moduledisable"></a>
+<a name="ModuleDisableCommand"></a>
 ### Module Disable
 
 Disabling a module prevents anyone that isn't a bot administrator from running any commands in that module until the bot is restarted or the module is enabled again. Modules are the command categories, for example [administration](#administration), [fun](#fun), [music](#music) and so forth.
@@ -1012,7 +1013,7 @@ Disabling a module prevents anyone that isn't a bot administrator from running a
 
     ;md <module>
 
-<a name="moduleenable"></a>
+<a name="ModuleEnableCommand"></a>
 ### Module Enable
 
 Enables a given module. Modules are the command categories, for example [administration](#administration), [fun](#fun), [music](#music) and so forth.
@@ -1023,7 +1024,7 @@ Enables a given module. Modules are the command categories, for example [adminis
 
     ;me <module>
 
-<a name="reboot"></a>
+<a name="RebootCommand"></a>
 ### Reboot
 
 Restarts the bot. If there are any active voice connections all the music will be stopped, the queue will be cleared and a voice maintenance message will be sent instead. Once the message is over the rebooting process will continue.
@@ -1036,7 +1037,7 @@ Restarts the bot. If there are any active voice connections all the music will b
 
     ;restart
 
-<a name="reload"></a>
+<a name="ReloadCommand"></a>
 ### Reload
 
 Reloads the given property.
@@ -1053,7 +1054,7 @@ Reloads the given property.
 
     ;rl
 
-<a name="runtimestats"></a>
+<a name="RuntimeStatisticsCommand"></a>
 ### Runtime Stats
 
 Returns information about the bot and other runtime statistics.
@@ -1066,7 +1067,7 @@ Returns information about the bot and other runtime statistics.
 
     ;stats
 
-<a name="safereboot"></a>
+<a name="SafeRebootCommand"></a>
 ### Safe Reboot
 
 Restarts the bot similar to the [reboot](#reboot) command. However unlike that command, using the safe reboot will wait for all voice connections to drop before restarting.
@@ -1092,7 +1093,7 @@ Sets the status of the bot. If no status is provided, the bot will cycle config-
 
     ;status
 
-<a name="setservertype"></a>
+<a name="SetServerTypeCommand"></a>
 ### Set Server Type
 
 Sets the server to the given type. This allows selfhosters with little knowledge on SQL to set their server to a particular type. Server types control reward ratios, the amount of alias slots, playlists and so forth.
@@ -1106,7 +1107,7 @@ Sets the server to the given type. This allows selfhosters with little knowledge
 
 All commands in the _Utility_ module use the `!` prefix.
 
-<a name="expandurl"></a>
+<a name="ExpandUrlCommand"></a>
 ### Expand URL
 
 Unshorten a shortened URL.
@@ -1119,7 +1120,7 @@ Unshorten a shortened URL.
 
     !e
 
-<a name="feedback"></a>
+<a name="FeedbackCommand"></a>
 ### Feedback
 
 Send feedback about Ava back to the developers and the staff team, any message passed to the command will be sent in the [#feedback](https://discord.gg/tAmWcbK) channel on [AvaIre Central](https://discord.gg/gt2FWER).
@@ -1128,20 +1129,7 @@ Send feedback about Ava back to the developers and the staff team, any message p
 
     !feedback <message>
 
-<a name="invite"></a>
-### Invite
-
-Displays the OAuth2 invite link for the bot.
-
-#### Usage
-
-    !invite
-
-#### Aliases
-
-    !join
-
-<a name="leaderboard"></a>
+<a name="LeaderboardCommand"></a>
 ### Leaderboard
 
 Displays the server's level leaderboard with the user's name, rank, level and XP. The response is paginated to show 10 users per page.
@@ -1156,8 +1144,20 @@ The **[Levels & Experience](#level)** feature must be enabled to run this comman
 
     !top
 
+<a name="InviteCommand"></a>
+### Invite
 
-<a name="ping"></a>
+Displays the OAuth2 invite link for the bot.
+
+#### Usage
+
+    !invite
+
+#### Aliases
+
+    !join
+
+<a name="PingCommand"></a>
 ### Ping
 
 Ping, Pong.
@@ -1170,7 +1170,7 @@ Ping, Pong.
 
     !pingme
 
-<a name="rank"></a>
+<a name="RankCommand"></a>
 ### Rank
 
 Displays the user's rank, level, XP and how much XP they need to level up.
@@ -1185,7 +1185,7 @@ The **[Levels & Experience](#level)** feature must be enabled to run this comman
 
     !level
 
-<a name="remind"></a>
+<a name="RemindCommand"></a>
 ### Remind
 
 Sets a message you would like to be reminded of later. The message can be anything while the time format has to follow suit with **XhXXmXXs** to delay the message where X represents a number. You can freely alter the time definition; available time units are hours (`h`), minutes (`m`) and seconds (`s`). Here are some examples.
@@ -1202,7 +1202,7 @@ Sets a message you would like to be reminded of later. The message can be anythi
 
     !rem
 
-<a name="shortenurl"></a>
+<a name="ShortenUrlCommand"></a>
 ### Shorten URL
 
 Shorten a URL using [goo.gl](https://goo.gl/).
@@ -1215,7 +1215,7 @@ Shorten a URL using [goo.gl](https://goo.gl/).
 
     !s
 
-<a name="source"></a>
+<a name="SourceCommand"></a>
 ### Source
 
 Gives you the source code for the bot, or the code for a given command.
@@ -1224,7 +1224,7 @@ Gives you the source code for the bot, or the code for a given command.
 
     !source [command]
 
-<a name="stats"></a>
+<a name="StatsCommand"></a>
 ### Stats
 
 Displays information about Ava and some related stats. The following information will be returned.
@@ -1252,7 +1252,7 @@ Displays information about Ava and some related stats. The following information
 
     !about
 
-<a name="uptime"></a>
+<a name="UptimeCommand"></a>
 ### Uptime
 
 Displays how long the bot has been online.
@@ -1261,7 +1261,7 @@ Displays how long the bot has been online.
 
     !uptime
 
-<a name="version"></a>
+<a name="VersionCommand"></a>
 ### Version
 
 Displays the current version of Ava you're running. If the version is oudated the new version will be shown as well as what type of changes have been made.
@@ -1270,7 +1270,7 @@ Displays the current version of Ava you're running. If the version is oudated th
 
     !version
 
-<a name="yesnopoll"></a>
+<a name="CreateYesNoPollCommand"></a>
 ### Yes/No Poll
 
 Creates a poll with a message. Users can then vote yes or no on the poll; when the given amount of time the poll will automatically close and show the result of the poll. The time format is the same as the one used with [remind](#remind).
