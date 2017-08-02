@@ -62,11 +62,13 @@ Below you'll find a list of all **84** commands that Ava has, along with a short
 | [>chucknorris](/docs/{{version}}/commands#ChuckNorrisCommand)  | Gets a random 100% true fact about Chuck Norris  |
 | [>coin](/docs/{{version}}/commands#CoinCommand)  | Flips a coin for heads or tails  |
 | [>dice [dice format]](/docs/{{version}}/commands#DiceCommand)  | Rolls a set of dice  |
+| [>holiday](/docs/{{version}}/commands#HolidayCommand)  | Find out of today is a holyday  |
 | [>lenny](/docs/{{version}}/commands#LennyCommand)  | ( ͡° ͜ʖ ͡°)  |
 | [>meme <meme\> [top text] [bottom text]](/docs/{{version}}/commands#MemeCommand)  | Creates a custom meme of the given type  |
 | [>randomcat](/docs/{{version}}/commands#RandomCatCommand)  | Gets a random cat image from the internet  |
 | [>randomdog](/docs/{{version}}/commands#RandomDogCommand)  | Gets a random dog image from the internet  |
 | [>repeat [message]](/docs/{{version}}/commands#RepeatCommand)  | Makes Ava repeat whatever you say  |
+| [>rip](/docs/{{version}}/commands#RipCommand)  | Pay your respects  |
 | [>roll [min] [max]](/docs/{{version}}/commands#RollCommand)  | Rolls a random number between 1 and 100, or between the numbers given  |
 | [>say [message]](/docs/{{version}}/commands#SayCommand)  | Makes Ava say whatever you want  |
 | [>shrug](/docs/{{version}}/commands#ShrugCommand)  | ¯\\_(ツ)_/¯  |

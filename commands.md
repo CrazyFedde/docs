@@ -478,6 +478,15 @@ Rolls a set of dice, for example using `4d8` will roll four eight sided dice.
 
     >dice [D&D Dice]
 
+<a name="HolidayCommand"></a>
+### Holiday
+
+Find out of today is a holyday.
+
+#### Usage
+
+    >holiday
+
 <a name="LennyCommand"></a>
 ### Lenny
 
@@ -495,7 +504,6 @@ Creates a meme of the given type. Passing list as an argument sends a full list 
 #### Usage
 
     >meme <meme|user|list> [top text] [bottom text]
-
 
 <a name="RandomCatCommand"></a>
 ### Random Cat
@@ -535,6 +543,15 @@ Makes Ava repeat whatever you say.
 #### Aliases
 
     >echo
+
+<a name="RipCommand"></a>
+### RIP
+
+Pay your respects.
+
+#### Usage
+
+    >rip
 
 <a name="RollCommand"></a>
 ### Roll
