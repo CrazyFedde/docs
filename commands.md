@@ -84,6 +84,21 @@ The **general.manage_server** permission is required to run this command.
 
     .aliaslist
 
+<a name="AutoAssignRoleCommand"></a>
+### Auto Assign Role
+
+Automaticaly assigns a specified role to every user who joins the server, if no arguments is given the current auto assignable role will be given, if a name is given the role will be set as the auto asignable role, and if disabled is given the feature will be turned off.
+
+The **general.administrator** permission is required to run this command.
+
+#### Usage
+
+    .autorole [role|disable]
+
+#### Aliases
+
+    .aar
+
 <a name="BanCommand"></a>
 ### Ban
 

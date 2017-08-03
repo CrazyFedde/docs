@@ -29,6 +29,7 @@ Below you'll find a list of all **95** commands that Ava has, along with a short
 | [.ai](/docs/{{version}}/commands#AiCommand)  | Toggles the AI on or off for the current channel  |
 | [.alias [alias] [command]](/docs/{{version}}/commands#AliasCommand)  | Binds or unbinds custom command aliases  |
 | [.aliases [page]](/docs/{{version}}/commands#AliasesCommand)  | Lists all command aliases for the server  |
+| [.autorole <role\>](/docs/{{version}}/commands#AutoAssignRoleCommand)  | Auto assigns a specified role to every user who joins the server  |
 | [.ban <user\> [reason]](/docs/{{version}}/commands#BanCommand)  | Bans the tagged user with the given reason  |
 | [.changeprefix <module\> [prefix]](/docs/{{version}}/commands#ChangePrefixCommand)  | Changes the prefix Ava uses  |
 | [.channel](/docs/{{version}}/commands#ChannelCommand)  | Displays the status of modules for the current channel  |
