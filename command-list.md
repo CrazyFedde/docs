@@ -132,6 +132,7 @@ Below you'll find a list of all **95** commands that Ava has, along with a short
 | [!feedback <message\>](/docs/{{version}}/commands#FeedbackCommand)  | Gives feedback about the bot  |
 | [!leaderboard](/docs/{{version}}/commands#LeaderboardCommand)  | Sends the level leaderboard for the current server  |
 | [!invite](/docs/{{version}}/commands#InviteCommand)  | Sends the link to invite Ava to your server  |
+| [!ipinfo <address\>](/docs/{{version}}/commands#IPInfoCommand)  | Gives information about the given IP address  |
 | [!ping](/docs/{{version}}/commands#PingCommand)  | Ping, Pong  |
 | [!rank](/docs/{{version}}/commands#RankCommand)  | Displays the users rank, level and XP if Leveling is enabled  |
 | [!remind <time\> <message\>](/docs/{{version}}/commands#RemindCommand)  | Sets a message you would like to be reminded of later  |

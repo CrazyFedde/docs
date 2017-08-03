@@ -1174,6 +1174,15 @@ Displays the OAuth2 invite link for the bot.
 
     !join
 
+<a name="IPInfoCommand"></a>
+### IP Info
+
+Gives information about the given IP address
+
+#### Usage
+
+    !ipinfo <address>
+
 <a name="PingCommand"></a>
 ### Ping
 
