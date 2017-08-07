@@ -26,6 +26,7 @@ Below you'll find a list of all **95** commands that Ava has, along with a short
 
 | Command           | Short Description      |
 | ----------------- |:---------------------- |
+| [.acr <role\>](/docs/{{version}}/commands#AddClaimableRoleCommand)  | Adds a role to the self-assignable/claimable roles list  |
 | [.ai](/docs/{{version}}/commands#AiCommand)  | Toggles the AI on or off for the current channel  |
 | [.alias [alias] [command]](/docs/{{version}}/commands#AliasCommand)  | Binds or unbinds custom command aliases  |
 | [.aliases [page]](/docs/{{version}}/commands#AliasesCommand)  | Lists all command aliases for the server  |
@@ -35,13 +36,17 @@ Below you'll find a list of all **95** commands that Ava has, along with a short
 | [.channel](/docs/{{version}}/commands#ChannelCommand)  | Displays the status of modules for the current channel  |
 | [.goodbye](/docs/{{version}}/commands#GoodbyeCommand)  | Toggles the goodbye module on or off for the current channel  |
 | [.goodbyemessage [message]](/docs/{{version}}/commands#GoodbyeMessageCommand)  | Sets the goodbye message for the current channel  |
+| [.iam <role\>](/docs/{{version}}/commands#IAmCommand)  | Gives the user the role with the given name if it is claimable  |
+| [.iamnot <role\>](/docs/{{version}}/commands#IAmNotCommand)  | Takes a role from the user with the given name if it is claimable  |
 | [.kick <user\> [reason]](/docs/{{version}}/commands#KickCommand)  | Kicks the tagged user from the server  |
 | [.language [local]](/docs/{{version}}/commands#LanguageCommand)  | Changes or lists the languages Ava supports  |
 | [.level](/docs/{{version}}/commands#LevelCommand)  | Toggles the level system on or off for the current server  |
 | [.levelalerts [channel]](/docs/{{version}}/commands#LevelAlertsCommand)  | Toggles the level alerts system on or off for the current server  |
+| [.lcr <role\>](/docs/{{version}}/commands#ListClaimableRoleCommand)  | List all the claimable roles, 10 per-page  |
 | [.modlog](/docs/{{version}}/commands#ModlogCommand)  | Toggles modlog on or off for the current channel  |
 | [.modules](/docs/{{version}}/commands#CommandModulesCommand)  | Shows the status of the given command modules for the current channel, and globally  |
 | [.purge <amount\> [user]](/docs/{{version}}/commands#PurgeCommand)  | Purge old messages from the current channel  |
+| [.rcr <role\>](/docs/{{version}}/commands#RemoveClaimableRoleCommand)  | Removes the role from the self-assignable/claimable roles list  |
 | [.serverid](/docs/{{version}}/commands#ServerIdCommand)  | Shows the server ID |
 | [.serverinfo](/docs/{{version}}/commands#ServerInfoCommand)  | Shows information about the server  |
 | [.setup [feature]](/docs/{{version}}/commands#SetupCommand)  | Helps you setup features within Ava for the server  |

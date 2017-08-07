@@ -47,6 +47,24 @@ Displaying a given command's information can be done by using `help` followed by
 
 All commands in the _Administration_ module uses the `.` prefix.
 
+<a name="AddClaimableRoleCommand"></a>
+### Add Claimable Role
+
+Adds a role to the self-assignable/claimable roles list, any role on the list can be claimed by users when they use [.iam](#IAmCommand) or unclaimed with [.iamnot](#IAmNotCommand).
+
+ - [List Claimable Role](#ListClaimableRoleCommand)
+ - [Remove Claimable Role](#RemoveClaimableRoleCommand)
+
+The **general.administrator** permission is required to run this command.
+
+#### Usage
+
+    .addclaimablerole <role>
+
+#### Aliases
+
+    .acr
+
 <a name="AiCommand"></a>
 ### AI
 
@@ -194,6 +212,28 @@ The **general.manage_server** permission is required to run this command.
 
     .byemsg
 
+<a name="IAmCommand"></a>
+### I Am
+
+Claims the role with the given name if it is claimable, giving the user the role.
+
+#### Usage
+
+    .iam <role>
+
+<a name="IAmNotCommand"></a>
+### I Am Not
+
+Unclaims the role with the given name, removing the role from the user if the role is claimable.
+
+#### Usage
+
+    .iamnot <role>
+
+#### Aliases
+
+    .iamn
+
 <a name="KickCommand"></a>
 ### Kick
 
@@ -252,6 +292,22 @@ The **general.manage_server** permission is required to run this command.
 
     .lvlalert
 
+<a name="ListClaimableRoleCommand"></a>
+### List Claimable Role
+
+List all the claimable roles, 10 per-page.
+
+ - [Add Claimable Role](#AddClaimableRoleCommand)
+ - [Remove Claimable Role](#RemoveClaimableRoleCommand)
+
+#### Usage
+
+    .listclaimablerole
+
+#### Aliases
+
+    .lcr
+
 <a name="ModlogCommand"></a>
 ### Modlog
 
@@ -299,6 +355,24 @@ The **text.manage_messages** permission is required to run this command.
 #### Aliases
 
     .clear
+
+<a name="RemoveClaimableRoleCommand"></a>
+### Remove Claimable Role
+
+Removes the role from the self-assignable/claimable roles list, any role on the list can be claimed by users when they use [.iam](#IAmCommand) or unclaimed with [.iamnot](#IAmNotCommand).
+
+ - [Add Claimable Role](#AddClaimableRoleCommand)
+ - [List Claimable Role](#ListClaimableRoleCommand)
+
+The **general.administrator** permission is required to run this command.
+
+#### Usage
+
+    .removeclaimablerole <role>
+
+#### Aliases
+
+    .rcr
 
 <a name="ServerIdCommand"></a>
 ### Server ID
