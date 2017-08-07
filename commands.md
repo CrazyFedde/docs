@@ -72,6 +72,10 @@ Toggles the AI module on or off for the current channel. If the module is enable
 
 The **general.manage_server** permission is required to run this command.
 
+#### Usage
+
+    .ai
+
 <a name="AliasCommand"></a>
 ### Alias
 
