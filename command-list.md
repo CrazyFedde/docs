@@ -58,6 +58,7 @@ Below you'll find a list of all **95** commands that Ava has, along with a short
 
 | Command           | Short Description      |
 | ----------------- |:---------------------- |
+| [>8ball](/docs/{{version}}/commands#EightBallCommand)  | Ask 8Ball a question  |
 | [>blah](/docs/{{version}}/commands#BlahCommand)  | Blah?  |
 | [>canyounot](/docs/{{version}}/commands#CanYouNotCommand)  | Can you not...?  |
 | [>chucknorris](/docs/{{version}}/commands#ChuckNorrisCommand)  | Gets a random 100% true fact about Chuck Norris  |

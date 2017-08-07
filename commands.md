@@ -443,6 +443,15 @@ The **general.manage_server** permission is required to run this command.
 
 All commands in the _Fun_ module use the `>` prefix.
 
+<a name="EightBallCommand"></a>
+### 8 Ball
+
+Ask 8Ball a question
+
+#### Usage
+
+    >8ball [message]
+
 <a name="BlahCommand"></a>
 ### Blah
 
