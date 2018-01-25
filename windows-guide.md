@@ -4,7 +4,7 @@
     - [Windows System](#windows)
     - [Software](#software)
 - [Installing Requirements](#install-requirements)
-    - [NodeJS & NPM](#install-node)
+    - [Java & Gradle](#install-java)
     - [Git - Source Control](#install-git)
 - [Installing Ava](#install-ava)
 - [Configuration of Ava](#configuration)
@@ -23,26 +23,29 @@
 <a name="software"></a>
 #### Software
 
- * [NodeJS & NPM](#install-node)
+ * [Java & Gradle](#install-java)
  * [Git](#install-git)
+ * MySQL Database ([XAMPP](https://www.apachefriends.org/) is recommended for beginners)
  * A code editor, i.e. [Notepad++](https://notepad-plus-plus.org/) or [Atom](https://atom.io/) or [Sublime Text](https://www.sublimetext.com/)
 
 <a name="install-requirements"></a>
 ## Installing Requirements
 
-> {tip} A number of steps require administrative access to finish installing both Git and NodeJS correctly, because of this it is recommended that you're logged in as an administrator to not have to type the admin password a whole bunch of times.
+> {tip} A number of steps require administrative access to finish installing both Git and Java correctly, because of this it is recommended that you're logged in as an administrator to not have to type the admin password a whole bunch of times.
 
-<a name="install-node"></a>
-### Installing NodeJS & NPM
+<a name="install-java"></a>
+### Installing Java & Gradle
 
-AvaIre is a NodeJS application, because of this we'll need to install NodeJS to run Ava, if you don't already have NodeJS installed, head over to the [NodeJS download page](https://nodejs.org/en/download/) to get started, it's pretty straight forward from there, just make sure that the features tab looks like this.
+AvaIre is a Java application, because of this we'll need to install Java to run Ava, if you don't already have Java installed, head over to the [Oracle Java download page](http://www.oracle.com/technetwork/java/javase/downloads/index.html) to get started, then select the latest Java Platform (JDK), accept Oracles license, and download the windows .exe file, it's pretty straight forward from there.
 
-<img src="https://avairebot.com/assets/img/guides/nodejs-setup.png" alt="NodeJS Setup"> 
+If you want to run the cutting edge of Ava you'll need Gradle as well, gradle is used by Ava to compile all the source code into a binary file that the computer can run, you can get gradle from [Gradles install page](https://gradle.org/install/).
 
 <a name="install-git"></a>
-### Installing Git
+### Installing Git (Optional)
 
-If you don't intend on updating Ava at any point you can skip this step, however, it is recommended that you install git since using it makes it a whole lot easier to keep Ava up to date.
+If you don't want to run the cutting edge versions of Ava you can skip this step.
+
+While running the cutting edge version of Ava it is recommended that you install git since using it makes it a whole lot easier to keep Ava up to date.
 
 If you don't already have git installed you can get started by going to the [git-scm download page](https://git-scm.com/downloads) and download the Windows installer.
 
@@ -65,32 +68,35 @@ From here on just continue with the installation process until Git is installed.
 <a name="install-ava"></a>
 ## Installing Ava
 
-Next, we'll retrieve the AvaIre GitHub repository, we will be using Git to install Ava so it will be easier to update later on.
+Next, we'll retrieve the AvaIre GitHub repository, we will be using Git to install Ava so it will be easier to update later on, if you skipped install git you can find the [latest release](https://github.com/avaire/avaire/releases) of Ava on github and skip right to the setup process.
 
 You'd want to figure out where you want the bot to be downloaded. Something simple where you can find it is good, AKA not in the system internals (Possibly some other drive, though NOT A FLASH DRIVE) or optionally your Desktop could be fine.
 
 When you've found the location of your choice, hit `Shift+Right click` and select **Git Bash here**. This will open the Git Bash console. Type the following command into Git Bash:
 
-    git clone https://github.com/AvaIre/AvaIre.git .
+    git clone https://github.com/avaire/avaire.git .
 
 Let it clone the Git repository. When it's done, you should have the following output.
 
 <img src="https://avairebot.com/assets/img/guides/ava-setup.png" alt="Git Setup">
 
-You have now successfully cloned the AvaIre Git repository, next we'll need to install all the dependencies, this is where NPM comes in, while the Console Window is still open run:
+You have now successfully cloned the AvaIre Git repository, next we'll need to build the jar file from the source code, we can do this by utilizing gradle which we just installed.
 
-    npm install
+    gradle build
 
-This will install everything Ava needs to run, if you're running the command for the first time it might take a minute or two to install everything, just get a cup of coffee while NPM does its thing.
+If the build finishes with no errors you should be good to go! You can find the generated binary file at `build/libs/AvaIre.jar`.
 
 <a name="configuration"></a>
 ## Configuration of Ava
 
-Once Ava has been cloned down into a folder and all the dependencies has been installed we'll need to configure Ava so the bot can connect and communicate with users, in the folder Ava was installed in you should find a file called `confg.example.json`, rename that file to `config.json`, or create a new file called `config.json` and copy the contents of the `config.example.json` file into the new config file and open it using Notepad++ or any other code editor. **Do not edit it with Windows Notepad, that will be a mess.**
+Next we'll need to configure Ava so the bot can connect and communicate with users, to generate the `config.yml` file we'll just need to run Ava once, we can do this by running:
 
-Next we'll need to setup a database the Ava can use, Ava requires a database to store things like custom playlists, aliases, channel and server data, and a lot of other things, if you don't have any experiance with `MySQL` databases you can also use `SQLite` which is a lot easier to setup, by default Ava comes with a MySQL database config setup.
+    java -jar AvaIre.jar
+    
+You can now open the new `config.yml` file in  Notepad++ or any other code editor. **Do not edit it with Windows Notepad, that will be a mess.**
 
-If you're planning on using a `MySQL` database you can leave the config as is, if you wanna change to a `SQLite` database setup you can find an example of a [SQLite config setup here](https://gist.github.com/Senither/0f270f8b3579b96c0661c990b3d87fbf), if you're using `SQLite` config example just leave the database parts of the config as is and you should be fine.
+Next we'll need to setup a database the Ava can use, Ava requires a database to store things like custom playlists, aliases, channel and server data, and a lot of other things, Ava currently only has support for MySQL databases, with SQLite and other types coming in the future.
+
 
 Now that the database is in order you'll need to put your Discord Bot Application token in the `bot.token` property, you can find your bot token under your Discord Application dashboard, if you don't have a Discord bot application setup you can create one easily by following these steps.
 
@@ -109,11 +115,13 @@ If you want a more in-detail guide and walkover for the [configuration](/docs/{{
 
 Congratulations, your AvaIre instance should now be ready to launch!
 
-To start the bot head into the `/scripts` folder, there you'll find a start and update scripts for windows systems, double click on the `windows-start.bat` file and you should be good to go.
+To start the bot, simply just run the jar file again after editing it with your bot and database details.
+
+    java -jar AvaIre.jar
 
 If the bot runs without any errors, you have had success so far!
 
-Now you'll need to invite your bot to your server so you can actually use it, take your bots client id from ealier and pop it into a URL like this without the less than and greater than symbols.
+Now you'll need to invite your bot to your server so you can actually use it, take your bots client id from earlier and pop it into a URL like this without the less than and greater than symbols.
 
     https://discordapp.com/oauth2/authorize?&client_id=<client id>&scope=bot
 
