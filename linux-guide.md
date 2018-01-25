@@ -4,7 +4,7 @@
     - [Linux Server](#server)
     - [Software](#software)
 - [Installing Requirements](#install-requirements)
-    - [NodeJS & NPM](#install-node)
+    - [Java & Gradle](#install-java)
     - [Git - Source Control](#install-git)
 - [Installing Ava](#install-ava)
 - [Configuration of Ava](#configuration)
@@ -34,17 +34,17 @@
 
 Start by logging into your server via your SSH client.
 
-<a name="install-node"></a>
-### Installing NodeJS & NPM
+<a name="install-java"></a>
+### Installing Java - Oracle JVM
 
-We'll be using NodeJS to run Ava, if you don't already have NodeJS and NPM installed, you can install it with the following commands.
+We'll be using Java 9 to run Ava, if you don't already have Java installed, you can install it with the following commands.
 
-    sudo apt install nodejs
+    sudo apt install oracle-java9-installer gradle
 
-If your server doesn't have the NodeJS reposetories saved you can try using updating the repositories and re-atempting to install NodeJS like the command below.
+If your server doesn't have the Oracle repositories saved you can try using updating the repositories and re-attempting to install Java using the command below.
 
-    curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
-    sudo apt install -y nodejs
+    sudo add-apt-repository ppa:webupd8team/java
+    sudo apt update
 
 <a name="install-git"></a>
 ### Installing Git
@@ -66,28 +66,22 @@ Next, we'll retrieve the AvaIre GitHub repository, we will be using Git to insta
 
 You'd want to figure out where you want the bot to be downloaded. When you've found the location of your choice, clone the Ava repository into the folder by using the following command.
 
-    git clone https://github.com/AvaIre/AvaIre.git .
+    git clone https://github.com/avaire/avaire.git .
 
-You have now successfully cloned the AvaIre Git repository, next we'll need to install all the dependencies, for this we'll be using Yarn, to install that just run:
+You have now successfully cloned the AvaIre Git repository, next we'll need to build the jar file from the source code, we can do this by utilizing gradle which we just installed.
 
-    npm install -g yarn
+    gradle build
 
-Now that we have yarn installed we can run use yarn to install all of Avas dependencies with the correct version number for everything so you're sure everything matches up, just run:
-
-    yarn
-
-This will install everything Ava needs to run, if you're running the command for the first time it might take a minute or two to install everything, just get a cup of coffee while Yarn does its thing.
+If the build finishes with no errors you should be good to go! You can find the generated binary file at `build/libs/AvaIre.jar`. 
 
 <a name="configuration"></a>
 ## Configuration of Ava
 
-Next we'll need to configure Ava so the bot can connect and communicate with users, in the folder Ava was installed in you should find a file called `confg.example.json`, rename that file to `config.json`.
+Next we'll need to configure Ava so the bot can connect and communicate with users, to generate the `config.yml` file we'll just need to run Ava once, we can do this by running:
 
-    cp confg.example.json config.json
+    java -jar AvaIre.jar
 
-You can now open the new `config.json` file in vim, next we'll need to setup a database the Ava can use, Ava requires a database to store things like custom playlists, aliases, channel and server data, and a lot of other things, if you don't have any experiance with `MySQL` databases you can also use `SQLite` which is a lot easier to setup, by default Ava comes with a MySQL database config setup.
-
-If you're planning on using a `MySQL` database you can leave the database parts of the config as is, if you wanna change to a `SQLite` database setup you can find an example of a [SQLite config setup here](https://gist.github.com/Senither/0f270f8b3579b96c0661c990b3d87fbf), if you're using `SQLite` config example just leave the database parts of the config as is and you should be fine.
+You can now open the new `config.yml` file in vim, next we'll need to setup a database the Ava can use, Ava requires a database to store things like custom playlists, aliases, channel and server data, and a lot of other things, Ava currently only has support for MySQL databases, with SQLite and other types coming in the future.
 
 Now that the database is in order you'll need to put your Discord Bot Application token in the `bot.token` property, you can find your bot token under your Discord Application dashboard, if you don't have a Discord bot application setup you can create one easily by following these steps.
 
@@ -106,19 +100,21 @@ If you want a more in-detail guide and walkover for the [configuration](/docs/{{
 
 Congratulations, your AvaIre instance should now be ready to launch!
 
-To start the bot head into the `/scripts` folder, there you'll find a start and update scripts for linux systems, just run the `linux-start.sh` file and you should be good to go.
+To start the bot, simply just run the jar file again after editing it with your bot and database details.
+
+    java -jar AvaIre.jar
 
 If the bot runs without any errors, you have had success so far!
 
-> {tip} It is recommend that you run the bot in a screen to prevent the bot from disconnecting when you disconnect from the server.
+> {tip} It is recommend that you run the bot in a separate process to prevent the bot from disconnecting when you disconnect from the machine, screens works pretty well for this.
 
-Now you'll need to invite your bot to your server so you can actually use it, take your bots client id from ealier and pop it into a URL like this without the less than and greater than symbols.
+Now you'll need to invite your bot to your server so you can actually use it, take your bots client id from earlier and pop it into a URL like this without the less than and greater than symbols.
 
     https://discordapp.com/oauth2/authorize?&client_id=<client id>&scope=bot
 
 Just replace the `<client id>` with your actually bot application id, if you don't have your client id you can find it on the [discordapp.com/developers/applications](https://discordapp.com/developers/applications/me) page, just click on your application, the client ID is at the very top under the **App Details** section.
 
-Go to the URL in a web browser, select your server and ht `Authorize`, your bot should now be on your server.
+Go to the URL in a web browser, select your server and hit `Authorize`, your bot should now be on your server.
 
 You can test simple functionality by running the ping command in a text channel that the bot can see. If it answers "Pong!", then congratulations, you have successfully set up AvaIre!
 
