@@ -12,6 +12,8 @@
 - [Server Placeholders](#server-placeholders)
     - [Server Name](#servername)
     - [Server ID](#serverid)
+- [Other Types](#other-types-placeholders)
+    - [New line](#new-line)
 
 <a name="introduction"></a>
 ## Introduction
@@ -111,3 +113,16 @@ Gets the id of the server the message was triggered in.
 #### Example
 
     284083636368834561
+
+<a name="other-types-placeholders"></a>
+## Other Types of Placeholders
+
+<a name="new-line"></a>
+### %br%
+
+Creates a new line for the message, br will "break the row" of the current message, creating a new line.
+
+#### Example
+
+    This is a
+    test message.
