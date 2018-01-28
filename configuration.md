@@ -3,16 +3,24 @@
  - [Overview](#overview)
  - [Properties](#properties)
      - [Environment](#environment)
-     - [Bot Tokens](#tokens)
-     - [Database](#database)
-     - [Playing](#playing)
-     - [Bot Access](#botaccess)
+     - [Discord Application](#discord-app)
+     - [Database Settings](#database)
+     - [Bot Status (Playing)](#status)
+     - [Music Activity Settings](#music-activity)
+     - [Bot Access (Bot Admins)](#botaccess)
+     - [Webhook Server Log](#webhook)
+     - [Sentry.io Error Logging](#sentry)
+     - [Prometheus Metrics & Spark API](#metrics)
      - [API Keys](#apis)
 
 <a name="overview"></a>
 ## Overview
 
-This is an overview of the `config.json` files content, when you're self-hosting AvaIre make sure you can find the `config.json` file in the root of the project, if you can't find the file copy the `config.json.example` file and rename it to `config.json` and you should be good to go.
+This is an overview of the `config.yml` files content, when you're self-hosting AvaIre make sure you can find the `config.yml` file in the root of the project, if you can't find the file you'll need to run the binary jar file 
+ 
+    java -jar AvaIre.jar
+
+You can also find a lot of information in the `config.yml` file, for an example of what a default `config.yml` file should look like, check the default file on github at [github.com/avaire/avaire/blob/master/src/main/resources/config.yml](https://github.com/avaire/avaire/blob/master/src/main/resources/config.yml)
 
 <a name="properties"></a>
 ## Properties
@@ -20,29 +28,29 @@ This is an overview of the `config.json` files content, when you're self-hosting
 Configuration properties.
 
 <a name="environment"></a>
-### Envioronment
+### Environment
 
-The environment property should always return a single string that represents the current application environment, if the environment is not valid the fallback(development mode) will be used instead. The following enviornments work within Ava.
+The application environment determines what is logged to the console, and what applications are loaded, this is to give a better user experience since having the console flooded with information can be very overwhelming if you don't know what you're looking at.
 
- - Production 
-    - Limits error logging to the console as much as possible, and eables all features. Error logging is stile done to-file which will be stored in `storage/logs/*`.
- - Testing
-    - Used during tests, this environment will be dynamicly set when tests are run, anything that might hit a database will use a in-memory SQLite database instead while this envioronment is set.
- - Development
-    - Logs anything and everything to the console, some features like stats updates for the bot will also be disabled to prevent Avas development version stats to be listed publicly.
+AvaIre supports two different environments, "production" and "development"
 
-<a name="tokens"></a>
-### Bot Tokens
+Production is used for minimal console output and for all parts of the application to be enabled. Development is used for debugging messages and preventing some parts of the application from running, to stop in-development changes from ruining the production environment. 
 
-The bot tokens, or `bot` field is a small object with two fields, *token* and *oauth*.
+<a name="discord-app"></a>
+### Discord Application
 
-#### Token
-
-The bot token is the bot application token, if you don't already have a bot token you can create by following these steps.
+Discord application information is things like your application token, application id, application secret, etc. To run a Discord bot you'll need an application token, if you don't already have an application with discord you can easily create one in two minutes.
 
  1. Start by heading to [discordapp.com/developers/applications](https://discordapp.com/developers/applications/me), once you're there you can create a new application, you can name it whatever you want and give it a fancy picture and description if you want to, once you're done click **Create App**.
  2. Your application should now have been created, next click on the **Create a Bot User** button, this will convert the application to a bot user application.
  3. Now that you have a user bot application you can get your bot token under the **App Bot User** section.
+
+AvaIre needs your Discord application token to login and interact with users, and optionally the application ID for generating invite links people can use to invite the bot to their servers with.
+
+#### Token
+
+This is your Discord application token, if you don't have a Discord application, check the link above and follow the short guide to create one, once you have it, replace the text between the quotes with your token.
+The bot token is the bot application token, if you don't already have a bot token you can create by following these steps.
 
 > {tip} If you want other people to be able to invite the bot you must check the **Public Bot** options under your **App Bot User** application settings, if you don't do that you will be the only one that can invite the bot to servers.
 
@@ -52,65 +60,95 @@ The oauth field should contain a valid invite link for the bot, the invite link 
 
     https://discordapp.com/oauth2/authorize?&client_id=<client id>&scope=bot
 
-Just replace the `<your client id>` with your actually bot application id, you can find your bot application id on the [discordapp.com/developers/applications](https://discordapp.com/developers/applications/me) page, just click on your application, the client ID is at the very top under the **App Details** section.
+Just replace the `<client id>` with your actual bot application id, you can find your bot application id on the [discordapp.com/developers/applications](https://discordapp.com/developers/applications/me) page, just click on your application, the client ID is at the very top under the **App Details** section.
 
 > **Note**: The client id is **not** your client secret, but your public application client id.
 
 <a name="database"></a>
 ### Database
 
-The database properties determines what type of database Ava should used, out of the box Ava supports three database types.
+AvaIre uses a database for storing things like custom prefixes, playlists, user XP and levels, statistics, autoroles, aliases and everything else.
 
- - MySQL
-    - This should be used for any large bots where shards is required, using MySQL can also be a lot easier in many cases to setup since Ava comes with a MySQL setup out of the box.
- - SQLite3 - Flatfile Database
-    - This store the entire database in a single file in the root directory of the application, this option is fast but may somtime not work when there is a lot of database activity at the same time.
- - SQLite3 - In Memory Database
-    - This stores the database in-memory, this means that when the bot restarts the entire database will be deleted in the process, this should only be used for tests.
+AvaIre currently only support the MySQL database type, with support for more types in the works, to get start simply just populate the fields below with your database login information.
 
-> {tip} Everytime you start AvaIre the database manager will check if all the migrations has been rolled out, if there is one missing the corresponding tables and columns will be created/updated.
+> Make sure the database user has permission to create, delete and edit tables in the database you want to use, Ava uses a migration system that will create all the needed tables, and roll out changes between versions automatically, this require creating new tables, and editing and deleting existing tables.
 
 #### MySQL Setup
 
-```json
-"database": {
-    "type": "mysql",
-    "database": "avaire",
-    "host": "localhost",
-    "user": "username",
-    "password": "password"
-}
+```yaml
+database:
+  type: 'mysql'
+  database: 'avaire'
+  hostname: 'localhost'
+  username: 'username'
+  password: 'password'
 ```
 
-The host should be the host the MySQL database is hosted on, you can add your port to the host by suffixing it with a colon(:) followed by the port you use, for example `localhost:3307`, if the port is left out the port will use the default `3306` port. If you're running the bot localy and have something like [XAMPP](https://www.apachefriends.org/index.html) or [WampServer](http://www.wampserver.com/en/) installed then you should be fine leaving the host as is.
+The host should be the host the MySQL database is hosted on, you can add your port to the host by suffixing it with a colon(:) followed by the port you use, for example `localhost:3307`, if the port is left out the port will use the default `3306` port. If you're running the bot locally and have something like [XAMPP](https://www.apachefriends.org/index.html) or [WampServer](http://www.wampserver.com/en/) installed then you should be fine leaving the host as is.
 
 #### SQLite3 Setup
 
-```json
-"database": {
-    "type": "sqlite3",
-    "filename": "./database.sqlite"
-}
-```
+Coming soon...
 
-Make sure to create a blank text file in the root of the application called `database.sqlite` for SQLite to work properly, if you want to use an in-memory database(Which seems kinda silly unless you're testing the database) you can use the following setup.
+<a name="music-activity"></a>
+### Music Activity Settings
 
-```json
-"database": {
-    "type": "sqlite3",
-    "filename": ":memory:"
-}
-```
+Music Activity is a tracking system built into Ava that disconnects the bot from voice channels if no one is listening to music anyway, this can help free up memory and bandwidth that wasn't being used to serve users anyway.
 
-<a name="playing"></a>
-### Playing
+The music activity tracks a few things:
 
-The playing property is a simple JSON string array, anything you put into the array will be randomly selected by Ava and a certain interval the selected item will be set as the bots playing status, out of the box the array will only have one property, but any number of strings could be added to the array.
+1. When no one is listening to the music, like when the bot is muted, everyone is deafened, or no one is in the voice channel with the bot.
+2. If the queue is empty, when you request a song by name the queue will be empty until the user selects the song they want to be played, this applies here, if the last song in the queue is playing it will disconnect once the song is done anyway.
+3. If the music is paused, this should be self-explanatory, if you pause the music the bot it will disconnect after awhile unless it is unpaused(resumed).
+
+<a name="status"></a>
+### Bot Status (Playing)
+
+Once every minute, Ava will change her "playing" status to something on the playing list, you can define what type of status it is by prefixing the status with one of the options below.
+
+ - watching:something
+   - This produces "Watching something"
+ - listening:some cool music
+   - This produces "Listening to some cool music"
+ - streaming:video games
+   - This produces "Streaming video games"
+
+If no prefix is given the playing status type will be used instead.
 
 <a name="botaccess"></a>
-### Bot Access
+### Bot Access (Bot Administrators)
 
-The bot access property is a simple JSON string array containing the IDs of users who should have full access to the system commands in the bot, you can find peoples user IDs by using the [User ID](/docs/{{version}}/commands#user-id) or [User Info](/docs/{{version}}/commands#user-info) commands. You can add people to this admin list temporarily by using the system [Bot Admin Add](/docs/{{version}}/commands#botadminadd) command.
+The bot access property is a string array containing the IDs of users who should have full access to the system commands in the bot, you can find peoples user IDs by using the [User ID](/docs/{{version}}/commands#UserIdCommand) or [User Info](/docs/{{version}}/commands#UserInfoCommand) commands.
+
+> Users who are bot administrators will still need the regular Discord permissions to run all the other commands outside of the System category, so bot admins can't use commands like the [ban command](docs/{{version}}/commands#BanCommand) without the right Discord permissions.
+
+<a name="webhook"></a>
+### Webhook Server Log
+
+The webhook option is only used for logging information about servers when the bot joins or leaves a server, this can give a nice overview of what servers the bot is joining or when it leaves a server, which server it was.
+
+<a name="sentry"></a>
+### Sentry.io Error Logging
+
+Sentry.io is an open source error tracking service, it can provide a lot of helpful information to developers on what is going wrong, and where in real-time, Sentry.io uses a DSN url for establishing a link between the bot and their service, the DSN url is used in Ava to log warnings, errors, and exceptions.
+
+To learn more, checkout: https://sentry.io/welcome/
+
+<a name="metrics"></a>
+### Prometheus Metrics & Spark API
+
+Ava uses Prometheus metrics for tracking a long list of different things within the application during runtime, the metrics are then displayed using Grafana to users on a web-dashboard using graphs.
+
+Along with the metrics, a stats and guilds API is also enabled, displaying stats per-shard, and globally with guild, channel, and user data, as well as the shard ID and the shard status, while the guild API allows getting information about one or more guilds at a time, as well as checking if the bot is on the given server ID or not, this is used by the AvaIre dashboard.
+
+The metrics stats are exposed on `ip:port/metrics`, the stats API are exposed on `ip:port/stats`, and the guilds API are exposed on `ip:port/guilds/<guild ids>` and `ip:port:guilds/<guild ids>/exists`
+
+For an real-world example of what the metrics looks like when they're setup using Grafana, checkout: https://status.avairebot.com
+
+For setup guides, see:
+
+ - https://prometheus.io/
+ - https://grafana.com/
 
 <a name="apis"></a>
 ### API Keys
@@ -129,12 +167,14 @@ Googles public API offers a lot of really cool features, within Ava the YouTube 
  4. Now that the **YouTube Data API** is enabled we'll have to setup some *credentials* for the application, click on the **Create credentials** button in the top right of the page, you'll be geeted with a few options, for the `Where will you be calling the API from?` field you can select the **Web browser (Javascript)** option, make sure you check **Public data** for the `What data will you be accessing?` option, once you've done that you can create your credentials.
  5. You should now have your API key, you can copy that into the `config.json` file and use all of YouTubes features.
 
-#### API.AI
+#### DialogFlow
 
-[API.AI](https://api.ai/) is a really cool service that provides you with "AI Agents" that can process text and voice and allows you to setup your own rules for different input, Ava uses a custom public agent that allows users to ask Discord related questions and data being used live, you can find all the AI intent handlers in [github.com/AvaIre/AvaIre/tree/master/app/services/ai/intents](https://github.com/AvaIre/AvaIre/tree/master/app/services/ai/intents), if you're using the smalltalk agent from [api.ai](https://api.ai/) the response will skip the intend handles and just be sent back directly to the user. If you don't already have a [api.ai](https://api.ai/) token you can create a simple AI agent in minutes by following these steps.
+[DialogFlow](https://dialogflow.com/) is a really cool service that provides you with "AI Agents" that can process text and voice and allows you to setup your own rules for different input, Ava uses a custom agent that allows users to ask Discord related questions and data being used live. If you don't already have a [DialogFlow](https://dialogflow.com/) token you can create a simple AI agent in minutes by following these steps.
 
- 1. Head over to [api.ai](https://api.ai/) and signup using your email or google account, once you're logged in you can create a new AI agent.
- 2. When creating the new agent you can either make a public or private agent, if the agient is public other people will be able to use your agent for their own projects.
- 3. Setup a AI agent name and description, you can also start adding some sample data and select that language you want the bot to use, once you're done click the **Save** button in the top right.
+ 1. Head over to [DialogFlow](https://dialogflow.com/) and signup using your email or google account, once you're logged in you can create a new AI agent.
+ 2. When creating the new agent you can either make a public or private agent, if the agent is public other people will be able to use your agent for their own projects.
+ 3. Setup an AI agent name and description, you can also start adding some sample data and select the language you want the bot to use, once you're done click the **Save** button in the top right.
  4. Now that your agent is created you can start making some custom intents or enabled prebuilt agents.
- 5. Once you're done adding intents you can head over to your agents settings in the top left, there you'll find your **Client access token**, you can copy that into the `config.json` file, the AI feature for Ava will now use your custom agent!
+ 5. Once you're done adding intents you can head over to your agents settings in the top left, there you'll find your **Client access token**, you can copy that into the `config.yml` file, the AI feature for Ava will now use your custom agent!
+ 
+If you want to use the same AI agent Ava uses you can find it on github at: https://github.com/avaire/agent
