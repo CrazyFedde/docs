@@ -9,6 +9,7 @@ Below you'll find a list of all **107** commands that Ava has, along with a shor
 - [Help Command](#help)
 - [Administration](#administration)
 - [Fun](#fun)
+- [Interaction](#interaction)
 - [Music](#music)
 - [Search](#search)
 - [System](#system)
@@ -83,6 +84,31 @@ Below you'll find a list of all **107** commands that Ava has, along with a shor
 | [>rip](/docs/{{version}}/commands#RipCommand)  | Pay your respects  |
 | [>roll [min] [max]](/docs/{{version}}/commands#RollCommand)  | Rolls a random number between 1 and 100, or between the numbers given  |
 | [>say [message]](/docs/{{version}}/commands#SayCommand)  | Makes Ava say whatever you want  |
+
+<a name="interaction"></a>
+## Interaction
+
+| Command           | Short Description      |
+| ----------------- |:---------------------- |
+| [>bite <user\>](/docs/{{version}}/commands#BiteCommand)  | Bites the the mentioned user  |
+| [>cuddle <user\>](/docs/{{version}}/commands#CuddleCommand)  | Cuddles the the mentioned user  |
+| [>divorce <user\>](/docs/{{version}}/commands#DivorceCommand)  | Divorces the the mentioned user  |
+| [>eats <user\>](/docs/{{version}}/commands#EatCommand)  | Eats some food with the mentioned user  |
+| [>hello <user\>](/docs/{{version}}/commands#HelloCommand)  | Says hello to the mentioned user  |
+| [>highfive <user\>](/docs/{{version}}/commands#HelloCommand)  | High fives the mentioned user  |
+| [>hug <user\>](/docs/{{version}}/commands#HugCommand)  | Hugs the mentioned user  |
+| [>kill <user\>](/docs/{{version}}/commands#KillCommand)  | Kills the mentioned user  |
+| [>kiss <user\>](/docs/{{version}}/commands#KissCommand)  | kisses the mentioned user  |
+| [>pan <user\>](/docs/{{version}}/commands#PanCommand)  | Hits the mentioned user with a pan  |
+| [>pat <user\>](/docs/{{version}}/commands#PatCommand)  | Pats the mentioned user  |
+| [>poke <user\>](/docs/{{version}}/commands#PokeCommand)  | Pokes the mentioned user  |
+| [>pouts <user\>](/docs/{{version}}/commands#PoutCommand)  | Pouts at the mentioned user  |
+| [>punch <user\>](/docs/{{version}}/commands#PunchCommand)  | Punches at the mentioned user  |
+| [>senpai <user\>](/docs/{{version}}/commands#SenpaiCommand)  | Sends an image in hope that the mentioned user notice you |
+| [>shrug <user\>](/docs/{{version}}/commands#ShrugCommand)  | Shrugs at the mentioned user  |
+| [>slap <user\>](/docs/{{version}}/commands#SlapCommand)  | Slaps the mentioned user  |
+| [>tickle <user\>](/docs/{{version}}/commands#TickleCommand)  | Tickles the mentioned user  |
+| [>triggered <user\>](/docs/{{version}}/commands#TriggeredCommand)  | Sends an image to let the mentioned user know you're triggered  |
 
 <a name="music"></a>
 ## Music
