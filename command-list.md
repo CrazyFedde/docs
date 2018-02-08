@@ -1,6 +1,6 @@
 # Command List
 
-Below you'll find a list of all **107** commands that Ava has, along with a short description of what each command does. If you'd like to know more about the command, like what permissions or roles are required to run the command, different aliases or anything similar you can click on the command links and you'll be taken to a more descriptive version of the command, or use the help command for the given command in a Discord server.
+Below you'll find a list of all **108** commands that Ava has, along with a short description of what each command does. If you'd like to know more about the command, like what permissions or roles are required to run the command, different aliases or anything similar you can click on the command links and you'll be taken to a more descriptive version of the command, or use the help command for the given command in a Discord server.
 
 > All commands can be used by mentioning Ava first, followed by the command you want to run, for example `@AvaIre ping` will run the ping command, or `@AvaIre poke @Senither` will run the poke command for Senither.
 
@@ -20,9 +20,9 @@ Below you'll find a list of all **107** commands that Ava has, along with a shor
 
 | Command           | Short Description      |
 | ----------------- |:---------------------- |
-| [.help](/docs/{{version}}/commands#HelpCommand)  | Lists all the command modules  |
-| [.help [category]](/docs/{{version}}/commands#HelpCommand)  | Lists all the commands in the given category  |
-| [.help [command]](/docs/{{version}}/commands#HelpCommand)  | Displays information about the provided command  |
+| [!help](/docs/{{version}}/commands#HelpCommand)  | Lists all the command modules  |
+| [!help [category]](/docs/{{version}}/commands#HelpCommand)  | Lists all the commands in the given category  |
+| [!help [command]](/docs/{{version}}/commands#HelpCommand)  | Displays information about the provided command  |
 
 > You can display all the commands in a category by just typing the first letters of the category, so displaying all the commands in the `administration` category can be done by just typing `.help ad`
 
@@ -31,84 +31,84 @@ Below you'll find a list of all **107** commands that Ava has, along with a shor
 
 | Command           | Short Description      |
 | ----------------- |:---------------------- |
-| [.ai](/docs/{{version}}/commands#AiCommand)  | Toggles the AI on or off for the current channel  |
-| [.alias [alias] [command]](/docs/{{version}}/commands#AliasCommand)  | Binds or unbinds custom command aliases  |
-| [.aliases [page]](/docs/{{version}}/commands#ListAliasesCommand)  | Lists all command aliases for the server  |
-| [.asar <role\>](/docs/{{version}}/commands#AddSelfAssignableRoleCommand)  | Adds a role to the self-assignable roles list  |
-| [.autorole <role\>](/docs/{{version}}/commands#AutoAssignRoleCommand)  | Auto assigns a specified role to every user who joins the server  |
-| [.avatar](/docs/{{version}}/commands#UserAvatarCommand)  | Get the profile picture of someone on the server by name, id, or mentions.  |
-| [.ban <user\> [reason]](/docs/{{version}}/commands#BanCommand)  | Bans the tagged user with the given reason  |
-| [.categories](/docs/{{version}}/commands#CategoriesCommand)  | Shows the status for all the command categories for the current channel, and globally  |
-| [.changeprefix <module\> [prefix]](/docs/{{version}}/commands#ChangePrefixCommand)  | Changes the prefix Ava uses  |
-| [.channelid](/docs/{{version}}/commands#ChannelIdCommand)  | Displays the status of modules for the current channel  |
-| [.channelinfo](/docs/{{version}}/commands#ChannelInfoCommand)  | Displays the status of modules for the current channel  |
-| [.djlevel](/docs/{{version}}/commands#DJLevelCommand)  | Change the DJ level requirement for the server  |
-| [.goodbye](/docs/{{version}}/commands#GoodbyeCommand)  | Toggles the goodbye module on or off for the current channel  |
-| [.goodbyemessage [message]](/docs/{{version}}/commands#GoodbyeMessageCommand)  | Sets the goodbye message for the current channel  |
-| [.iam <role\>](/docs/{{version}}/commands#IAmCommand)  | Gives the user the role with the given name if it is claimable  |
-| [.iamnot <role\>](/docs/{{version}}/commands#IAmNotCommand)  | Takes a role from the user with the given name if it is claimable  |
-| [.kick <user\> [reason]](/docs/{{version}}/commands#KickCommand)  | Kicks the tagged user from the server  |
-| [.level](/docs/{{version}}/commands#LevelCommand)  | Toggles the level system on or off for the current server  |
-| [.levelalerts [channel]](/docs/{{version}}/commands#LevelAlertsCommand)  | Toggles the level alerts system on or off for the current server  |
-| [.lsar <role\>](/docs/{{version}}/commands#ListClaimableRoleCommand)  | List all the self-assignable roles, 10 per-page  |
-| [.nsfw](/docs/{{version}}/commands#NSFWCommand)  | Displays the NSFW status of the current channel  |
-| [.purge <amount\> [user]](/docs/{{version}}/commands#PurgeCommand)  | Purge old messages from the current channel  |
-| [.rsar <role\>](/docs/{{version}}/commands#RemoveClaimableRoleCommand)  | Removes the role from the self-assignable roles list  |
-| [.serverid](/docs/{{version}}/commands#ServerIdCommand)  | Shows the server ID |
-| [.serverinfo](/docs/{{version}}/commands#ServerInfoCommand)  | Shows information about the server  |
-| [.slowmode [limit] [decay]](/docs/{{version}}/commands#SlowmodeCommand)  | Toggles slowmode on or off for the current channel  |
-| [.softban <user\> [reason]](/docs/{{version}}/commands#SoftBanCommand)  | Bans the tagged user with the given reason  |
-| [.togglecategory <category\> <channel\>](/docs/{{version}}/commands#ToggleModuleCommand)  |  Toggles the given category on or off for the current channel or the whole server  |
-| [.userid [user]](/docs/{{version}}/commands#UserIdCommand)  | Shows the ID of the tagged user  |
-| [.userinfo [user]](/docs/{{version}}/commands#UserInfoCommand)  | Shows information about the tagged user  |
-| [.voicekick <user\>](/docs/{{version}}/commands#VoiceKickCommand)  | Kicks the mentioned user from the voice channel  |
-| [.welcome](/docs/{{version}}/commands#WelcomeCommand)  | Toggles the welcome module on or off for the current channel  |
-| [.welcomemessage](/docs/{{version}}/commands#WelcomeMessageCommand)  | Sets the welcome message for the current channel  |
+| [!ai](/docs/{{version}}/commands#AiCommand)  | Toggles the AI on or off for the current channel  |
+| [!alias [alias] [command]](/docs/{{version}}/commands#AliasCommand)  | Binds or unbinds custom command aliases  |
+| [!aliases [page]](/docs/{{version}}/commands#ListAliasesCommand)  | Lists all command aliases for the server  |
+| [!asar <role\>](/docs/{{version}}/commands#AddSelfAssignableRoleCommand)  | Adds a role to the self-assignable roles list  |
+| [!autorole <role\>](/docs/{{version}}/commands#AutoAssignRoleCommand)  | Auto assigns a specified role to every user who joins the server  |
+| [!avatar](/docs/{{version}}/commands#UserAvatarCommand)  | Get the profile picture of someone on the server by name, id, or mentions.  |
+| [!ban <user\> [reason]](/docs/{{version}}/commands#BanCommand)  | Bans the tagged user with the given reason  |
+| [!categories](/docs/{{version}}/commands#CategoriesCommand)  | Shows the status for all the command categories for the current channel, and globally  |
+| [!changeprefix <module\> [prefix]](/docs/{{version}}/commands#ChangePrefixCommand)  | Changes the prefix Ava uses  |
+| [!channelid](/docs/{{version}}/commands#ChannelIdCommand)  | Displays the status of modules for the current channel  |
+| [!channelinfo](/docs/{{version}}/commands#ChannelInfoCommand)  | Displays the status of modules for the current channel  |
+| [!djlevel](/docs/{{version}}/commands#DJLevelCommand)  | Change the DJ level requirement for the server  |
+| [!goodbye](/docs/{{version}}/commands#GoodbyeCommand)  | Toggles the goodbye module on or off for the current channel  |
+| [!goodbyemessage [message]](/docs/{{version}}/commands#GoodbyeMessageCommand)  | Sets the goodbye message for the current channel  |
+| [!iam <role\>](/docs/{{version}}/commands#IAmCommand)  | Gives the user the role with the given name if it is claimable  |
+| [!iamnot <role\>](/docs/{{version}}/commands#IAmNotCommand)  | Takes a role from the user with the given name if it is claimable  |
+| [!kick <user\> [reason]](/docs/{{version}}/commands#KickCommand)  | Kicks the tagged user from the server  |
+| [!level](/docs/{{version}}/commands#LevelCommand)  | Toggles the level system on or off for the current server  |
+| [!levelalerts [channel]](/docs/{{version}}/commands#LevelAlertsCommand)  | Toggles the level alerts system on or off for the current server  |
+| [!lsar <role\>](/docs/{{version}}/commands#ListClaimableRoleCommand)  | List all the self-assignable roles, 10 per-page  |
+| [!nsfw](/docs/{{version}}/commands#NSFWCommand)  | Displays the NSFW status of the current channel  |
+| [!purge <amount\> [user]](/docs/{{version}}/commands#PurgeCommand)  | Purge old messages from the current channel  |
+| [!rsar <role\>](/docs/{{version}}/commands#RemoveClaimableRoleCommand)  | Removes the role from the self-assignable roles list  |
+| [!serverid](/docs/{{version}}/commands#ServerIdCommand)  | Shows the server ID |
+| [!serverinfo](/docs/{{version}}/commands#ServerInfoCommand)  | Shows information about the server  |
+| [!slowmode [limit] [decay]](/docs/{{version}}/commands#SlowmodeCommand)  | Toggles slowmode on or off for the current channel  |
+| [!softban <user\> [reason]](/docs/{{version}}/commands#SoftBanCommand)  | Bans the tagged user with the given reason  |
+| [!togglecategory <category\> <channel\>](/docs/{{version}}/commands#ToggleModuleCommand)  |  Toggles the given category on or off for the current channel or the whole server  |
+| [!userid [user]](/docs/{{version}}/commands#UserIdCommand)  | Shows the ID of the tagged user  |
+| [!userinfo [user]](/docs/{{version}}/commands#UserInfoCommand)  | Shows information about the tagged user  |
+| [!voicekick <user\>](/docs/{{version}}/commands#VoiceKickCommand)  | Kicks the mentioned user from the voice channel  |
+| [!welcome](/docs/{{version}}/commands#WelcomeCommand)  | Toggles the welcome module on or off for the current channel  |
+| [!welcomemessage](/docs/{{version}}/commands#WelcomeMessageCommand)  | Sets the welcome message for the current channel  |
 
 <a name="fun"></a>
 ## Fun
 
 | Command           | Short Description      |
 | ----------------- |:---------------------- |
-| [>8ball](/docs/{{version}}/commands#EightBallCommand)  | Ask 8Ball a question  |
-| [>chucknorris](/docs/{{version}}/commands#ChuckNorrisCommand)  | Gets a random 100% true fact about Chuck Norris  |
-| [>coin](/docs/{{version}}/commands#CoinflipCommand)  | Flips a coin for heads or tails  |
-| [>dice [dice format]](/docs/{{version}}/commands#DiceCommand)  | Rolls a set of dice  |
-| [>flip [message]](/docs/{{version}}/commands#FlipTextCommand)  | Flips the given message upside down.  |
-| [>lenny](/docs/{{version}}/commands#LennyCommand)  | ( ͡° ͜ʖ ͡°)  |
-| [>meme <meme\> [top text] [bottom text]](/docs/{{version}}/commands#MemeCommand)  | Creates a custom meme of the given type  |
-| [>cat](/docs/{{version}}/commands#RandomCatCommand)  | Gets a random cat image from the internet  |
-| [>dog](/docs/{{version}}/commands#RandomDogCommand)  | Gets a random dog image from the internet  |
-| [>repeat [message]](/docs/{{version}}/commands#RepeatCommand)  | Makes Ava repeat whatever you say  |
-| [>reverse [message]](/docs/{{version}}/commands#ReverseCommand)  | Reverses the message given.  |
-| [>rip](/docs/{{version}}/commands#RipCommand)  | Pay your respects  |
-| [>roll [min] [max]](/docs/{{version}}/commands#RollCommand)  | Rolls a random number between 1 and 100, or between the numbers given  |
-| [>say [message]](/docs/{{version}}/commands#SayCommand)  | Makes Ava say whatever you want  |
+| [!8ball](/docs/{{version}}/commands#EightBallCommand)  | Ask 8Ball a question  |
+| [!chucknorris](/docs/{{version}}/commands#ChuckNorrisCommand)  | Gets a random 100% true fact about Chuck Norris  |
+| [!coin](/docs/{{version}}/commands#CoinflipCommand)  | Flips a coin for heads or tails  |
+| [!dice [dice format]](/docs/{{version}}/commands#DiceCommand)  | Rolls a set of dice  |
+| [!flip [message]](/docs/{{version}}/commands#FlipTextCommand)  | Flips the given message upside down.  |
+| [!lenny](/docs/{{version}}/commands#LennyCommand)  | ( ͡° ͜ʖ ͡°)  |
+| [!meme <meme\> [top text] [bottom text]](/docs/{{version}}/commands#MemeCommand)  | Creates a custom meme of the given type  |
+| [!cat](/docs/{{version}}/commands#RandomCatCommand)  | Gets a random cat image from the internet  |
+| [!dog](/docs/{{version}}/commands#RandomDogCommand)  | Gets a random dog image from the internet  |
+| [!repeat [message]](/docs/{{version}}/commands#RepeatCommand)  | Makes Ava repeat whatever you say  |
+| [!reverse [message]](/docs/{{version}}/commands#ReverseCommand)  | Reverses the message given.  |
+| [!rip](/docs/{{version}}/commands#RipCommand)  | Pay your respects  |
+| [!roll [min] [max]](/docs/{{version}}/commands#RollCommand)  | Rolls a random number between 1 and 100, or between the numbers given  |
+| [!say [message]](/docs/{{version}}/commands#SayCommand)  | Makes Ava say whatever you want  |
 
 <a name="interaction"></a>
 ## Interaction
 
 | Command           | Short Description      |
 | ----------------- |:---------------------- |
-| [>bite <user\>](/docs/{{version}}/commands#BiteCommand)  | Bites the the mentioned user  |
-| [>cuddle <user\>](/docs/{{version}}/commands#CuddleCommand)  | Cuddles the the mentioned user  |
-| [>divorce <user\>](/docs/{{version}}/commands#DivorceCommand)  | Divorces the the mentioned user  |
-| [>eats <user\>](/docs/{{version}}/commands#EatCommand)  | Eats some food with the mentioned user  |
-| [>hello <user\>](/docs/{{version}}/commands#HelloCommand)  | Says hello to the mentioned user  |
-| [>highfive <user\>](/docs/{{version}}/commands#HelloCommand)  | High fives the mentioned user  |
-| [>hug <user\>](/docs/{{version}}/commands#HugCommand)  | Hugs the mentioned user  |
-| [>kill <user\>](/docs/{{version}}/commands#KillCommand)  | Kills the mentioned user  |
-| [>kiss <user\>](/docs/{{version}}/commands#KissCommand)  | kisses the mentioned user  |
-| [>pan <user\>](/docs/{{version}}/commands#PanCommand)  | Hits the mentioned user with a pan  |
-| [>pat <user\>](/docs/{{version}}/commands#PatCommand)  | Pats the mentioned user  |
-| [>poke <user\>](/docs/{{version}}/commands#PokeCommand)  | Pokes the mentioned user  |
-| [>pouts <user\>](/docs/{{version}}/commands#PoutCommand)  | Pouts at the mentioned user  |
-| [>punch <user\>](/docs/{{version}}/commands#PunchCommand)  | Punches at the mentioned user  |
-| [>senpai <user\>](/docs/{{version}}/commands#SenpaiCommand)  | Sends an image in hope that the mentioned user notice you |
-| [>shrug <user\>](/docs/{{version}}/commands#ShrugCommand)  | Shrugs at the mentioned user  |
-| [>slap <user\>](/docs/{{version}}/commands#SlapCommand)  | Slaps the mentioned user  |
-| [>tickle <user\>](/docs/{{version}}/commands#TickleCommand)  | Tickles the mentioned user  |
-| [>triggered <user\>](/docs/{{version}}/commands#TriggeredCommand)  | Sends an image to let the mentioned user know you're triggered  |
+| [!bite <user\>](/docs/{{version}}/commands#BiteCommand)  | Bites the the mentioned user  |
+| [!cuddle <user\>](/docs/{{version}}/commands#CuddleCommand)  | Cuddles the the mentioned user  |
+| [!divorce <user\>](/docs/{{version}}/commands#DivorceCommand)  | Divorces the the mentioned user  |
+| [!eats <user\>](/docs/{{version}}/commands#EatCommand)  | Eats some food with the mentioned user  |
+| [!hello <user\>](/docs/{{version}}/commands#HelloCommand)  | Says hello to the mentioned user  |
+| [!highfive <user\>](/docs/{{version}}/commands#HelloCommand)  | High fives the mentioned user  |
+| [!hug <user\>](/docs/{{version}}/commands#HugCommand)  | Hugs the mentioned user  |
+| [!kill <user\>](/docs/{{version}}/commands#KillCommand)  | Kills the mentioned user  |
+| [!kiss <user\>](/docs/{{version}}/commands#KissCommand)  | kisses the mentioned user  |
+| [!pan <user\>](/docs/{{version}}/commands#PanCommand)  | Hits the mentioned user with a pan  |
+| [!pat <user\>](/docs/{{version}}/commands#PatCommand)  | Pats the mentioned user  |
+| [!poke <user\>](/docs/{{version}}/commands#PokeCommand)  | Pokes the mentioned user  |
+| [!pouts <user\>](/docs/{{version}}/commands#PoutCommand)  | Pouts at the mentioned user  |
+| [!punch <user\>](/docs/{{version}}/commands#PunchCommand)  | Punches at the mentioned user  |
+| [!senpai <user\>](/docs/{{version}}/commands#SenpaiCommand)  | Sends an image in hope that the mentioned user notice you |
+| [!shrug <user\>](/docs/{{version}}/commands#ShrugCommand)  | Shrugs at the mentioned user  |
+| [!slap <user\>](/docs/{{version}}/commands#SlapCommand)  | Slaps the mentioned user  |
+| [!tickle <user\>](/docs/{{version}}/commands#TickleCommand)  | Tickles the mentioned user  |
+| [!triggered <user\>](/docs/{{version}}/commands#TriggeredCommand)  | Sends an image to let the mentioned user know you're triggered  |
 
 <a name="music"></a>
 ## Music
@@ -136,10 +136,10 @@ Below you'll find a list of all **107** commands that Ava has, along with a shor
 
 | Command           | Short Description      |
 | ----------------- |:---------------------- |
-| [>g <query\>](/docs/{{version}}/commands#DuckDuckGoCommand)  | Searches DuckDuckGo.com with your given query  |
-| [>gfycat [tags]](/docs/{{version}}/commands#GfycatCommand)  | Gets a random gif from [gfycat.com](https://gfycat.com/)  |
-| [>urban [word]](/docs/{{version}}/commands#UrbanDictionaryCommand)  | Get the definition of a word or sentence from [urbandictionary.com](http://www.urbandictionary.com/)  |
-| [>xkcd [number]](/docs/{{version}}/commands#XKCDCommand)  | Gets the latest [xkcd](https://xkcd.com/) comic, or the comic with the given id.  |
+| [!g <query\>](/docs/{{version}}/commands#DuckDuckGoCommand)  | Searches DuckDuckGo.com with your given query  |
+| [!gfycat [tags]](/docs/{{version}}/commands#GfycatCommand)  | Gets a random gif from [gfycat.com](https://gfycat.com/)  |
+| [!urban [word]](/docs/{{version}}/commands#UrbanDictionaryCommand)  | Get the definition of a word or sentence from [urbandictionary.com](http://www.urbandictionary.com/)  |
+| [!xkcd [number]](/docs/{{version}}/commands#XKCDCommand)  | Gets the latest [xkcd](https://xkcd.com/) comic, or the comic with the given id.  |
 
 <a name="utility"></a>
 ## Utility
