@@ -9,6 +9,13 @@
 - [Installing Ava](#install-ava)
 - [Configuration of Ava](#configuration)
 - [Running the bot](#running-the-bot)
+- [System Commands](#system-commands)
+    - [Application Restart](#commands-restart)
+    - [Application Shutdown](#commands-shutdown)
+    - [Application Update](#commands-update)
+    - [Evaluate Code](#commands-eval)
+    - [Reload Configuration](#commands-reload)
+    - [Set Bot Status](#commands-status)
 
 <a name="prerequisites"></a>
 ## Prerequisites
@@ -136,3 +143,85 @@ And that's it! You are now ready to start using your very own AvaIre instance!
 Keep in mind, if you have further questions or need help, we're around over at our official server, [AvaIre Central](https://discord.gg/gt2FWER)!
 
 On the behalf of the AvaIre team, we hope you enjoy your bot!
+
+<a name="system-commands"></a>
+## System Commands
+
+> System commands can only be seen and run by bot administrators, ie, people who have their user ID in the bot admins field in the config of the bot.
+
+All system commands uses a semicolon(;) as their prefix by default. 
+
+| Command           | Short Description      |
+| ----------------- |:---------------------- |
+| [;restart <when\>](#commands-restart)  | Restarts the application gracefully  |
+| [;shutdown <when\>](#commands-shutdown)  | Shuts down the application gracefully  |
+| [;update <when\>](#commands-update)  | Updates the bot to the latest version  |
+| [;eval <code\>](#commands-eval)  | Evaluate and executes raw code and returns the result  |
+| [;reload](#commands-reload)  | Reloads the main config and all plugin configs  |
+| [;status](#commands-status)  | Set the playing status of the bot   |
+
+<a name="commands-restart"></a>
+### Application Restart
+
+Schedule a time the bot should be automatically-restarted, the bot will shutdown, then start back up again.
+This requires [Watchdog](https://github.com/avaire/watchdog) to work, without it the bot will just shutdown.
+
+#### Usage
+
+    ;restart now - Restarts the bot now
+    ;restart cancel - Cancels the restart process
+    ;restart <time> - Schedules a time the bot should be restarted
+
+<a name="commands-shutdown"></a>
+### Application Shutdown
+
+Schedules a time the bot should be shutdown gracefully.
+
+#### Usage
+
+    ;shutdown now - Shuts down the bot now.
+    ;shutdown cancel - Cancels the shutdown process.
+    ;shutdown <time> - Schedules a time the bot should be shutdown.
+
+<a name="commands-update"></a>
+### Application Update
+
+Schedule a time the bot should be automatically-updated, the bot will shutdown, update itself to the latest version from github, and start back up again.
+This requires [Watchdog](https://github.com/avaire/watchdog) to work, without it the bot will just shutdown.
+
+#### Usage
+
+    ;update now - Updates the bot now.
+    ;update cancel - Cancels the update process.
+    ;update <time> - Schedules a time the bot should be updated.
+
+<a name="commands-eval"></a>
+### Evaluate Code
+
+Runs the given piece of code as the bot.
+
+> This command is really dangerous to use if you don't know what you're doing! Use it at your own risk!
+
+#### Usage
+
+    ;eval <code> - Runs the given code as the bot.
+
+<a name="commands-reload"></a>
+### Reload Configuration
+
+Reloads the main `config.yml` configuration file, and all the configs for enabled plugins.
+
+#### Usage
+
+    ;reload - Reloads all the configs.
+
+<a name="commands-status"></a>
+### Set Bot Status
+
+Sets the status of the bot instance for all servers the bot is on, if no status is set the bot status will go back to cycling status from the config.
+
+#### Usage
+
+    ;setstatus - Goes back to cycling status from the config.
+    ;setstatus <game> - Sets the bots playing status to the given game.
+    ;setstatus <twitch url> - The URL that the bot should be broadcasting.
