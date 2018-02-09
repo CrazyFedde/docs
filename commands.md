@@ -5,7 +5,6 @@
 - [Fun](#fun)
 - [Music](#music)
 - [Search](#search)
-- [System](#system)
 - [Utility](#utility)
 
 <a name="introduction"></a>
@@ -15,24 +14,26 @@ This is the command reference for AvaIre. You can find more elaboration on each 
 
 If you need for any further info, you can use the [help command](#help) for the bot to get info about command throttling limits, permission requirements and so forth. Got any questions? Check out #support in [AvaIre Central](#).
 
+All commands uses the exclamation mark(!) as their prefix by default, you can change the prefix for all commands categories, or each category individually using the [!prefix](#ChangePrefixCommand) command.
+
 <a name="HelpCommand"></a>
 ## Help Command
 
-Displays a list of available modules, commands in a given module, or information about a specific command.
+Displays a list of available command categories, commands in a given category, or information about a specific command.
 
-#### Listing all modules
+#### Listing all categories
 
-Using the help command with no additional arguments will display a list of all the modules.
+Using the help command with no additional arguments will display a list of all the categories.
 
-    .help
+    !help
 
-#### Listing commands in module
+#### Listing commands in category
 
-Listing all commands in a module can be done by using the help command followed by the name of the module.
+Listing all commands in a category can be done by using the help command followed by the name of the category.
 
-    .help <module>
+    !help <category>
 
-> {tip} It is not required to type out the full name of the module, just typing a few characters will still list the commands in the module that starts with the given characters.<br>For example listing all the commands in the `Administration` module can be done by doing `.help a` for short.
+> {tip} It is not required to type out the full name of the category, just typing a few characters will still list the commands in the category that starts with the given characters.<br>For example listing all the commands in the `Administration` category can be done by doing `!help a` for short.
 
 #### Listing command information
 
@@ -40,30 +41,10 @@ Displaying a given command's information can be done by using `help` followed by
 
     .help <command>
 
-> {tip} Command aliases can be used as well, for example `.help .sid` will display help for the `.serverid` command.
+> {tip} Command aliases can be used as well, for example `!help sid` will display help for the `!serverid` command.
 
 <a name="administration"></a>
 ## Administration
-
-All commands in the _Administration_ module uses the `.` prefix.
-
-<a name="AddClaimableRoleCommand"></a>
-### Add Claimable Role
-
-Adds a role to the self-assignable/claimable roles list, any role on the list can be claimed by users when they use [.iam](#IAmCommand) or unclaimed with [.iamnot](#IAmNotCommand).
-
- - [List Claimable Role](#ListClaimableRoleCommand)
- - [Remove Claimable Role](#RemoveClaimableRoleCommand)
-
-The **general.administrator** permission is required to run this command.
-
-#### Usage
-
-    .addclaimablerole <role>
-
-#### Aliases
-
-    .acr
 
 <a name="AiCommand"></a>
 ### AI
@@ -74,7 +55,7 @@ The **general.manage_server** permission is required to run this command.
 
 #### Usage
 
-    .ai
+    !ai - Toggles the AI ON or OFF for the current channel.
 
 <a name="AliasCommand"></a>
 ### Alias
@@ -85,11 +66,12 @@ The **general.manage_server** permission is required to run this command.
 
 #### Usage
 
-    .alias <alias trigger> [command to bind to]
+    !alias <alias> - Deletes the alias if it exists.
+    !alias <alias> <command> - Creates an alias for the given command.
 
 #### Aliases
 
-    .cmdmap
+    !cmdmap
 
 <a name="AliasesCommand"></a>
 ### Aliases
@@ -106,20 +88,45 @@ The **general.manage_server** permission is required to run this command.
 
     .aliaslist
 
-<a name="AutoAssignRoleCommand"></a>
-### Auto Assign Role
+<a name="AddSelfAssignableRoleCommand"></a>
+### Add Self Assignable Role
 
-Automaticaly assigns a specified role to every user who joins the server, if no arguments is given the current auto assignable role will be given, if a name is given the role will be set as the auto asignable role, and if disabled is given the feature will be turned off.
+Adds a role to the self-assignable roles list, any role on the list can be claimed by users when they use [!iam](#IAmCommand) or unclaimed with [!iamnot](#IAmNotCommand).
+
+ - [List Self Assignable Roles](#ListSelfAssignableRolesCommand)
+ - [Remove Self Assignable Role](#RemoveSelfAssignableRoleCommand)
 
 The **general.administrator** permission is required to run this command.
 
 #### Usage
 
-    .autorole [role|disable]
+    !asar <role> - Adds the mentioned role to the self-assignable roles list.
+
+<a name="AutoAssignRoleCommand"></a>
+### Auto Assign Role
+
+Automatically assigns a specified role to every user who joins the server, if no arguments is given the current auto assignable role will be given, if a name is given the role will be set as the auto assignable role, and if disabled is given the feature will be turned off.
+
+The **general.administrator** permission is required to run this command.
+
+#### Usage
+
+    !autorole - Displays the current auto assignable role if one is set.
+    !autorole <role> - The role that should be auto assignable.
+    !autorole disable - Disables the auto assignable role.
 
 #### Aliases
 
-    .aar
+    !aar
+
+<a name="UserAvatarCommand"></a>
+### Avatar
+
+Get the profile picture of someone on the server by name, id, or mentions.
+
+#### Usage
+
+    !avatar <user | user id> - Gets the avatar of the given user.
 
 <a name="BanCommand"></a>
 ### Ban
@@ -134,57 +141,84 @@ The **general.ban_members** permission is required to run this command.
 
     .ban <user> [reason]
 
+<a name="CategoriesCommand"></a>
+### Categories
+
+Shows status of all command categories in the current or mentioned channel, both for globally and per-channel. You can tag a channel if you want to see the command category status for the given channel.
+
+#### Usage
+
+    !categories [channel] - Displays the status of the command categories in the mentioned channel, or the current channel if no channel was mentioned.
+
+#### Aliases
+
+    !cats
+
 <a name="ChangePrefixCommand"></a>
 ### Change Prefix
 
-Sets the prefix that should be used for all commands in a given module. If no prefix is provided the module's prefix will be reset to the default.
+Sets the prefix that should be used for all commands in a given category, if no prefix is provided the category prefix will be reset back to the default instead.
 
-The following modules can be affected by this command.
+> {tip} Command prefixes cannot contain spaces.
+
+The following categories can be affected by this command.
 
  - [Administration](#administration)
  - [Fun](#fun)
  - [Help](#help)
  - [Music](#music)
  - [Search](#search)
- - [System](#system)
  - [Utility](#utility)
 
 The **general.administrator** permission is required to run this command.
 
-> {tip} It is not required to type out the full name of the module, just typing a few characters will get the module that starts with the given characters.<br>For example changing the prefix all the commands in the `Administration` module can be done by doing `.changeprefix a [prefix]` for short.
+> {tip} It is not required to type out the full name of the category, just typing a few characters will get the category that starts with the given characters.<br>For example changing the prefix all the commands in the `Administration` category can be done by doing `!changeprefix a [prefix]` for short.
 
 #### Usage
 
-    .changeprefix <module> [prefix]
+    !changeprefix <category> - Resets the category prefix back to its default prefix.
+    !changeprefix <category> [prefix] - Sets the category prefix to the given prefix.
 
 #### Aliases
 
-    .avaireprefix
+    !prefix
 
-#### Tag Example
+<a name="ChannelIdCommand"></a>
+### Channel ID
 
-    @AvaIre prefix <module> [prefix]
-
-<a name="ChannelCommand"></a>
-### Channel
-
-Displays what modules are enabled and disabled for the current channel, as-well as their settings if they're enabled. The following list of commands can change the behavior of the channel command:
-
- - [.ai](#AiCommand)
- - [.goodbye](#GoodbyeCommand)
- - [.goodbyemessage](#GoodbyeMessageCommand)
- - [.modlog](#ModlogCommand)
- - [.slowmode](#SlowmodeCommand)
- - [.welcome](#WelcomeCommand)
- - [.welcomemessage](#WelcomeMessageCommand)
+Shows the ID of the channel the command was ran in, or the channel tagged in the command.
 
 #### Usage
 
-    .channel
+    !channelid [channel]
 
 #### Aliases
 
-    .chl
+    !cid
+
+<a name="ChannelInfoCommand"></a>
+### Channel Info
+
+Shows information about the channel the command was run in, or the mentioned channel.
+
+#### Usage
+
+    !channelinfo [channel]
+
+#### Aliases
+
+    !cinfo
+
+<a name="DJLevelCommand"></a>
+### DJ Level
+
+Change the DJ level requirement for the server, this changes what music commands people can use with or without the DJ Discord role.
+
+#### Usage
+
+    !djlevel - Displays the current DJ Level for the server.
+    !djlevel types - Displays all the types and some info about them.
+    !djlevel <type> - Change the DJ Level to the given type.
 
 <a name="GoodbyeCommand"></a>
 ### Goodbye
@@ -195,53 +229,55 @@ The **general.manage_server** permission is required to run this command.
 
 #### Usage
 
-    .goodbye
+    !goodbye
 
 #### Aliases
 
-    .bye
+    !bye
 
 <a name="GoodbyeMessageCommand"></a>
 ### Goodbye Message
 
-Sets the goodbye message to the given string. If no arguments are passed, the goodbye message will be set back to the default goodbye message. You can customize how the goodbye message looks using [placeholders](/docs/{{version}}/placeholders).
+Sets the message that should be sent when a user leaves the server, this command can only be used if the goodbye module is enabled for the current channel. You can customize how the goodbye message looks using [placeholders](/docs/{{version}}/placeholders).
 
 The **general.manage_server** permission is required to run this command.
 
 #### Usage
 
-    .goodbyemessage [message]
+    !goodbyemessage - Resets the goodbye back to the default message.
+    !goodbyemessage <message> - Sets the goodbye message to the given message.
+    !goodbyemessage <user> - If a valid username, nickname or user was mentioned, an example message will be sent for the given user.
 
 #### Aliases
 
-    .byemsg
+    !byemsg
 
 <a name="IAmCommand"></a>
 ### I Am
 
-Claims the role with the given name if it is claimable, giving the user the role.
+Gives you the role with the given name if it is in the self-assignable list of roles.
 
 #### Usage
 
-    .iam <role>
+    !iam <role>
 
 <a name="IAmNotCommand"></a>
 ### I Am Not
 
-Unclaims the role with the given name, removing the role from the user if the role is claimable.
+Removes the role with the given name from you if it is in the self-assignable list of roles.
 
 #### Usage
 
-    .iamnot <role>
+    !iamnot <role>
 
 #### Aliases
 
-    .iamn
+    !iamn
 
 <a name="KickCommand"></a>
 ### Kick
 
-Kicks the mentioned user off the server with the provided reason.
+Kicks the mentioned user from the server with the provided reason, this action will be reported to any channel that has modloging enabled.
 
 The **general.kick_members** permission is required to run this command.
 
@@ -249,134 +285,82 @@ The **general.kick_members** permission is required to run this command.
 
 #### Usage
 
-    .kick <user> [reason]
-
-<a name="LanguageCommand"></a>
-### Language
-
-Displays the localization that is used on the server, you can also use this command to change the language that Ava will use when sending messages.
-
-The **general.manage_server** permission is required to run this command.
-
-#### Usage
-
-    .language [local]
-
-#### Aliases
-
-    .lang
-
-<a name="LevelCommand"></a>
-### Level
-
-Toggles the leveling system on or off for the current server. When the leveling system is enabled users will slowly accumulate XP from being active in the chat and using commands, every minute the user is active they will receive 10-15 XP.
-
-The **general.manage_server** permission is required to run this command.
-
-#### Usage
-
-    .level
-
-#### Aliases
-
-    .lvl
+    !kick <user> [reason] - Kicks the mentioned user with the given reason.
 
 <a name="LevelAlertsCommand"></a>
 ### Level Alerts
 
-Toggles the level alerts system on or off for the current server. If a channel tag is passed as an argument, all level up alerts be sent in that channel. When the level alerts are enabled the bot will send a message each time a user levels up, letting them know they leveled up and what level they are now.
+Toggles the Leveling alerts system on or off for the current server or channel. When the level alerts are enabled the bot will send a message each time a user levels up, letting them know they leveled up and what level they are now.
 
 The **general.manage_server** permission is required to run this command.
 
 #### Usage
 
-    .levelalerts [channel]
+    !levelalerts - Toggles the level alerts feature on/off
+    !levelalerts <channel> - Toggles the level alerts feature on for the given channel
 
 #### Aliases
 
-    .lvlalert
+    !lvlalert
 
-<a name="ListClaimableRoleCommand"></a>
-### List Claimable Role
+<a name="ListSelfAssignableRolesCommand"></a>
+### List Self Assignable Roles
 
-List all the claimable roles, 10 per-page.
+List all the self-assignable roles, 10 per-page.
 
- - [Add Claimable Role](#AddClaimableRoleCommand)
- - [Remove Claimable Role](#RemoveClaimableRoleCommand)
+ - [Add Self Assignable Role](#AddSelfAssignableRoleCommand)
+ - [Remove Self Assignable Role](#RemoveSelfAssignableRoleCommand)
 
 #### Usage
 
-    .listclaimablerole
+    !lsar
 
-#### Aliases
+<a name="NSFWCommand"></a>
+### NSFW
 
-    .lcr
+Displays the NSFW status of the current channel, additionally on/off can be passed to the command to change the channels NSFW status.
 
-<a name="ModlogCommand"></a>
-### Modlog
-
-Toggles the modlog module on or off for the current channel. If the module is enabled, any action that will broadcast modlog messages([Ban](#ban), [Softban](#softban), [Kick](#kick)...) will be sent to this channel. By default modlogging will be disabled for all channels.
-
-The **general.manage_server** permission is required to run this command.
+The **general.manage_channel** permission is required to run this command.
 
 #### Usage
 
-    .modlog
-
-#### Aliases
-
-    .mlog
-
-<a name="CommandModulesCommand"></a>
-### Modules
-
-Shows the status of all the command modules for the current channel and for the whole server if any commands are disabled globally. You can tag a channel if you want to see the command module status for the given channel.
-
-The **general.administrator** permission is required to run this command.
-
-#### Usage
-
-    .modules [channel]
-
-#### Aliases
-
-    .module
-    .mod
+    !nsfw - Displays the NSFW status of the current channel.
+    !nsfw <on | off> - Changes the NSFW status of the current channel.
+    !nsfw <channel> - Displays the mentioned channels NSFW status
+    !nsfw <channel> <on | off> - Changes the NSFW status of the mentioned channel.
 
 <a name="PurgeCommand"></a>
 ### Purge
 
-Deletes up to 1,000 chat messages in any channel, you can pass a user mention as the second argument if you only want to delete messages sent by the mentioned user. Due to a restriction in the Discord API, the purge command will only work on messages sent in the last 14 days.
+Deletes up to 100 chat messages in any channel, you can mention a user if you only want to delete messages by the mentioned user. Due to a restriction in the Discord API, the purge command will only work on messages sent in the last 14 days.
 
 The **text.manage_messages** permission is required to run this command.
 
-> {tip} Tagging a user will only delete any messages they have sent in the last `<amount>` of messages, for example `.purge 100 @JohnDoe#2854` will delete any messages the JohnDoe user has sent within the last 100 messages.
+> {tip} Tagging a user will only delete any messages they have sent in the last `<amount>` of messages, for example `!purge 100 @JohnDoe#2854` will delete any messages the JohnDoe user has sent within the last 100 messages.
 
 #### Usage
 
-    .purge <amount> [tagged user]
+    !purge - Deletes the last 5 messages.
+    !purge [number] - Deletes the given number of messages.
+    !purge [number] [user] - Deletes the given number of messages for the mentioned users.
 
 #### Aliases
 
-    .clear
+    !clear
 
-<a name="RemoveClaimableRoleCommand"></a>
-### Remove Claimable Role
+<a name="RemoveSelfAssignableRoleCommand"></a>
+### Remove Self Assignable Role
 
 Removes the role from the self-assignable/claimable roles list, any role on the list can be claimed by users when they use [.iam](#IAmCommand) or unclaimed with [.iamnot](#IAmNotCommand).
 
- - [Add Claimable Role](#AddClaimableRoleCommand)
- - [List Claimable Role](#ListClaimableRoleCommand)
+ - [Add Self Assignable Role](#AddSelfAssignableRoleCommand)
+ - [List Self Assignable Role](#ListSelfAssignableRolesCommand)
 
 The **general.administrator** permission is required to run this command.
 
 #### Usage
 
-    .removeclaimablerole <role>
-
-#### Aliases
-
-    .rcr
+    !rsar <role> - Removes the mentioned role from the self-assignable roles list.
 
 <a name="ServerIdCommand"></a>
 ### Server ID
@@ -398,22 +382,11 @@ Displays information about the server the command was ran in. This includes the 
 
 #### Usage
 
-    .serverinfo
+    !serverinfo
 
 #### Aliases
 
-    .sinfo
-
-<a name="SetupCommand"></a>
-### Setup
-
-Helps setup different features within Ava for the current server.
-
-The **general.administrator** permission is required to run this command.
-
-#### Usage
-
-    .setup [feature]
+    !sinfo
 
 <a name="SlowmodeCommand"></a>
 ### Slowmode
@@ -424,7 +397,8 @@ The **general.manage_server** permission is required to run this command.
 
 #### Usage
 
-    .slowmode [limit] [decay]
+    !slowmode <off> - Disables slowmode for the current channel.
+    !slowmode <limit> <decay> - Enables slowmode with the given settings.
 
 <a name="SoftbanCommand"></a>
 ### Softban
@@ -437,16 +411,16 @@ The **text.ban_members** permission is required to run this command.
 
 #### Usage
 
-    .softban <user> [reason]
+    !softban <user> [reason] - Bans the mentioned user with the given reason.
 
 #### Aliases
 
-    .sban
+    !sban
 
-<a name="ToggleModuleCommand"></a>
-### Toggle Module
+<a name="ToggleCategoryCommand"></a>
+### Toggle Category
 
-Toggles the given command module on or off for the given channel, optionally for the whole server. When a command module is disabled no one can run any commands in the command module, you can disable commands on a per-channel basis by tagging the channel you want to affect.
+Toggles the given command category on or off for the given channel, optionally for the whole server. When a command category is disabled no one can run any commands in the command module, you can disable commands on a per-channel basis by tagging the channel you want to affect.
 
 The **general.administrator** permission is required to run this command.
 
@@ -454,37 +428,71 @@ The **general.administrator** permission is required to run this command.
 
 #### Usage
 
-    .togglemodule <module> [channel|all] [on|off]
+    !togglecategory <category> <global> [status] - Changes the command category status for the whole server.
+    !togglecategory <category> <channel> [status] - Changes the command category status for the mentioned channel.
 
 #### Aliases
 
-    .tmod
+    !tcategory
+    !tcat
+
+<a name="LevelCommand"></a>
+### Toggle Level
+
+Toggles the leveling system on or off for the current server. When the leveling system is enabled users will slowly accumulate XP from being active in the chat and using commands, every minute the user is active they will receive 10-15 XP.
+
+The **general.manage_server** permission is required to run this command.
+
+#### Usage
+
+    !togglelevel - Toggles the level feature on/off
+
+#### Aliases
+
+    !tlvl
 
 <a name="UserIdCommand"></a>
 ### User ID
 
-Displays ID of the user who ran the command or the ID of the tagged user.
+Displays ID of the user who ran the command or the ID of the mentioned user.
 
 #### Usage
 
-    .userid [user]
+    !userid [user]
 
 #### Aliases
 
-    .uid
+    !uid
 
 <a name="UserInfoCommand"></a>
 ### User Info
 
-Displays information about the user who ran the command or the tagged user. This includes the users username, ID, roles, the date they joined the server, the date they created their account, and how many servers they're in (That Ava knows about).
+Displays information about the user who ran the command or the mentioned user. This includes the users username, ID, roles, the date they joined the server, the date they created their account, and how many servers they're in (That Ava knows about).
 
 #### Usage
 
-    .userinfo [user]
+    !userinfo [user]
 
 #### Aliases
 
-    .uinfo
+    !uinfo
+
+<a name="VoiceKickCommand"></a>
+### Voice Kick
+
+Kicks the mentioned user from the voice channel they're currently connected to, 
+
+The **general.kick_members** permission is required to run this command.
+
+> This action will be reported to any channel that has [modlogging](#modlog) enabled on the server.
+
+#### Usage
+
+    !voicekick <user> [reason] - Kicks the mentioned user with the given reason.
+
+#### Aliases
+
+    !vkick
 
 <a name="WelcomeCommand"></a>
 ### Welcome
@@ -495,26 +503,28 @@ The **general.manage_server** permission is required to run this command.
 
 #### Usage
 
-    .welcome
+    !welcome
 
 #### Aliases
 
-    .wel
+    !wel
 
 <a name="WelcomeMessageCommand"></a>
 ### Welcome Message
 
-Sets the welcome message to the given string. If no arguments are passed the welcome message will be set back to the default welcome message. You can customize how the welcome message looks using [placeholders](/docs/{{version}}/placeholders).
+Sets the welcome message to the given message. If no arguments are passed the welcome message will be set back to the default welcome message. You can customize how the welcome message looks using [placeholders](/docs/{{version}}/placeholders).
 
 The **general.manage_server** permission is required to run this command.
 
 #### Usage
 
-    .welcomemessage [message]
+    !welcomemessage - Resets the welcome back to the default message.
+    !welcomemessage <message> - Sets the welcome message to the given message.
+    !welcomemessage <user> - If a valid username, nickname or user was mentioned, an example message will be sent for the given user.
 
 #### Aliases
 
-    .welmsg
+    !welmsg
 
 <a name="fun"></a>
 ## Fun Commands
@@ -1021,205 +1031,6 @@ Gets the latest [xkcd](https://xkcd.com/) comic, or the comic with the given ID.
 #### Usage
 
     >xkcd [comic ID]
-
-
-<a name="system"></a>
-## System Commands
-
-All commands in the _System_ module use the `;` prefix.
-
-System commands are limited to **Bot Administrators only**, which means to say the following.
-
- - Bot Administrators Only commands refer to the commands only a bot admin can use.
- - Bot Administrators Only commands do **not** refer to the owner of the server.
- - Bot Administrators is a person who is **hosting** their own bot, and their **ID** is inside of **config.json**.
- - You are **not** a bot admin if you invited the bot using **discordbots.org** or other invitation links.
-
-<a name="BlacklistAddCommand"></a>
-### Blacklist Add
-
-Adds a user to the bot blacklist. This will prevent the user from using any of Ava's features and interacting with the bot in **any** server.
-
-#### Usage
-
-    ;bla <user ID> [reason]
-
-<a name="BlacklistRemoveCommand"></a>
-### Blacklist Remove
-
-Removes a user from the bot blacklist, allowing them to interact with the bot again.
-
-#### Usage
-
-    ;blr <user ID>
-
-<a name="BotAdminAddCommand"></a>
-### Bot Admin Add
-
-Add a user ID to the bot administrators list temporarily. If the user's ID isn't in config.json when the bot restarts, the user will be removed from the list.
-
-> {tip} This allows the user to run all system commands, this includes the [;bar](#botadminremove) command.
-
-#### Usage
-
-    ;baa <user ID>
-
-<a name="BotAdminListCommand"></a>
-### Bot Admin List
-
-Lists all user IDs currently in the bot administrators list.
-
-#### Usage
-
-    ;bal
-
-<a name="BotAdminRemoveCommand"></a>
-### Bot Admin Remove
-
-Removes a user ID from the bot administrators list. If the user's ID is in config.json, their ID will be added back to the administrators list when the bot restarts.
-
-#### Usage
-
-    ;bar <user ID>
-
-<a name="BroadcastCommand"></a>
-### Broadcast
-
-Prepares a broadcast message and returns a unique ID for the message as well as how it's going to look like. To send the message use the [broadcast send](#broadcastsend) command. Broadcast message IDs are stored for two minutes before being deleted.
-
-#### Usage
-
-    ;broadcast <message>
-
-#### Aliases
-
-    ;bc
-
-<a name="BroadcastSendCommand"></a>
-### Broadcast Send
-
-Broadcasts the message linked to the given ID. If the ID is valid the message linked to that ID will be broadcasted to every server the bot is in. The message will be sent to five servers at a time, with 0.5 second delay.
-
-#### Usage
-
-    ;broadcastsend <ID>
-
-#### Aliases
-
-    ;bcsend
-
-<a name="EvalCommand"></a>
-### Eval
-
-Evaluates and executes raw JavaScript code.
-
-> {tip} Messing around too much with this command can cause crashes and other funny things to happen since code is being evaluated within the bot while it's running.
-
-#### Usage
-
-    ;eval <code>
-
-<a name="ModuleDisableCommand"></a>
-### Module Disable
-
-Disabling a module prevents anyone that isn't a bot administrator from running any commands in that module until the bot is restarted or the module is enabled again. Modules are the command categories, for example [administration](#administration), [fun](#fun), [music](#music) and so forth.
-
-**Note:** The system module cannot be disabled.
-
-> {tip} You don't have to type out the full module/category name, simply typing the first few characters are fine.
-
-#### Usage
-
-    ;md <module>
-
-<a name="ModuleEnableCommand"></a>
-### Module Enable
-
-Enables a given module. Modules are the command categories, for example [administration](#administration), [fun](#fun), [music](#music) and so forth.
-
-> {tip} You don't have to type out the full module/category name, simply typing the first few characters are fine.
-
-#### Usage
-
-    ;me <module>
-
-<a name="RebootCommand"></a>
-### Reboot
-
-Restarts the bot. If there are any active voice connections all the music will be stopped, the queue will be cleared and a voice maintenance message will be sent instead. Once the message is over the rebooting process will continue.
-
-#### Usage
-
-    ;reboot
-
-#### Aliases
-
-    ;restart
-
-<a name="ReloadCommand"></a>
-### Reload
-
-Reloads the given property.
-
-#### Usage
-
-    ;reload lang
-    ;reload service
-    ;reload database
-    ;reload cmd <command>
-    ;reload event <event>
-
-#### Aliases
-
-    ;rl
-
-<a name="RuntimeStatisticsCommand"></a>
-### Runtime Stats
-
-Returns information about the bot and other runtime statistics.
-
-#### Usage
-
-    ;rstats
-
-#### Aliases
-
-    ;stats
-
-<a name="SafeRebootCommand"></a>
-### Safe Reboot
-
-Restarts the bot similar to the [reboot](#reboot) command. However unlike that command, using the safe reboot will wait for all voice connections to drop before restarting.
-
-#### Usage
-
-    ;safereboot
-
-#### Aliases
-
-    ;sreboot
-
-<a name="setstatus"></a>
-### Set Status
-
-Sets the status of the bot. If no status is provided, the bot will cycle config-defined status messages.
-
-#### Usage
-
-    ;setstatus [status/Twitch URL]
-
-#### Aliases
-
-    ;status
-
-<a name="SetServerTypeCommand"></a>
-### Set Server Type
-
-Sets the server to the given type. This allows selfhosters with little knowledge on SQL to set their server to a particular type. Server types control reward ratios, the amount of alias slots, playlists and so forth.
-
-#### Usage
-
-    ;sst <type> [server ID]
 
 <a name="utility"></a>
 ## Utility Commands
