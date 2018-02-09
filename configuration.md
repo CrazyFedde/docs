@@ -5,7 +5,9 @@
      - [Environment](#environment)
      - [Discord Application](#discord-app)
      - [Database Settings](#database)
+     - [Default Command Prefix](#prefix)
      - [Bot Status (Playing)](#status)
+     - [Music Lavalink Nodes](#music-lavalink)
      - [Music Activity Settings](#music-activity)
      - [Bot Access (Bot Admins)](#botaccess)
      - [Webhook Server Log](#webhook)
@@ -45,7 +47,11 @@ Discord application information is things like your application token, applicati
  2. Your application should now have been created, next click on the **Create a Bot User** button, this will convert the application to a bot user application.
  3. Now that you have a user bot application you can get your bot token under the **App Bot User** section.
 
-AvaIre needs your Discord application token to login and interact with users, and optionally the application ID for generating invite links people can use to invite the bot to their servers with.
+AvaIre needs your Discord application token to login and interact with users, and optionally the application ID for handling music using Lavalink instead of doing it internally, you can also use the application ID to create a invite link for your bot.
+
+#### Client ID
+
+This is your Discord application client id,if you don't have a Discord application, check the link above and follow the short guide to create one.
 
 #### Token
 
@@ -90,16 +96,12 @@ The host should be the host the MySQL database is hosted on, you can add your po
 
 Coming soon...
 
-<a name="music-activity"></a>
-### Music Activity Settings
+<a name="prefix"></a>
+### Default Command Prefix
 
-Music Activity is a tracking system built into Ava that disconnects the bot from voice channels if no one is listening to music anyway, this can help free up memory and bandwidth that wasn't being used to serve users anyway.
+All internal commands registered with Ava will be linked to a command category, each category has a default prefix which are used for all  commands linked to that category, setting the default prefix will set the default prefixed used by all the official AvaIre command categories.
 
-The music activity tracks a few things:
-
-1. When no one is listening to the music, like when the bot is muted, everyone is deafened, or no one is in the voice channel with the bot.
-2. If the queue is empty, when you request a song by name the queue will be empty until the user selects the song they want to be played, this applies here, if the last song in the queue is playing it will disconnect once the song is done anyway.
-3. If the music is paused, this should be self-explanatory, if you pause the music the bot it will disconnect after awhile unless it is unpaused(resumed).
+> Plugins that adds commands and categories to the Ava registry doesn't necessarily have to follow the default prefix set below, check in with the developer for the plugin about the command prefix if one is used, or just change the prefix for the category using the "Change Prefix" command.
 
 <a name="status"></a>
 ### Bot Status (Playing)
@@ -114,6 +116,27 @@ Once every minute, Ava will change her "playing" status to something on the play
    - This produces "Streaming video games"
 
 If no prefix is given the playing status type will be used instead.
+
+<a name="music-lavalink"></a>
+### Music Lavalink Nodes (Advanced Music Settings)
+
+Lavalink is used internally in Ava to delegate sending and encoding jobs, using Lavalink makes it easy to provided good quality music to everyone around the world at the same time by spreading the needed resources for streaming music out to external encoding nodes.
+
+If a encoding node is closed, disconnects, or stops working for any reason, all music that is streamed through that node will stop and the load-balancer built into Lavalink will begin to distribute the load out to the remaining working nodes, if no working nodes are available the music will not work. 
+
+> Lavalink is NOT a requirement to use the music features in Ava, it's simply an alternative way to deliver the end result to the user, for more information about Lavalink checkout: https://github.com/Frederikam/Lavalink
+
+<a name="music-activity"></a>
+### Music Activity Settings
+
+Music Activity is a tracking system built into Ava that disconnects the bot from voice channels if no one is listening to music anyway, this can help free up memory and bandwidth that wasn't being used to serve users anyway.
+
+The music activity tracks a few things:
+
+1. When no one is listening to the music, like when the bot is muted, everyone is deafened, or no one is in the voice channel with the bot.
+2. If the queue is empty, when you request a song by name the queue will be empty until the user selects the song they want to be played, this applies here, if the last song in the queue is playing it will disconnect once the song is done anyway.
+3. If the music is paused, this should be self-explanatory, if you pause the music the bot it will disconnect after awhile unless it is unpaused(resumed).
+
 
 <a name="botaccess"></a>
 ### Bot Access (Bot Administrators)
