@@ -39,7 +39,7 @@ Listing all commands in a category can be done by using the help command followe
 
 Displaying a given command's information can be done by using `help` followed by the command you want to get information about.
 
-    .help <command>
+    !help <command>
 
 > {tip} Command aliases can be used as well, for example `!help sid` will display help for the `!serverid` command.
 
@@ -529,34 +529,14 @@ The **general.manage_server** permission is required to run this command.
 <a name="fun"></a>
 ## Fun Commands
 
-All commands in the _Fun_ module use the `>` prefix.
-
 <a name="EightBallCommand"></a>
 ### 8 Ball
 
-Ask 8Ball a question
+Ask 8Ball a question and get a random response back.
 
 #### Usage
 
-    >8ball [message]
-
-<a name="BlahCommand"></a>
-### Blah
-
-Blah?
-
-#### Usage
-
-    >blah
-
-<a name="CanYouNotCommand"></a>
-### CanYouNot
-
-Can you not...?
-
-#### Usage
-
-    >canyounot
+    !8ball [message]
 
 <a name="ChuckNorrisCommand"></a>
 ### Chuck Norris
@@ -565,39 +545,44 @@ Gets a random 100% true, real fact about Chuck Norris using the "Internet Chuck 
 
 #### Usage
 
-    >chucknorris
+    !chucknorris - Gets a random fact for you about "Chuck Norris".
+    !chucknorris [name] - Gets a random fact for you, and changes the name "Chuck Norris" with the given name.
 
 #### Aliases
 
-    >chuck
-    >norris
+    !chuck
+    !norris
 
-<a name="CoinCommand"></a>
-### Coin
+<a name="CoinflipCommand"></a>
+### Coin Flip
 
 Flips a coin for heads or tails.
 
 #### Usage
 
-    >coin
+    !coinflip
+
+#### Aliases
+
+    !coin
 
 <a name="DiceCommand"></a>
 ### Dice
 
-Rolls a set of dice, for example using `4d8` will roll four eight sided dice.
+Rolls a set of dice with the given number of sides, for example using `4d8` will roll four eight sided dice.
 
 #### Usage
 
-    >dice [D&D Dice]
+    !dice <dice followed by a D and the sides> - Rolls some dice randomly.
 
-<a name="HolidayCommand"></a>
-### Holiday
+<a name="FlipTextCommand"></a>
+### Flip Message
 
-Find out of today is a holyday.
+Flips the given message upside down.
 
 #### Usage
 
-    >holiday
+    !flip <message> - Flips the given message.
 
 <a name="LennyCommand"></a>
 ### Lenny
@@ -606,7 +591,7 @@ Find out of today is a holyday.
 
 #### Usage
 
-    >lenny
+    !lenny
 
 <a name="MemeCommand"></a>
 ### Meme
@@ -615,7 +600,14 @@ Creates a meme of the given type. Passing list as an argument sends a full list 
 
 #### Usage
 
-    >meme <meme|user|list> [top text] [bottom text]
+    !meme list - Lists all the available meme types.
+    !meme <meme> <top text> <bottom text> - Generates the meme with the given text.
+    !meme <user> <top text> <bottom text> - Generates a meme with the mentioned users avatar and the given text.
+
+#### Example
+
+    !meme buzz "Memes" "Memes everywhere"
+    !meme @Senither "Creates a Meme command for AvaIre" "Almost no one uses it"
 
 <a name="RandomCatCommand"></a>
 ### Random Cat
@@ -624,11 +616,11 @@ Gets a random cat image from the internet.
 
 #### Usage
 
-    >randomcat
+    !randomcat
 
 #### Aliases
 
-    >cat
+    !cat
 
 <a name="RandomDogCommand"></a>
 ### Random Dog
@@ -637,24 +629,33 @@ Gets a random dog image from the internet.
 
 #### Usage
 
-    >randomdog
+    !randomdog
 
 #### Aliases
 
-    >dog
+    !dog
 
 <a name="RepeatCommand"></a>
-### Repeat
+### Repeat Message
 
 Makes Ava repeat whatever you say.
 
 #### Usage
 
-    >repeat [message]
+    !repeat <message> - Repeats the given message
 
 #### Aliases
 
-    >echo
+    !echo
+
+<a name="ReverseCommand"></a>
+### Reverse Message
+
+Reverses the message given.
+
+#### Usage
+
+    !reverse <message> - Reverses the given message.
 
 <a name="RipCommand"></a>
 ### RIP
@@ -663,16 +664,16 @@ Pay your respects.
 
 #### Usage
 
-    >rip
+    !rip
 
 <a name="RollCommand"></a>
 ### Roll
 
-Rolls a random number between 1 and 100, or between the numbers given.
+Roll a random number between 1 and 100, or within the given parameters.
 
 #### Usage
 
-    >roll [min] [max]
+    !roll [min] [max]
 
 <a name="SayCommand"></a>
 ### Say
@@ -681,25 +682,7 @@ Makes Ava say whatever you want. If Ava has permissions to delete messages, the 
 
 #### Usage
 
-    >say [message]
-
-<a name="ShrugCommand"></a>
-### Shrug
-
-¯\\\_(ツ)\_/¯
-
-#### Usage
-
-    >shrug
-
-<a name="SlowClapCommand"></a>
-### Slowclap
-
-Clap... Clap... Clap...
-
-#### Usage
-
-    >slowcap
+    !say [message]
 
 <a name="music"></a>
 ## Music Commands
