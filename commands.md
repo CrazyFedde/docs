@@ -1013,34 +1013,32 @@ Use this command to vote on the song currently playing to be skipped, if the vot
 <a name="search"></a>
 ## Search Commands
 
-All commands in the _Search_ module use the `>` prefix.
+<a name="DuckDuckGoCommand"></a>
+### Search
+
+Searches DuckDuckGo.com with the given query and returns the first six results, if the command is used in a channel with NSFW disabled, all NSFW search results will be removed from the results.
+
+#### Usage
+
+    !duckduckgo <query>
+
+#### Aliases
+
+    !ddg
+    !g
 
 <a name="GfycatCommand"></a>
 ### Gfycat
 
-Gets a random gif from [gfycat.com](https://gfycat.com/) with the given tags.
+Gets a random gif from [gfycat.com](https://gfycat.com/) with the given query.
 
 #### Usage
 
-    >gfycat [tag]
+    !gfycat <query>
 
 #### Aliases
 
-    >gif
-
-<a name="DuckDuckGoCommand"></a>
-### Search
-
-Searches DuckDuckGo.com with the given query and returns the first four results.
-
-#### Usage
-
-    >search <query>
-
-#### Aliases
-
-    >ddg
-    >g
+    !gif
 
 <a name="UrbanDictionaryCommand"></a>
 ### Urban Dictionary
@@ -1049,11 +1047,11 @@ Get the definition of a word or sentence from [urbandictionary.com](http://www.u
 
 #### Usage
 
-    >urbandictionary [word or sentence]
+    !urbandictionary [word or sentence]
 
 #### Aliases
 
-    >urban
+    !urban
 
 <a name="XKCDCommand"></a>
 ### XKCD
@@ -1062,7 +1060,7 @@ Gets the latest [xkcd](https://xkcd.com/) comic, or the comic with the given ID.
 
 #### Usage
 
-    >xkcd [comic ID]
+    !xkcd [comic ID]
 
 <a name="utility"></a>
 ## Utility Commands
