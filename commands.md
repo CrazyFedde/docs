@@ -687,38 +687,21 @@ Makes Ava say whatever you want. If Ava has permissions to delete messages, the 
 <a name="music"></a>
 ## Music Commands
 
-All commands in the _Music_ module use the `!` prefix.
+<a name="ClearQueueCommand"></a>
+### Clear Queue
 
-<a name="FlushQueueCommand"></a>
-### Flush Queue
-
-Flushes the music queue, removing all songs currently waiting in the queue.
+Clears the music queue of all pending songs, removing all pending songs.
 
 The **DJ** role is required to run this command.
 
 #### Usage
+
+    !clearqueue - Clears the music queue
+
+#### Aliases
 
     !flushqueue
-
-#### Aliases
-
-    !fqueue
-
-<a name="RepeatMusicQueueCommand"></a>
-### Repeat Music Queue
-
-Toggles music looping on or off, the [queue](#queue) command be used to get the music looping status.
-
-The **DJ** role is required to run this command.
-
-#### Usage
-
-    !repeatsongs
-
-#### Aliases
-
-    !repeat
-    !loop
+    !cqueue
 
 <a name="MoveHereCommand"></a>
 ### Move Here
@@ -745,6 +728,24 @@ The **DJ** role is required to run this command.
 #### Usage
 
     !pause
+
+<a name="PlayCommand"></a>
+### Play
+
+Plays the provided song for you, if just the song title is given the bot will search YouTube for your song and give you some suggestions, you can also use YouTube, SoundCloud, TwitchTV, Bandcamp, and Vimeo link, or raw sound file, mp3, flac, wav, webm, mp4, ogg, aac, m3u and pls formats.
+
+#### Usage
+
+    !play <song> - Plays the given song
+
+#### Aliases
+
+    !request
+
+#### Tag Example
+
+    @AvaIre play <name of song>
+    @AvaIre can you find me some chill music?
 
 <a name="PlaylistCommand"></a>
 ### Playlist
@@ -871,43 +872,39 @@ Rename an existing playlist. The string passed to the command will be used as th
 
 **You can replace the `!playlist` command with any of [playlist command aliases](#playlist).**
 
-<a name="QueueCommand"></a>
-### Queue
+<a name="RemoveSongFromQueueCommand"></a>
+### Remove Song from Queue
 
-Returns the song that is playing right now and some attached information. This includes who requested it, how much of the song is left and the volume the song is playing at plus the rest of the songs currently in queue. If the **remove** argument and the ID of the song are passed to the command, the song with the given ID will be removed from the music queue.
-
-#### Usage
-
-    !queue [remove] [ID]
-
-#### Aliases
-
-    !songs
-    !song
-
-<a name="RequestCommand"></a>
-### Request
-
-Requests a song via YouTube, SoundCloud, Twitch, radio streams or by name. If the song was successfully found the song will be added to the queue.
+Removes the song with the given ID from the queue, you can get the song ID in the queue by using the [!](!queue) command.
 
 #### Usage
 
-    !request <link or name of song>
+    !removesong <song id> Removes the song with the given ID from the queue.
 
 #### Aliases
 
-    !play
+    !songremove
 
+<a name="RepeatMusicQueueCommand"></a>
+### Repeat Music Queue
 
-#### Tag Example
+Toggles music looping on or off, the [queue](#queue) command be used to get the music looping status.
 
-    @AvaIre play <name of song>
-    @AvaIre can you find me some chill music?
+The **DJ** role is required to run this command.
+
+#### Usage
+
+    !repeatsongs
+
+#### Aliases
+
+    !repeatqueue
+    !loop
 
 <a name="ResumeCommand"></a>
 ### Resume
 
-Resumes the song that was playing before.
+Resumes the music in the queue, starting the music back up if it was paused.
 
 The **DJ** role is required to run this command.
 
@@ -915,10 +912,25 @@ The **DJ** role is required to run this command.
 
     !resume
 
+<a name="SeekCommand"></a>
+### Seek
+
+Jumps to the given time in the song currently playing.
+
+The **DJ** role is required to run this command.
+
+#### Usage
+
+    !seek <time> - Jumps to the given time.
+
+#### Aliases
+
+    !goto
+
 <a name="ShuffleCommand"></a>
 ### Shuffle
 
-Shuffles the songs waiting in the queue.
+Shuffles the music queue, mixing the songs up in random order.
 
 The **DJ** role is required to run this command.
 
@@ -929,13 +941,45 @@ The **DJ** role is required to run this command.
 <a name="SkipCommand"></a>
 ### Skip
 
-Skips the song that is currently playing.
+Skips to the next song in the music queue.
 
 The **DJ** role is required to run this command.
 
 #### Usage
 
     !skip
+
+<a name="SongCommand"></a>
+### Song Command
+
+Returns the song that is playing right now and some attached information. This includes who requested it, how much of the song is left and the volume the song is playing at plus the rest of the songs currently in queue. 
+
+#### Usage
+
+    !song - Shows info about the song currently playing and the queue.
+    !song [page] - Shows the songs in the given page in the queue.
+
+#### Aliases
+
+    !songs
+    !queue
+
+<a name="SoundcloudCommand"></a>
+### Play
+
+Plays the provided song for you, if just the song title is given the bot will search SoundCloud for your song and give you some suggestions, you can also use YouTube, SoundCloud, TwitchTV, Bandcamp, and Vimeo link, or raw sound file, mp3, flac, wav, webm, mp4, ogg, aac, m3u and pls formats.
+
+#### Usage
+
+    !soundcloud <song> - Plays the given song
+
+#### Aliases
+
+    !sc
+
+#### Tag Example
+
+    @AvaIre sc <name of song>
 
 <a name="VolumeCommand"></a>
 ### Volume
@@ -946,12 +990,17 @@ The **DJ** role is required to run this command.
 
 #### Usage
 
-    !volume <volume>
+    !volume - Shows the current music volume without changing it.
+    !volume <volume> - Sets the music volume to the given number.
+
+#### Aliases
+
+    !vol
 
 <a name="VoteSkipCommand"></a>
 ### Vote Skip
 
-Votes to skip the song that is currently playing. If 50% or more of the people listening vote to skip, the song will be skipped.
+Use this command to vote on the song currently playing to be skipped, if the vote wins with a majority vote the song will be skipped.
 
 #### Usage
 
