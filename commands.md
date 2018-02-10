@@ -684,6 +684,48 @@ Makes Ava say whatever you want. If Ava has permissions to delete messages, the 
 
     !say [message]
 
+<a name="interaction"></a>
+## Interaction Commands
+
+Interaction commands are commands that will send a random gif matching the type of interaction command used.
+
+All interaction commands requires a user to be mentioned in the command as the only argument, either by tagging the user, using the users ID, nickname or username, because all the interaction commands follows the same format, all the commands have been bundled up in a table for easier overview.
+
+#### Example
+
+If the command were to be used on a user called JohnDoe#1234 with a nickname of Johnny, all the following examples would be a valid use of a interaction command.
+
+    !command @JhonDoe
+    !command JhonDoe
+    !command JhonDoe#1234
+    !command Johnny
+    !command 123321123321123321 <- This is Johns user ID
+
+<a name="interaction-commands"></a>
+### Commands
+
+| Command           |  Description      |
+| ----------------- |:---------------------- |
+| !bite  | Bites the mentioned user.  |
+| !cuddle  | Cuddles with the mentioned user.  |
+| !divorce  | Divorces the mentioned user.  |
+| !eats  | Eats some food with the mentioned user.  |
+| !hello  | Waves hello to the mentioned user.  |
+| !highfive  | Highfives the mentioned user.  |
+| !hug  | Hugs the mentioned user.  |
+| !kill  | Kills the mentioned user.  |
+| !kiss  | Kisses the mentioned user.  |
+| !pan  | Hits the mentioned user with a pan.  |
+| !pat  | Pats the mentioned users head.  |
+| !poke  | Pokes the mentioned user.  |
+| !pouts  | Pouts at the mentioned user.  |
+| !punch  | Punches the mentioned user.  |
+| !senpai  | Sends a **notice me** image to the mentioned user.  |
+| !shrugs  | Shrugs at the mentioned user.  |
+| !slap  | Slaps the mentioned user.  |
+| !tickle  | Tickles the mentioned user.  |
+| !triggered  | Sends a **triggered** image to the mentioned user.  |
+
 <a name="music"></a>
 ## Music Commands
 

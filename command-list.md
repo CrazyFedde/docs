@@ -90,25 +90,25 @@ Below you'll find a list of all **108** commands that Ava has, along with a shor
 
 | Command           | Short Description      |
 | ----------------- |:---------------------- |
-| [!bite <user\>](/docs/{{version}}/commands#BiteCommand)  | Bites the the mentioned user  |
-| [!cuddle <user\>](/docs/{{version}}/commands#CuddleCommand)  | Cuddles the the mentioned user  |
-| [!divorce <user\>](/docs/{{version}}/commands#DivorceCommand)  | Divorces the the mentioned user  |
-| [!eats <user\>](/docs/{{version}}/commands#EatCommand)  | Eats some food with the mentioned user  |
-| [!hello <user\>](/docs/{{version}}/commands#HelloCommand)  | Says hello to the mentioned user  |
-| [!highfive <user\>](/docs/{{version}}/commands#HelloCommand)  | High fives the mentioned user  |
-| [!hug <user\>](/docs/{{version}}/commands#HugCommand)  | Hugs the mentioned user  |
-| [!kill <user\>](/docs/{{version}}/commands#KillCommand)  | Kills the mentioned user  |
-| [!kiss <user\>](/docs/{{version}}/commands#KissCommand)  | kisses the mentioned user  |
-| [!pan <user\>](/docs/{{version}}/commands#PanCommand)  | Hits the mentioned user with a pan  |
-| [!pat <user\>](/docs/{{version}}/commands#PatCommand)  | Pats the mentioned user  |
-| [!poke <user\>](/docs/{{version}}/commands#PokeCommand)  | Pokes the mentioned user  |
-| [!pouts <user\>](/docs/{{version}}/commands#PoutCommand)  | Pouts at the mentioned user  |
-| [!punch <user\>](/docs/{{version}}/commands#PunchCommand)  | Punches at the mentioned user  |
-| [!senpai <user\>](/docs/{{version}}/commands#SenpaiCommand)  | Sends an image in hope that the mentioned user notice you |
-| [!shrug <user\>](/docs/{{version}}/commands#ShrugCommand)  | Shrugs at the mentioned user  |
-| [!slap <user\>](/docs/{{version}}/commands#SlapCommand)  | Slaps the mentioned user  |
-| [!tickle <user\>](/docs/{{version}}/commands#TickleCommand)  | Tickles the mentioned user  |
-| [!triggered <user\>](/docs/{{version}}/commands#TriggeredCommand)  | Sends an image to let the mentioned user know you're triggered  |
+| [!bite <user\>](/docs/{{version}}/commands#interaction-commands)  | Bites the the mentioned user  |
+| [!cuddle <user\>](/docs/{{version}}/commands#interaction-commands)  | Cuddles the the mentioned user  |
+| [!divorce <user\>](/docs/{{version}}/commands#interaction-commands)  | Divorces the the mentioned user  |
+| [!eats <user\>](/docs/{{version}}/commands#interaction-commands)  | Eats some food with the mentioned user  |
+| [!hello <user\>](/docs/{{version}}/commands#interaction-commands)  | Says hello to the mentioned user  |
+| [!highfive <user\>](/docs/{{version}}/commands#interaction-commands)  | High fives the mentioned user  |
+| [!hug <user\>](/docs/{{version}}/commands#interaction-commands)  | Hugs the mentioned user  |
+| [!kill <user\>](/docs/{{version}}/commands#interaction-commands)  | Kills the mentioned user  |
+| [!kiss <user\>](/docs/{{version}}/commands#interaction-commands)  | kisses the mentioned user  |
+| [!pan <user\>](/docs/{{version}}/commands#interaction-commands)  | Hits the mentioned user with a pan  |
+| [!pat <user\>](/docs/{{version}}/commands#interaction-commands)  | Pats the mentioned user  |
+| [!poke <user\>](/docs/{{version}}/commands#interaction-commands)  | Pokes the mentioned user  |
+| [!pouts <user\>](/docs/{{version}}/commands#interaction-commands)  | Pouts at the mentioned user  |
+| [!punch <user\>](/docs/{{version}}/commands#interaction-commands)  | Punches at the mentioned user  |
+| [!senpai <user\>](/docs/{{version}}/commands#interaction-commands)  | Sends an image in hope that the mentioned user notice you |
+| [!shrug <user\>](/docs/{{version}}/commands#interaction-commands)  | Shrugs at the mentioned user  |
+| [!slap <user\>](/docs/{{version}}/commands#interaction-commands)  | Slaps the mentioned user  |
+| [!tickle <user\>](/docs/{{version}}/commands#interaction-commands)  | Tickles the mentioned user  |
+| [!triggered <user\>](/docs/{{version}}/commands#interaction-commands)  | Sends an image to let the mentioned user know you're triggered  |
 
 <a name="music"></a>
 ## Music
