@@ -90,9 +90,9 @@ Below you'll find a list of all **108** commands that Ava has, along with a shor
 
 | Command           | Short Description      |
 | ----------------- |:---------------------- |
-| [!bite <user\>](/docs/{{version}}/commands#interaction-commands)  | Bites the the mentioned user  |
-| [!cuddle <user\>](/docs/{{version}}/commands#interaction-commands)  | Cuddles the the mentioned user  |
-| [!divorce <user\>](/docs/{{version}}/commands#interaction-commands)  | Divorces the the mentioned user  |
+| [!bite <user\>](/docs/{{version}}/commands#interaction-commands)  | Bites the mentioned user  |
+| [!cuddle <user\>](/docs/{{version}}/commands#interaction-commands)  | Cuddles the mentioned user  |
+| [!divorce <user\>](/docs/{{version}}/commands#interaction-commands)  | Divorces the mentioned user  |
 | [!eats <user\>](/docs/{{version}}/commands#interaction-commands)  | Eats some food with the mentioned user  |
 | [!hello <user\>](/docs/{{version}}/commands#interaction-commands)  | Says hello to the mentioned user  |
 | [!highfive <user\>](/docs/{{version}}/commands#interaction-commands)  | High fives the mentioned user  |
