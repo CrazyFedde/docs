@@ -1065,29 +1065,76 @@ Gets the latest [xkcd](https://xkcd.com/) comic, or the comic with the given ID.
 <a name="utility"></a>
 ## Utility Commands
 
-All commands in the _Utility_ module use the `!` prefix.
+<a name="CalculateCommand"></a>
+### Calculate
+
+Calculates the given math equations and returns the result for you.
+
+#### Usage
+
+    !calculate <equation> - Calculates the result of the given math equation.
+
+#### Aliases
+
+    !calc
 
 <a name="ExpandUrlCommand"></a>
 ### Expand URL
 
-Unshorten a shortened URL.
+Expands the url to the full form, resolving all the redirects and showing what urls the link goes through if it redirects anywhere.
 
 #### Usage
 
-    !expand [url]
+    !expand <url> - Expands the provided url.
 
 #### Aliases
 
+    !resolve
     !e
 
 <a name="FeedbackCommand"></a>
 ### Feedback
 
-Send feedback about Ava back to the developers and the staff team, any message passed to the command will be sent in the [#feedback](https://discord.gg/tAmWcbK) channel on [AvaIre Central](https://discord.gg/gt2FWER).
+Send feedback about Ava back to the developers and the staff team, any message passed to the command will be sent in the [#feedback](https://discord.gg/gt2FWER) channel on the [AvaIre Central](https://discord.gg/gt2FWER) server.
 
 #### Usage
 
     !feedback <message>
+
+<a name="GlobalLeaderboardCommand"></a>
+### Global Leaderboard
+
+Shows the top 100 users globally, combining their rank, level, and xp between all servers the users are on. The response is paginated to show 10 users per page.
+
+#### Usage
+
+    !gleaderboard [page]
+
+#### Aliases
+
+    !gtop
+
+<a name="InviteCommand"></a>
+### Invite
+
+Returns a link that can be used to invite the bot to other servers.
+
+#### Usage
+
+    !invite - Gives you an invite link that can be used to invite AvaIre to servers.
+
+#### Aliases
+
+    !join
+
+<a name="IPInfoCommand"></a>
+### IP Info
+
+Gives information about the given IP address.
+
+#### Usage
+
+    !ipinfo <ip> - Displays information about the given IP address.
 
 <a name="LeaderboardCommand"></a>
 ### Leaderboard
@@ -1104,94 +1151,56 @@ The **[Levels & Experience](#level)** feature must be enabled to run this comman
 
     !top
 
-<a name="InviteCommand"></a>
-### Invite
-
-Displays the OAuth2 invite link for the bot.
-
-#### Usage
-
-    !invite
-
-#### Aliases
-
-    !join
-
-<a name="IPInfoCommand"></a>
-### IP Info
-
-Gives information about the given IP address
-
-#### Usage
-
-    !ipinfo <address>
-
 <a name="PingCommand"></a>
 ### Ping
 
-Ping, Pong.
+Can be used to check if the bot is still alive.
 
 #### Usage
 
-    !ping
-
-#### Aliases
-
-    !pingme
+    !ping - Returns the latency of the bot.
 
 <a name="RankCommand"></a>
 ### Rank
 
-Displays the user's rank, level, XP and how much XP they need to level up.
+This command requires the Levels & Experience feature to be enabled for the server!
+Displays the user's rank, level, XP and how much XP they need to level up, as well as their total xp between all servers they're on.
 
 The **[Levels & Experience](#level)** feature must be enabled to run this command.
 
 #### Usage
 
-    !rank
+    !rank - Displays your rank, level, xp and other stuff
+    !rank @Senither - Displays Senither's rank, level, xp...
 
 #### Aliases
 
     !level
 
-<a name="RemindCommand"></a>
-### Remind
+<a name="ShardCommand"></a>
+### Shards
 
-Sets a message you would like to be reminded of later. The message can be anything while the time format has to follow suit with **XhXXmXXs** to delay the message where X represents a number. You can freely alter the time definition; available time units are hours (`h`), minutes (`m`) and seconds (`s`). Here are some examples.
+Displays the status of all the shards for the bot, including how many servers, channels and users each shard is connected to.
 
- - **1h25m52s** = 1 hour, 25 minutes and 52 seconds of delay.
- - **2h16s** = 2 hours and 16 seconds of delay.
- - **30m** = 30 minutes of delay.
+> If the bot instance is not started in a sharded state the [!stats](#StatsCommand) command will be used instead.
 
 #### Usage
 
-    !remind <time> <message>
+    !shards
 
 #### Aliases
 
-    !rem
-
-<a name="ShortenUrlCommand"></a>
-### Shorten URL
-
-Shorten a URL using [goo.gl](https://goo.gl/).
-
-#### Usage
-
-    !shorten [url]
-
-#### Aliases
-
-    !s
+    !shard
 
 <a name="SourceCommand"></a>
 ### Source
 
-Gives you the source code for the bot, or the code for a given command.
+Gives you the source code for the Bot, or the code for a given command.
 
 #### Usage
 
-    !source [command]
+    !source - Returns the full source code for the bot.
+    !source <command> - Returns the source code for the given command.
 
 <a name="StatsCommand"></a>
 ### Stats
@@ -1215,7 +1224,7 @@ Displays information about Ava and some related stats. The following information
 
 #### Usage
 
-    !stats
+    !stats - Shows some stats about the bot.
 
 #### Aliases
 
@@ -1224,7 +1233,7 @@ Displays information about Ava and some related stats. The following information
 <a name="UptimeCommand"></a>
 ### Uptime
 
-Displays how long the bot has been online.
+Displays how long the bot has been online for.
 
 #### Usage
 
@@ -1233,22 +1242,8 @@ Displays how long the bot has been online.
 <a name="VersionCommand"></a>
 ### Version
 
-Displays the current version of Ava you're running. If the version is oudated the new version will be shown as well as what type of changes have been made.
+Displays the current version of Ava you're running. If the version is outdated the new version will be shown as well as what type of changes have been made.
 
 #### Usage
 
     !version
-
-<a name="CreateYesNoPollCommand"></a>
-### Yes/No Poll
-
-Creates a poll with a message. Users can then vote yes or no on the poll; when the given amount of time the poll will automatically close and show the result of the poll. The time format is the same as the one used with [remind](#remind).
-
-#### Usage
-
-    !yesnopoll <time> <message>
-
-#### Aliases
-
-    !ynpoll
-    !poll
