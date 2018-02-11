@@ -40,8 +40,6 @@ Below you'll find a list of all **108** commands that Ava has, along with a shor
 | [!ban <user\> [reason]](/docs/{{version}}/commands#BanCommand)  | Bans the tagged user with the given reason  |
 | [!categories](/docs/{{version}}/commands#CategoriesCommand)  | Shows the status for all the command categories for the current channel, and globally  |
 | [!changeprefix <module\> [prefix]](/docs/{{version}}/commands#ChangePrefixCommand)  | Changes the prefix Ava uses  |
-| [!channelid](/docs/{{version}}/commands#ChannelIdCommand)  | Displays the status of modules for the current channel  |
-| [!channelinfo](/docs/{{version}}/commands#ChannelInfoCommand)  | Displays the status of modules for the current channel  |
 | [!djlevel](/docs/{{version}}/commands#DJLevelCommand)  | Change the DJ level requirement for the server  |
 | [!goodbye](/docs/{{version}}/commands#GoodbyeCommand)  | Toggles the goodbye module on or off for the current channel  |
 | [!goodbyemessage [message]](/docs/{{version}}/commands#GoodbyeMessageCommand)  | Sets the goodbye message for the current channel  |
@@ -54,13 +52,9 @@ Below you'll find a list of all **108** commands that Ava has, along with a shor
 | [!nsfw](/docs/{{version}}/commands#NSFWCommand)  | Displays the NSFW status of the current channel  |
 | [!purge <amount\> [user]](/docs/{{version}}/commands#PurgeCommand)  | Purge old messages from the current channel  |
 | [!rsar <role\>](/docs/{{version}}/commands#RemoveClaimableRoleCommand)  | Removes the role from the self-assignable roles list  |
-| [!serverid](/docs/{{version}}/commands#ServerIdCommand)  | Shows the server ID |
-| [!serverinfo](/docs/{{version}}/commands#ServerInfoCommand)  | Shows information about the server  |
 | [!slowmode [limit] [decay]](/docs/{{version}}/commands#SlowmodeCommand)  | Toggles slowmode on or off for the current channel  |
 | [!softban <user\> [reason]](/docs/{{version}}/commands#SoftBanCommand)  | Bans the tagged user with the given reason  |
 | [!togglecategory <category\> <channel\>](/docs/{{version}}/commands#ToggleModuleCommand)  |  Toggles the given category on or off for the current channel or the whole server  |
-| [!userid [user]](/docs/{{version}}/commands#UserIdCommand)  | Shows the ID of the tagged user  |
-| [!userinfo [user]](/docs/{{version}}/commands#UserInfoCommand)  | Shows information about the tagged user  |
 | [!voicekick <user\>](/docs/{{version}}/commands#VoiceKickCommand)  | Kicks the mentioned user from the voice channel  |
 | [!welcome](/docs/{{version}}/commands#WelcomeCommand)  | Toggles the welcome module on or off for the current channel  |
 | [!welcomemessage](/docs/{{version}}/commands#WelcomeMessageCommand)  | Sets the welcome message for the current channel  |
@@ -147,6 +141,8 @@ Below you'll find a list of all **108** commands that Ava has, along with a shor
 | Command           | Short Description      |
 | ----------------- |:---------------------- |
 | [!calc <url\>](/docs/{{version}}/commands#CalculateCommand)  | Calculates the given math equations and returns the result for you  |
+| [!channelid](/docs/{{version}}/commands#ChannelIdCommand)  | Displays the status of modules for the current channel  |
+| [!channelinfo](/docs/{{version}}/commands#ChannelInfoCommand)  | Displays the status of modules for the current channel  |
 | [!expand <url\>](/docs/{{version}}/commands#ExpandUrlCommand)  | Unshorten an URL  |
 | [!feedback <msg\>](/docs/{{version}}/commands#FeedbackCommand)  | Gives feedback about the bot  |
 | [!gleaderboard](/docs/{{version}}/commands#GlobalLeaderboardCommand)  | Shows the top 100 users globally, combining their rank, level, and xp between all servers the users are on.  |
@@ -155,7 +151,11 @@ Below you'll find a list of all **108** commands that Ava has, along with a shor
 | [!leaderboard](/docs/{{version}}/commands#LeaderboardCommand)  | Sends the level leaderboard for the current server  |
 | [!ping](/docs/{{version}}/commands#PingCommand)  | Ping, Pong  |
 | [!rank](/docs/{{version}}/commands#RankCommand)  | Displays the users rank, level and XP if Leveling is enabled  |
+| [!serverid](/docs/{{version}}/commands#ServerIdCommand)  | Shows the server ID |
+| [!serverinfo](/docs/{{version}}/commands#ServerInfoCommand)  | Shows information about the server  |
 | [!source](/docs/{{version}}/commands#SourceCommand)  | Sends a link to the source code for the given command  |
 | [!stats](/docs/{{version}}/commands#StatsCommand)  | Displays information and stats about Ava  |
 | [!uptime](/docs/{{version}}/commands#UptimeCommand)  | Displays how long Ava has been online for  |
+| [!userid [user]](/docs/{{version}}/commands#UserIdCommand)  | Shows the ID of the tagged user  |
+| [!userinfo [user]](/docs/{{version}}/commands#UserInfoCommand)  | Shows information about the tagged user  |
 | [!version](/docs/{{version}}/commands#VersionCommand)  | Displays the current version of Ava  |

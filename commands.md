@@ -183,32 +183,6 @@ The **general.administrator** permission is required to run this command.
 
     !prefix
 
-<a name="ChannelIdCommand"></a>
-### Channel ID
-
-Shows the ID of the channel the command was ran in, or the channel tagged in the command.
-
-#### Usage
-
-    !channelid [channel]
-
-#### Aliases
-
-    !cid
-
-<a name="ChannelInfoCommand"></a>
-### Channel Info
-
-Shows information about the channel the command was run in, or the mentioned channel.
-
-#### Usage
-
-    !channelinfo [channel]
-
-#### Aliases
-
-    !cinfo
-
 <a name="DJLevelCommand"></a>
 ### DJ Level
 
@@ -362,32 +336,6 @@ The **general.administrator** permission is required to run this command.
 
     !rsar <role> - Removes the mentioned role from the self-assignable roles list.
 
-<a name="ServerIdCommand"></a>
-### Server ID
-
-Displays ID of the server the command was ran in.
-
-#### Usage
-
-    .serverid
-
-#### Aliases
-
-    .sid
-
-<a name="ServerInfoCommand"></a>
-### Server Info
-
-Displays information about the server the command was ran in. This includes the server's ID, owner, text and voice channels, members, roles, region, avatar and when it was created.
-
-#### Usage
-
-    !serverinfo
-
-#### Aliases
-
-    !sinfo
-
 <a name="SlowmodeCommand"></a>
 ### Slowmode
 
@@ -450,32 +398,6 @@ The **general.manage_server** permission is required to run this command.
 #### Aliases
 
     !tlvl
-
-<a name="UserIdCommand"></a>
-### User ID
-
-Displays ID of the user who ran the command or the ID of the mentioned user.
-
-#### Usage
-
-    !userid [user]
-
-#### Aliases
-
-    !uid
-
-<a name="UserInfoCommand"></a>
-### User Info
-
-Displays information about the user who ran the command or the mentioned user. This includes the users username, ID, roles, the date they joined the server, the date they created their account, and how many servers they're in (That Ava knows about).
-
-#### Usage
-
-    !userinfo [user]
-
-#### Aliases
-
-    !uinfo
 
 <a name="VoiceKickCommand"></a>
 ### Voice Kick
@@ -1120,6 +1042,32 @@ Calculates the given math equations and returns the result for you.
 
     !calc
 
+<a name="ChannelIdCommand"></a>
+### Channel ID
+
+Shows the ID of the channel the command was ran in, or the channel tagged in the command.
+
+#### Usage
+
+    !channelid [channel]
+
+#### Aliases
+
+    !cid
+
+<a name="ChannelInfoCommand"></a>
+### Channel Info
+
+Shows information about the channel the command was run in, or the mentioned channel.
+
+#### Usage
+
+    !channelinfo [channel]
+
+#### Aliases
+
+    !cinfo
+
 <a name="ExpandUrlCommand"></a>
 ### Expand URL
 
@@ -1219,6 +1167,32 @@ The **[Levels & Experience](#level)** feature must be enabled to run this comman
 
     !level
 
+<a name="ServerIdCommand"></a>
+### Server ID
+
+Displays ID of the server the command was ran in.
+
+#### Usage
+
+    !serverid
+
+#### Aliases
+
+    !sid
+
+<a name="ServerInfoCommand"></a>
+### Server Info
+
+Displays information about the server the command was ran in. This includes the server's ID, owner, text and voice channels, members, roles, region, avatar and when it was created.
+
+#### Usage
+
+    !serverinfo
+
+#### Aliases
+
+    !sinfo
+
 <a name="ShardCommand"></a>
 ### Shards
 
@@ -1280,6 +1254,32 @@ Displays how long the bot has been online for.
 #### Usage
 
     !uptime
+
+<a name="UserIdCommand"></a>
+### User ID
+
+Displays ID of the user who ran the command or the ID of the mentioned user.
+
+#### Usage
+
+    !userid [user]
+
+#### Aliases
+
+    !uid
+
+<a name="UserInfoCommand"></a>
+### User Info
+
+Displays information about the user who ran the command or the mentioned user. This includes the users username, ID, roles, the date they joined the server, the date they created their account, and how many servers they're in (That Ava knows about).
+
+#### Usage
+
+    !userinfo [user]
+
+#### Aliases
+
+    !uinfo
 
 <a name="VersionCommand"></a>
 ### Version
