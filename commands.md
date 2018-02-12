@@ -303,6 +303,19 @@ The **general.manage_channel** permission is required to run this command.
     !nsfw <channel> - Displays the mentioned channels NSFW status
     !nsfw <channel> <on | off> - Changes the NSFW status of the mentioned channel.
 
+<a name="ModlogCommand"></a>
+### Modlog
+
+Displays the modlogging status for the server if no arguments is given, you can also mention a text channel to enable modlogging and set it to the mentioned channel.
+
+The **general.manage_server** permission is required to run this command.
+
+#### Usage
+
+    !modlog - Displays the current state of the modlog module for the server.
+    !modlog <channel> - Enabled modlogging and sets it to the mentioned channel.
+    !modlog disable - Disables the modlogging module for the server.
+
 <a name="PurgeCommand"></a>
 ### Purge
 

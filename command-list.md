@@ -1,6 +1,6 @@
 # Command List
 
-Below you'll find a list of all **108** commands that Ava has, along with a short description of what each command does. If you'd like to know more about the command, like what permissions or roles are required to run the command, different aliases or anything similar you can click on the command links and you'll be taken to a more descriptive version of the command, or use the help command for the given command in a Discord server.
+Below you'll find a list of all **109** commands that Ava has, along with a short description of what each command does. If you'd like to know more about the command, like what permissions or roles are required to run the command, different aliases or anything similar you can click on the command links and you'll be taken to a more descriptive version of the command, or use the help command for the given command in a Discord server.
 
 > All commands can be used by mentioning Ava first, followed by the command you want to run, for example `@AvaIre ping` will run the ping command, or `@AvaIre poke @Senither` will run the poke command for Senither.
 
@@ -50,6 +50,7 @@ Below you'll find a list of all **108** commands that Ava has, along with a shor
 | [!levelalerts [channel]](/docs/{{version}}/commands#LevelAlertsCommand)  | Toggles the level alerts system on or off for the current server  |
 | [!lsar <role\>](/docs/{{version}}/commands#ListClaimableRoleCommand)  | List all the self-assignable roles, 10 per-page  |
 | [!nsfw](/docs/{{version}}/commands#NSFWCommand)  | Displays the NSFW status of the current channel  |
+| [!modlog [channel\]](/docs/{{version}}/commands#ModlogCommand)  | Displays the modlog status and toggles it on/off  |
 | [!purge <amount\> [user]](/docs/{{version}}/commands#PurgeCommand)  | Purge old messages from the current channel  |
 | [!rsar <role\>](/docs/{{version}}/commands#RemoveClaimableRoleCommand)  | Removes the role from the self-assignable roles list  |
 | [!slowmode [limit] [decay]](/docs/{{version}}/commands#SlowmodeCommand)  | Toggles slowmode on or off for the current channel  |
