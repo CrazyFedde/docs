@@ -942,7 +942,7 @@ Returns the song that is playing right now and some attached information. This i
     !queue
 
 <a name="SoundcloudCommand"></a>
-### Play
+### Soundcloud
 
 Plays the provided song for you, if just the song title is given the bot will search SoundCloud for your song and give you some suggestions, you can also use YouTube, SoundCloud, TwitchTV, Bandcamp, and Vimeo link, or raw sound file, mp3, flac, wav, webm, mp4, ogg, aac, m3u and pls formats.
 
@@ -957,6 +957,17 @@ Plays the provided song for you, if just the song title is given the bot will se
 #### Tag Example
 
     @AvaIre sc <name of song>
+
+<a name="StopCommand"></a>
+### Stop
+
+Stops the song currently playing, clears the music queue and disconnects from the voice channel the music was playing in.
+
+The **DJ** role is required to run this command.
+
+#### Usage
+
+    !stop
 
 <a name="VolumeCommand"></a>
 ### Volume

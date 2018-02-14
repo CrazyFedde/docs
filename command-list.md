@@ -123,6 +123,7 @@ Below you'll find a list of all **109** commands that Ava has, along with a shor
 | [!skip](/docs/{{version}}/commands#SkipCommand)  | Skips the song that is currently playing  |
 | [!songs](/docs/{{version}}/commands#SongCommand)  | Lists all the songs in the music queue  |
 | [!soundcloud <song\>](/docs/{{version}}/commands#SoundcloudCommand)  | Adds the given song to the queue from Soundcloud, or by link  |
+| [!stop](/docs/{{version}}/commands#StopCommand)  | Stops the music and disconnects from voice  |
 | [!volume <vol\>](/docs/{{version}}/commands#VolumeCommand)  | Changes the volume of the music  |
 | [!voteskip](/docs/{{version}}/commands#VoteSkipCommand)  | Votes to skip the song that is currently playing  |
 
