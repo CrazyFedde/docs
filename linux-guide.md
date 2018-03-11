@@ -13,6 +13,7 @@
     - [Application Restart](#commands-restart)
     - [Application Shutdown](#commands-shutdown)
     - [Application Update](#commands-update)
+    - [Set Guild Type](#commands-set-type)
     - [Evaluate Code](#commands-eval)
     - [Reload Configuration](#commands-reload)
     - [Set Bot Status](#commands-status)
@@ -181,6 +182,19 @@ This requires [Watchdog](https://github.com/avaire/watchdog) to work, without it
     ;update now - Updates the bot now.
     ;update cancel - Cancels the update process.
     ;update <time> - Schedules a time the bot should be updated.
+
+<a name="commands-set-type"></a>
+### Set Guild Type
+
+Sets the Guild Type of the server the command was ran in, if no arguments was given the current Guild Type will be displayed instead.
+
+> Ava has an internal ranking system for guilds/servers, different ranks can give servers different limits for commands like [playlists](/docs/{{version}}/commands#PlaylistCommand) and [aliases](/docs/{{version}}/commands#AliasCommand), 
+
+#### Usage
+
+    ;set-type - Displays the current guild type.
+    ;set-type list - List available guild types.
+    ;set-type <type id> - Changes the guild type to the given type.
 
 <a name="commands-eval"></a>
 ### Evaluate Code
