@@ -111,6 +111,7 @@ Below you'll find a list of all **110** commands that Ava has, along with a shor
 | Command           | Short Description      |
 | ----------------- |:---------------------- |
 | [!clearqueue](/docs/{{version}}/commands#ClearQueueCommand)  | Clears the music queue of all pending songs  |
+| [!default-volume](/docs/{{version}}/commands#SetDefaultVolumeCommand)  | Sets the default volume used by all the music  |
 | [!movehere](/docs/{{version}}/commands#MoveHereCommand)  | Moves the bot into the same voice channel you're in  |
 | [!pause](/docs/{{version}}/commands#PauseCommand)  | Pauses the song that is currently playing  |
 | [!play <song\>](/docs/{{version}}/commands#PlayCommand)  | Adds the given song to the queue from YouTube, or by link  |

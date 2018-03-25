@@ -680,6 +680,23 @@ The **DJ** role is required to run this command.
     !flushqueue
     !cqueue
 
+<a name="SetDefaultVolumeCommand"></a>
+### Set Default Volume Command
+
+Sets the default volume that the music should play at when Ava first joins a voice channel.
+
+> Note: This does not change the volume of music already playing, to change that, use the [!volume](#VolumeCommand) command instead.
+
+The **DJ** role is required to run this command.
+
+#### Usage
+
+    !default-volume [volume]
+
+#### Aliases
+
+    !set-volume
+
 <a name="MoveHereCommand"></a>
 ### Move Here
 
