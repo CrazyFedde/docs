@@ -44,7 +44,7 @@
 <a name="install-java"></a>
 ### Installing Java & Gradle
 
-AvaIre is a Java application, because of this we'll need to install Java to run Ava, if you don't already have Java installed, head over to the [Oracle Java download page](http://www.oracle.com/technetwork/java/javase/downloads/index.html) to get started, then select the latest Java Platform (JDK), accept Oracles license, and download the windows .exe file, it's pretty straight forward from there.
+AvaIre is a Java application, because of this we'll need to install Java to run Ava, if you don't already have Java installed, head over to the [Oracle Java download page](http://www.oracle.com/technetwork/java/javase/downloads/index.html) to get started, then select the latest Java Platform (JDK), accept Oracles license, and download the windows .exe file, once Java has been installed you may need to add Java to your windows system path variable, check out the "[how to set java home on windows 10](https://www.mkyong.com/java/how-to-set-java_home-on-windows-10/)" guide by [mkyong](https://twitter.com/mkyong) for how to get started with doing that.
 
 If you want to run the cutting edge of Ava you'll need Gradle as well, gradle is used by Ava to compile all the source code into a binary file that the computer can run, you can get gradle from [Gradles install page](https://gradle.org/install/).
 
