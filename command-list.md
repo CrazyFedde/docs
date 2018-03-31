@@ -12,7 +12,6 @@ Below you'll find a list of all **110** commands that Ava has, along with a shor
 - [Interaction](#interaction)
 - [Music](#music)
 - [Search](#search)
-- [System](#system)
 - [Utility](#utility)
 
 <a name="help"></a>

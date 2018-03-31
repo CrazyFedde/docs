@@ -10,8 +10,9 @@
     - [Help Command](/docs/{{version}}/commands#help)
     - [Administration](/docs/{{version}}/commands#administration)
     - [Fun](/docs/{{version}}/commands#fun)
+    - [Interaction](/docs/{{version}}/commands#interaction)
     - [Music](/docs/{{version}}/commands#music)
-    - [System](/docs/{{version}}/commands#system)
+    - [Search](/docs/{{version}}/commands#search)
     - [Utility](/docs/{{version}}/commands#utility)
     <hr>
     - [Placeholders](/docs/{{version}}/placeholders)
