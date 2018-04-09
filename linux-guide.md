@@ -144,6 +144,7 @@ All system commands uses a semicolon(;) as their prefix by default.
 | [;restart <when\>](#commands-restart)  | Restarts the application gracefully  |
 | [;shutdown <when\>](#commands-shutdown)  | Shuts down the application gracefully  |
 | [;update <when\>](#commands-update)  | Updates the bot to the latest version  |
+| [;set-type <type\>](#commands-set-type)  | Sets the Guild Type of the server the command was ran in |
 | [;eval <code\>](#commands-eval)  | Evaluate and executes raw code and returns the result  |
 | [;reload](#commands-reload)  | Reloads the main config and all plugin configs  |
 | [;status](#commands-status)  | Set the playing status of the bot   |
