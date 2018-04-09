@@ -17,6 +17,7 @@
     - [Evaluate Code](#commands-eval)
     - [Reload Configuration](#commands-reload)
     - [Set Bot Status](#commands-status)
+    - [Lavalink](#commands-lavalink)
 
 <a name="prerequisites"></a>
 ## Prerequisites
@@ -161,6 +162,7 @@ All system commands uses a semicolon(;) as their prefix by default.
 | [;eval <code\>](#commands-eval)  | Evaluate and executes raw code and returns the result  |
 | [;reload](#commands-reload)  | Reloads the main config and all plugin configs  |
 | [;status](#commands-status)  | Set the playing status of the bot   |
+| [;lavalink <options\>](#commands-lavalink)  | Add, remove, and manage Lavalink nodes   |
 
 <a name="commands-restart"></a>
 ### Application Restart
@@ -240,3 +242,15 @@ Sets the status of the bot instance for all servers the bot is on, if no status 
     ;setstatus - Goes back to cycling status from the config.
     ;setstatus <game> - Sets the bots playing status to the given game.
     ;setstatus <twitch url> - The URL that the bot should be broadcasting.
+
+<a name="commands-lavalink"></a>
+### Lavalink
+
+This command can be used to list the status of Lavalink nodes, adding, and removing nodes on the fly during runtime.
+
+#### Usage
+
+    ;lavalink list - List all Lavalink nodes
+    ;lavalink show <node> - Shows in-depth information about the node
+    ;lavalink add <name> <url> <pass> - Adds the node to Lavalink
+    ;lavalink remove <name> - Removes the node from Lavalink
