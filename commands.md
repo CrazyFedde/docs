@@ -1330,3 +1330,12 @@ Displays the current version of Ava you're running. If the version is outdated t
 #### Usage
 
     !version
+
+<a name="VoteCommand"></a>
+### Vote
+
+Enjoy using the bot? Consider voting for the bot to help it grow, it's free but means a lot to the team behind Ava <3
+
+#### Usage
+
+    !vote

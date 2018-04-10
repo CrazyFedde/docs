@@ -45,7 +45,7 @@ Below you'll find a list of all **110** commands that Ava has, along with a shor
 | [!iam <role\>](/docs/{{version}}/commands#IAmCommand)  | Gives the user the role with the given name if it is claimable  |
 | [!iamnot <role\>](/docs/{{version}}/commands#IAmNotCommand)  | Takes a role from the user with the given name if it is claimable  |
 | [!kick <user\> [reason]](/docs/{{version}}/commands#KickCommand)  | Kicks the tagged user from the server  |
-| [!level](/docs/{{version}}/commands#LevelCommand)  | Toggles the level system on or off for the current server  |
+| [!togglelevel](/docs/{{version}}/commands#LevelCommand)  | Toggles the level system on or off for the current server  |
 | [!levelalerts [channel]](/docs/{{version}}/commands#LevelAlertsCommand)  | Toggles the level alerts system on or off for the current server  |
 | [!lsar <role\>](/docs/{{version}}/commands#ListClaimableRoleCommand)  | List all the self-assignable roles, 10 per-page  |
 | [!nsfw](/docs/{{version}}/commands#NSFWCommand)  | Displays the NSFW status of the current channel  |
@@ -161,3 +161,4 @@ Below you'll find a list of all **110** commands that Ava has, along with a shor
 | [!userid [user]](/docs/{{version}}/commands#UserIdCommand)  | Shows the ID of the tagged user  |
 | [!userinfo [user]](/docs/{{version}}/commands#UserInfoCommand)  | Shows information about the tagged user  |
 | [!version](/docs/{{version}}/commands#VersionCommand)  | Displays the current version of Ava  |
+| [!vote](/docs/{{version}}/commands#VoteCommand)  | Links a site where you can vote for rewards  |
