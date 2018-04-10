@@ -88,6 +88,20 @@ The **general.manage_server** permission is required to run this command.
 
     .aliaslist
 
+<a name="AddLevelRoleCommand"></a>
+### Add Level Role
+
+Adds a role to the leveling up table, roles on the table will be given to users once they level up and meet the requirements for the role.
+
+ - [List Level Roles](#ListLevelRolesCommand)
+ - [Remove Level Role](#RemoveLevelRoleCommand)
+
+The **general.administrator** permission is required to run this command.
+
+#### Usage
+
+    !alr <role> <level requirement> - Adds to role to users when they level up and meet the level requirement.
+
 <a name="AddSelfAssignableRoleCommand"></a>
 ### Add Self Assignable Role
 
@@ -277,6 +291,18 @@ The **general.manage_server** permission is required to run this command.
 
     !lvlalert
 
+<a name="ListLevelRolesCommand"></a>
+### List Level Roles
+
+List all the leveling roles and the level require to get them.
+
+ - [Add Level Role](#AddLevelRoleCommand)
+ - [Remove Level Role](#RemoveLevelRoleCommand)
+
+#### Usage
+
+    !llr - Lists all the roles you can get for leveling up.
+
 <a name="ListSelfAssignableRolesCommand"></a>
 ### List Self Assignable Roles
 
@@ -361,6 +387,20 @@ You can only set modlog reasons for old modlog cases if you were the moderator f
 #### Usage
 
     !reason <case id> <reason> - Sets the reason for the given ID
+
+<a name="RemoveLevelRoleCommand"></a>
+### Remove Level Role
+
+Remove a role from the leveling up role table.
+
+ - [Add Level Role](#AddLevelRoleCommand)
+ - [List Level Role](#ListLevelRolesCommand)
+
+The **general.administrator** permission is required to run this command.
+
+#### Usage
+
+    !rlr <role> - Removes the role from the leveling up role table.
 
 <a name="RemoveSelfAssignableRoleCommand"></a>
 ### Remove Self Assignable Role

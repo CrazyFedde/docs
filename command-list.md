@@ -33,7 +33,8 @@ Below you'll find a list of all **120** commands that Ava has, along with a shor
 | [!ai](/docs/{{version}}/commands#AiCommand)  | Toggles the AI on or off for the current channel  |
 | [!alias [alias] [command]](/docs/{{version}}/commands#AliasCommand)  | Binds or unbinds custom command aliases  |
 | [!aliases [page]](/docs/{{version}}/commands#ListAliasesCommand)  | Lists all command aliases for the server  |
-| [!asar <role\>](/docs/{{version}}/commands#AddSelfAssignableRoleCommand)  | Adds a role to the self-assignable roles list  |
+| [!alr <role\> <level requirement\>](/docs/{{version}}/commands#AddLevelRoleCommand)  | Adds a level role to the leveling up table   |
+| [!asar <role\>](/docs/{{version}}/commands#AddSelfAssignableRoleCommand)  | Adds a  role to the self-assignable roles list  |
 | [!autorole <role\>](/docs/{{version}}/commands#AutoAssignRoleCommand)  | Auto assigns a specified role to every user who joins the server  |
 | [!avatar](/docs/{{version}}/commands#UserAvatarCommand)  | Get the profile picture of someone on the server by name, id, or mentions.  |
 | [!ban <user\> [reason]](/docs/{{version}}/commands#BanCommand)  | Bans the tagged user with the given reason  |
@@ -47,12 +48,14 @@ Below you'll find a list of all **120** commands that Ava has, along with a shor
 | [!kick <user\> [reason]](/docs/{{version}}/commands#KickCommand)  | Kicks the tagged user from the server  |
 | [!togglelevel](/docs/{{version}}/commands#LevelCommand)  | Toggles the level system on or off for the current server  |
 | [!levelalerts [channel]](/docs/{{version}}/commands#LevelAlertsCommand)  | Toggles the level alerts system on or off for the current server  |
-| [!lsar <role\>](/docs/{{version}}/commands#ListClaimableRoleCommand)  | List all the self-assignable roles, 10 per-page  |
+| [!llr [page]](/docs/{{version}}/commands#ListLevelRolesCommand)  | List all the level roles, 10 per-page  |
+| [!lsar [page]](/docs/{{version}}/commands#ListClaimableRoleCommand)  | List all the self-assignable roles, 10 per-page  |
 | [!nsfw](/docs/{{version}}/commands#NSFWCommand)  | Displays the NSFW status of the current channel  |
 | [!modlog [channel\]](/docs/{{version}}/commands#ModlogCommand)  | Displays the modlog status and toggles it on/off  |
 | [!modloghistory <user\>](/docs/{{version}}/commands#ModlogHistoryCommand)  | Displays the modlog history for the user  |
 | [!purge <amount\> [user]](/docs/{{version}}/commands#PurgeCommand)  | Purge old messages from the current channel  |
 | [!reason <case id\> <reason\>](/docs/{{version}}/commands#ModlogReasonCommand)  | Changes the reason for the given modlog case id  |
+| [!rlr <role\>](/docs/{{version}}/commands#RemoveLevelRoleCommand)  | Removes the level role from the level table roles list  |
 | [!rsar <role\>](/docs/{{version}}/commands#RemoveClaimableRoleCommand)  | Removes the role from the self-assignable roles list  |
 | [!slowmode [limit] [decay]](/docs/{{version}}/commands#SlowmodeCommand)  | Toggles slowmode on or off for the current channel  |
 | [!softban <user\> [reason]](/docs/{{version}}/commands#SoftBanCommand)  | Bans the tagged user with the given reason  |
