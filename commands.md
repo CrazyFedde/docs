@@ -316,6 +316,21 @@ The **general.manage_server** permission is required to run this command.
     !modlog <channel> - Enabled modlogging and sets it to the mentioned channel.
     !modlog disable - Disables the modlogging module for the server.
 
+<a name="ModlogHistoryCommand"></a>
+### Modlog History
+
+Displays the modlog history for the mentioned user, this will display all past warnings, bans, soft bans, kicks, and voice kicks.
+
+The **general.manage_server** permission is required to run this command.
+
+#### Usage
+
+    !modloghistory <user> - Displays the modlog history for the mentioned user.
+
+#### Aliases
+
+    !history
+
 <a name="PurgeCommand"></a>
 ### Purge
 
@@ -334,6 +349,18 @@ The **text.manage_messages** permission is required to run this command.
 #### Aliases
 
     !clear
+
+<a name="ModlogReasonCommand"></a>
+### Modlog Reason
+
+Sets the reason for an old modlog case, this command requires the server has a modlog channel set using the !modlog command.
+You can only set modlog reasons for old modlog cases if you were the moderator for the case.
+
+> {tip} You can only set modlog reasons for old modlog cases if you were the moderator for the case.
+
+#### Usage
+
+    !reason <case id> <reason> - Sets the reason for the given ID
 
 <a name="RemoveSelfAssignableRoleCommand"></a>
 ### Remove Self Assignable Role
@@ -428,6 +455,17 @@ The **general.kick_members** permission is required to run this command.
 #### Aliases
 
     !vkick
+
+<a name="WarnCommand"></a>
+### Warn
+
+Warns a given user with a message, this action will be reported to any channel that has modloging enabled.
+
+The **text.manage_messages** permission is required to run this command.
+
+#### Usage
+
+    !warn <user> [reason] - Warns the mentioned user with the given reason.
 
 <a name="WelcomeCommand"></a>
 ### Welcome

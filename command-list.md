@@ -1,6 +1,6 @@
 # Command List
 
-Below you'll find a list of all **110** commands that Ava has, along with a short description of what each command does. If you'd like to know more about the command, like what permissions or roles are required to run the command, different aliases or anything similar you can click on the command links and you'll be taken to a more descriptive version of the command, or use the help command for the given command in a Discord server.
+Below you'll find a list of all **120** commands that Ava has, along with a short description of what each command does. If you'd like to know more about the command, like what permissions or roles are required to run the command, different aliases or anything similar you can click on the command links and you'll be taken to a more descriptive version of the command, or use the help command for the given command in a Discord server.
 
 > All commands can be used by mentioning Ava first, followed by the command you want to run, for example `@AvaIre ping` will run the ping command, or `@AvaIre poke @Senither` will run the poke command for Senither.
 
@@ -50,12 +50,15 @@ Below you'll find a list of all **110** commands that Ava has, along with a shor
 | [!lsar <role\>](/docs/{{version}}/commands#ListClaimableRoleCommand)  | List all the self-assignable roles, 10 per-page  |
 | [!nsfw](/docs/{{version}}/commands#NSFWCommand)  | Displays the NSFW status of the current channel  |
 | [!modlog [channel\]](/docs/{{version}}/commands#ModlogCommand)  | Displays the modlog status and toggles it on/off  |
+| [!modloghistory <user\>](/docs/{{version}}/commands#ModlogHistoryCommand)  | Displays the modlog history for the user  |
 | [!purge <amount\> [user]](/docs/{{version}}/commands#PurgeCommand)  | Purge old messages from the current channel  |
+| [!reason <case id\> <reason\>](/docs/{{version}}/commands#ModlogReasonCommand)  | Changes the reason for the given modlog case id  |
 | [!rsar <role\>](/docs/{{version}}/commands#RemoveClaimableRoleCommand)  | Removes the role from the self-assignable roles list  |
 | [!slowmode [limit] [decay]](/docs/{{version}}/commands#SlowmodeCommand)  | Toggles slowmode on or off for the current channel  |
 | [!softban <user\> [reason]](/docs/{{version}}/commands#SoftBanCommand)  | Bans the tagged user with the given reason  |
 | [!togglecategory <category\> <channel\>](/docs/{{version}}/commands#ToggleModuleCommand)  |  Toggles the given category on or off for the current channel or the whole server  |
 | [!voicekick <user\>](/docs/{{version}}/commands#VoiceKickCommand)  | Kicks the mentioned user from the voice channel  |
+| [!warn <user\> [reason]](/docs/{{version}}/commands#WarnCommand)  | Warns the user with the given message  |
 | [!welcome](/docs/{{version}}/commands#WelcomeCommand)  | Toggles the welcome module on or off for the current channel  |
 | [!welcomemessage](/docs/{{version}}/commands#WelcomeMessageCommand)  | Sets the welcome message for the current channel  |
 
