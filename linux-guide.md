@@ -13,6 +13,7 @@
     - [Application Restart](#commands-restart)
     - [Application Shutdown](#commands-shutdown)
     - [Application Update](#commands-update)
+    - [Global Blacklist](#commands-blacklist)
     - [Set Guild Type](#commands-set-type)
     - [Evaluate Code](#commands-eval)
     - [Reload Configuration](#commands-reload)
@@ -145,6 +146,7 @@ All system commands uses a semicolon(;) as their prefix by default.
 | [;restart <when\>](#commands-restart)  | Restarts the application gracefully  |
 | [;shutdown <when\>](#commands-shutdown)  | Shuts down the application gracefully  |
 | [;update <when\>](#commands-update)  | Updates the bot to the latest version  |
+| [;blacklist <option\>](#commands-blacklist)  | Adds, Removes and Lists servers/users on the global blacklist |
 | [;set-type <type\>](#commands-set-type)  | Sets the Guild Type of the server the command was ran in |
 | [;eval <code\>](#commands-eval)  | Evaluate and executes raw code and returns the result  |
 | [;reload](#commands-reload)  | Reloads the main config and all plugin configs  |
@@ -185,6 +187,17 @@ This requires [Watchdog](https://github.com/avaire/watchdog) to work, without it
     ;update now - Updates the bot now.
     ;update cancel - Cancels the update process.
     ;update <time> - Schedules a time the bot should be updated.
+
+<a name="commands-blacklist"></a>
+### Global Blacklist
+
+Add, Remove, and list users and servers on the blacklist. Users and servers on the blacklist will be ignored by Ava, regardless of their permissions, or roles on any server, 
+
+#### Usage
+
+    ;blacklist list - Lists users and servers on the blacklist.
+    ;blacklist remove <id> - Removes the entry from the blacklist.
+    ;blacklist add <type> <id> <reason> - Add the ID to the blacklist.
 
 <a name="commands-set-type"></a>
 ### Set Guild Type
