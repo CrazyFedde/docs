@@ -162,6 +162,7 @@ Below you'll find a list of all **123** commands that Ava has, along with a shor
 | [!rank](/docs/{{version}}/commands#RankCommand)  | Displays the users rank, level and XP if Leveling is enabled  |
 | [!serverid](/docs/{{version}}/commands#ServerIdCommand)  | Shows the server ID |
 | [!serverinfo](/docs/{{version}}/commands#ServerInfoCommand)  | Shows information about the server  |
+| [!shards](/docs/{{version}}/commands#ShardCommand)  | Displays the bot shards, or the stats command if no shards are used  |
 | [!source](/docs/{{version}}/commands#SourceCommand)  | Sends a link to the source code for the given command  |
 | [!stats](/docs/{{version}}/commands#StatsCommand)  | Displays information and stats about Ava  |
 | [!uptime](/docs/{{version}}/commands#UptimeCommand)  | Displays how long Ava has been online for  |
