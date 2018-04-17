@@ -275,6 +275,18 @@ The **general.kick_members** permission is required to run this command.
 
     !kick <user> [reason] - Kicks the mentioned user with the given reason.
 
+<a name="LanguageCommand"></a>
+### Language
+
+Show a list of available languages or set a language that should be used for the server.
+
+The **general.administrator** permission is required to run this command.
+
+#### Usage
+
+    !language [page] - Displays a list of languages, 10 languages per page.
+    !language [code] - Sets the language to the given language code.
+
 <a name="LevelAlertsCommand"></a>
 ### Level Alerts
 

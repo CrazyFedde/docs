@@ -1,6 +1,6 @@
 # Command List
 
-Below you'll find a list of all **120** commands that Ava has, along with a short description of what each command does. If you'd like to know more about the command, like what permissions or roles are required to run the command, different aliases or anything similar you can click on the command links and you'll be taken to a more descriptive version of the command, or use the help command for the given command in a Discord server.
+Below you'll find a list of all **123** commands that Ava has, along with a short description of what each command does. If you'd like to know more about the command, like what permissions or roles are required to run the command, different aliases or anything similar you can click on the command links and you'll be taken to a more descriptive version of the command, or use the help command for the given command in a Discord server.
 
 > All commands can be used by mentioning Ava first, followed by the command you want to run, for example `@AvaIre ping` will run the ping command, or `@AvaIre poke @Senither` will run the poke command for Senither.
 
@@ -46,6 +46,7 @@ Below you'll find a list of all **120** commands that Ava has, along with a shor
 | [!iam <role\>](/docs/{{version}}/commands#IAmCommand)  | Gives the user the role with the given name if it is claimable  |
 | [!iamnot <role\>](/docs/{{version}}/commands#IAmNotCommand)  | Takes a role from the user with the given name if it is claimable  |
 | [!kick <user\> [reason]](/docs/{{version}}/commands#KickCommand)  | Kicks the tagged user from the server  |
+| [!language <lang\>](/docs/{{version}}/commands#LanguageCommand)  | Changes the language that Ava uses  |
 | [!togglelevel](/docs/{{version}}/commands#LevelCommand)  | Toggles the level system on or off for the current server  |
 | [!levelalerts [channel]](/docs/{{version}}/commands#LevelAlertsCommand)  | Toggles the level alerts system on or off for the current server  |
 | [!llr [page]](/docs/{{version}}/commands#ListLevelRolesCommand)  | List all the level roles, 10 per-page  |
