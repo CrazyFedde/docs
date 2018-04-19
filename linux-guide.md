@@ -57,7 +57,7 @@ If your server doesn't have the Oracle repositories saved you can try using upda
     sudo apt update
 
 <a name="install-git"></a>
-### Installing Git
+### Installing Git (Optional)
 
 Next we'll install Git to be able to download and update Ava, git will also be used later on if you want to update Ava to the latest version.
 
@@ -72,7 +72,7 @@ If the command is not found you can install git by running
 <a name="install-ava"></a>
 ## Installing Ava
 
-Next, we'll retrieve the AvaIre GitHub repository, we will be using Git to install Ava so it will be easier to update later on.
+Next, we'll need to get the jar file to run Ava, you can get a stable version from the [github releases](https://github.com/avaire/avaire/releases), or the [nightly build](https://avairebot.com/nightly-build.zip) from avairebot.com, the zip file gets updated once every 24 at midnight CEST, you can also build your own jar file by getting source code from the AvaIre GitHub repository, to do this you will will need Git to clone down the code.
 
 You'd want to figure out where you want the bot to be downloaded. When you've found the location of your choice, clone the Ava repository into the folder by using the following command.
 

@@ -34,8 +34,8 @@
 #### Software
 
  * [Java & Gradle](#install-java)
- * [Git](#install-git)
- * MySQL Database ([XAMPP](https://www.apachefriends.org/) is recommended for beginners)
+ * [Git](#install-git) &nbsp; (Optional)
+ * MySQL Database &nbsp; ([XAMPP](https://www.apachefriends.org/) is recommended for beginners)
  * A code editor, i.e. [Notepad++](https://notepad-plus-plus.org/) or [Atom](https://atom.io/) or [Sublime Text](https://www.sublimetext.com/)
 
 <a name="install-requirements"></a>
@@ -48,7 +48,9 @@
 
 AvaIre is a Java application, because of this we'll need to install Java to run Ava, if you don't already have Java installed, head over to the [Oracle Java download page](http://www.oracle.com/technetwork/java/javase/downloads/index.html) to get started, then select the latest Java Platform (JDK), accept Oracles license, and download the windows .exe file, once Java has been installed you may need to add Java to your windows system path variable, check out the "[how to set java home on windows 10](https://www.mkyong.com/java/how-to-set-java_home-on-windows-10/)" guide by [mkyong](https://twitter.com/mkyong) for how to get started with doing that.
 
-If you want to run the cutting edge of Ava you'll need Gradle as well, gradle is used by Ava to compile all the source code into a binary file that the computer can run, you can get gradle from [Gradles install page](https://gradle.org/install/).
+If you want to run the cutting edge of Ava you can download the [nightly build](https://avairebot.com/nightly-build.zip) from avairebot.com, the zip file gets updated once every 24 at midnight CEST, you can also download a stable version of the bot from the [github releases](https://github.com/avaire/avaire/releases), or you can use Gradle to build your own jar file, gradle is used by Ava to compile all the source code into a binary file that the computer can run, you can get gradle from [Gradles install page](https://gradle.org/install/).
+
+If you choose to use a github release or the nightly build, you can skip installing Git and jump right into setting up the bot.
 
 <a name="install-git"></a>
 ### Installing Git (Optional)
