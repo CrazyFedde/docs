@@ -33,7 +33,7 @@ Below you'll find a list of all **123** commands that Ava has, along with a shor
 | [!ai](/docs/{{version}}/commands#AiCommand)  | Toggles the AI on or off for the current channel  |
 | [!alias [alias] [command]](/docs/{{version}}/commands#AliasCommand)  | Binds or unbinds custom command aliases  |
 | [!aliases [page]](/docs/{{version}}/commands#ListAliasesCommand)  | Lists all command aliases for the server  |
-| [!alr <role\> <level requirement\>](/docs/{{version}}/commands#AddLevelRoleCommand)  | Adds a level role to the leveling up table   |
+| [!alr <level requirement\> <role\>](/docs/{{version}}/commands#AddLevelRoleCommand)  | Adds a level role to the leveling up table   |
 | [!asar <role\>](/docs/{{version}}/commands#AddSelfAssignableRoleCommand)  | Adds a  role to the self-assignable roles list  |
 | [!autorole <role\>](/docs/{{version}}/commands#AutoAssignRoleCommand)  | Auto assigns a specified role to every user who joins the server  |
 | [!avatar](/docs/{{version}}/commands#UserAvatarCommand)  | Get the profile picture of someone on the server by name, id, or mentions.  |
@@ -56,7 +56,7 @@ Below you'll find a list of all **123** commands that Ava has, along with a shor
 | [!modloghistory <user\>](/docs/{{version}}/commands#ModlogHistoryCommand)  | Displays the modlog history for the user  |
 | [!purge <amount\> [user]](/docs/{{version}}/commands#PurgeCommand)  | Purge old messages from the current channel  |
 | [!reason <case id\> <reason\>](/docs/{{version}}/commands#ModlogReasonCommand)  | Changes the reason for the given modlog case id  |
-| [!rlr <role\>](/docs/{{version}}/commands#RemoveLevelRoleCommand)  | Removes the level role from the level table roles list  |
+| [!rlr <role/level\>](/docs/{{version}}/commands#RemoveLevelRoleCommand)  | Removes the level role from the level table roles list  |
 | [!rsar <role\>](/docs/{{version}}/commands#RemoveClaimableRoleCommand)  | Removes the role from the self-assignable roles list  |
 | [!slowmode [limit] [decay]](/docs/{{version}}/commands#SlowmodeCommand)  | Toggles slowmode on or off for the current channel  |
 | [!softban <user\> [reason]](/docs/{{version}}/commands#SoftBanCommand)  | Bans the tagged user with the given reason  |

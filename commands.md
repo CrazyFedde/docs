@@ -100,7 +100,7 @@ The **general.administrator** permission is required to run this command.
 
 #### Usage
 
-    !alr <role> <level requirement> - Adds to role to users when they level up and meet the level requirement.
+    !alr <level requirement> <role> - Adds to role to users when they level up and meet the level requirement.
 
 <a name="AddSelfAssignableRoleCommand"></a>
 ### Add Self Assignable Role
@@ -412,7 +412,7 @@ The **general.administrator** permission is required to run this command.
 
 #### Usage
 
-    !rlr <role> - Removes the role from the leveling up role table.
+    !rlr <role / level> - Removes the role from the leveling up role table.
 
 <a name="RemoveSelfAssignableRoleCommand"></a>
 ### Remove Self Assignable Role
