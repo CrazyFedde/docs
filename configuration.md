@@ -9,6 +9,7 @@
      - [Bot Status (Playing)](#status)
      - [Music Lavalink Nodes](#music-lavalink)
      - [Music Activity Settings](#music-activity)
+     - [Audio Encoding and Resampling Quality](#music-quality)
      - [Bot Access (Bot Admins)](#botaccess)
      - [Sentry.io Error Logging](#sentry)
      - [Prometheus Metrics & Spark API](#metrics)
@@ -142,6 +143,22 @@ The music activity tracks a few things:
 2. If the queue is empty, when you request a song by name the queue will be empty until the user selects the song they want to be played, this applies here, if the last song in the queue is playing it will disconnect once the song is done anyway.
 3. If the music is paused, this should be self-explanatory, if you pause the music the bot it will disconnect after awhile unless it is unpaused(resumed).
 
+<a name="music-quality"></a>
+### Audio Encoding and Resampling Quality
+
+Audio encoding and audio resampling is a way to control the quality of audio the bot will deliver for music related commands.
+
+Lower encoding and resampling will use less memory and CPU, but will also produce worse audio quality in the end, while higher encoding and resampling will use more memory and CPU but will in turn produce more clear and "crisp" audio.
+
+#### Resampling
+
+Audio resampling is tasked with sending the data from the server the bot is hosted on to the Discord servers so people can listen to the music.
+
+Higher resampling rates gives a higher chance that the audio reaches Discord servers so people can hear the audio by sending each frame multiple times, higher resampling uses more CPU since it has to send each frame multiple times.
+
+#### Encoding
+
+Audio encoding is tasked with encoding the audio track so it is playable by Discord, higher values will produce a higher quality encoded track, which in turn uses more CPU, while lower values will produce a worse quality audio track but ues less CPU to do so.
 
 <a name="botaccess"></a>
 ### Bot Access (Bot Administrators)
