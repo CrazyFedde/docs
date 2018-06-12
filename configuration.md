@@ -10,7 +10,6 @@
      - [Music Lavalink Nodes](#music-lavalink)
      - [Music Activity Settings](#music-activity)
      - [Bot Access (Bot Admins)](#botaccess)
-     - [Webhook Server Log](#webhook)
      - [Sentry.io Error Logging](#sentry)
      - [Prometheus Metrics & Spark API](#metrics)
      - [API Keys](#apis)
@@ -150,11 +149,6 @@ The music activity tracks a few things:
 The bot access property is a string array containing the IDs of users who should have full access to the system commands in the bot, you can find peoples user IDs by using the [User ID](/docs/{{version}}/commands#UserIdCommand) or [User Info](/docs/{{version}}/commands#UserInfoCommand) commands.
 
 > Users who are bot administrators will still need the regular Discord permissions to run all the other commands outside of the System category, so bot admins can't use commands like the [ban command](docs/{{version}}/commands#BanCommand) without the right Discord permissions.
-
-<a name="webhook"></a>
-### Webhook Server Log
-
-The webhook option is only used for logging information about servers when the bot joins or leaves a server, this can give a nice overview of what servers the bot is joining or when it leaves a server, which server it was.
 
 <a name="sentry"></a>
 ### Sentry.io Error Logging
