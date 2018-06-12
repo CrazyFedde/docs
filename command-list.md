@@ -99,7 +99,7 @@ Below you'll find a list of all **123** commands that Ava has, along with a shor
 | [!highfive <user\>](/docs/{{version}}/commands#interaction-commands)  | High fives the mentioned user  |
 | [!hug <user\>](/docs/{{version}}/commands#interaction-commands)  | Hugs the mentioned user  |
 | [!kill <user\>](/docs/{{version}}/commands#interaction-commands)  | Kills the mentioned user  |
-| [!kiss <user\>](/docs/{{version}}/commands#interaction-commands)  | kisses the mentioned user  |
+| [!kiss <user\>](/docs/{{version}}/commands#interaction-commands)  | Kisses the mentioned user  |
 | [!pan <user\>](/docs/{{version}}/commands#interaction-commands)  | Hits the mentioned user with a pan  |
 | [!pat <user\>](/docs/{{version}}/commands#interaction-commands)  | Pats the mentioned user  |
 | [!poke <user\>](/docs/{{version}}/commands#interaction-commands)  | Pokes the mentioned user  |
