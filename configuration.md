@@ -75,26 +75,32 @@ Just replace the `<client id>` with your actual bot application id, you can find
 
 AvaIre uses a database for storing things like custom prefixes, playlists, user XP and levels, statistics, autoroles, aliases and everything else.
 
-AvaIre currently only support the MySQL database type, with support for more types in the works, to get start simply just populate the fields below with your database login information.
+AvaIre currently supports MySQL and SQLite database type, to get start simply just populate the fields below with your database login information.
 
 > Make sure the database user has permission to create, delete and edit tables in the database you want to use, Ava uses a migration system that will create all the needed tables, and roll out changes between versions automatically, this require creating new tables, and editing and deleting existing tables.
 
 #### MySQL Setup
 
 ```yaml
-database:
-  type: 'mysql'
-  database: 'avaire'
-  hostname: 'localhost'
-  username: 'username'
-  password: 'password'
+    database:
+      type: 'mysql'
+      database: 'avaire'
+      hostname: 'localhost'
+      username: 'username'
+      password: 'password'
 ```
 
 The host should be the host the MySQL database is hosted on, you can add your port to the host by suffixing it with a colon(:) followed by the port you use, for example `localhost:3307`, if the port is left out the port will use the default `3306` port. If you're running the bot locally and have something like [XAMPP](https://www.apachefriends.org/index.html) or [WampServer](http://www.wampserver.com/en/) installed then you should be fine leaving the host as is.
 
 #### SQLite3 Setup
 
-Coming soon...
+```yaml
+    database:
+        type: 'sqlite'
+        filename: 'database.sqlite'
+```
+
+That's about all you need to use the SQLite database in Ava, you don't need to install or setup anything else.
 
 <a name="prefix"></a>
 ### Default Command Prefix

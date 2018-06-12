@@ -87,7 +87,10 @@ If the command is not found you can install git by running
 <a name="install-mysql"></a>
 ## Installing MySQL
 
-We'll need to setup a database that Ava can use. Ava requires a database to store things like custom playlists, aliases, channel and server data, and a lot of other things, it currently only has support for MySQL databases, with SQLite and other types comming in the future.  
+> {tip} Ava also supports SQLite, if you want to use the flatfile SQLite database instead, you can skip this step and just tell Ava to use SQLite in the config instead.
+
+We'll need to setup a database that Ava can use. Ava requires a database to store things like custom playlists, aliases, channel and server data, and a lot of other things.
+
 First we need to download MySQL, doing the following:
 
     sudo apt-get install mysql-server
