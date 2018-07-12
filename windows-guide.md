@@ -133,6 +133,8 @@ To start the bot, simply just run the jar file again after editing it with your 
 
 If the bot runs without any errors, you have had success so far!
 
+> {tip} Windows may start the Java VM without UTF-8 encoding(Which can cause some language files to send messages with missing characters), or/and doesn't parse colors correctly(Which can make the console almost un-readable), you can fix this by using the `-Dfile.encoding=UTF-8` and `--no-colors` flag respectively:<br>```java -Dfile.encoding=UTF-8 -jar AvaIre.jar --no-colors```
+
 Now you'll need to invite your bot to your server so you can actually use it, take your bots client id from earlier and pop it into a URL like this without the less than and greater than symbols.
 
     https://discordapp.com/oauth2/authorize?&client_id=<client id>&scope=bot
