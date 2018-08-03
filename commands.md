@@ -82,11 +82,11 @@ The **general.manage_server** permission is required to run this command.
 
 #### Usage
 
-    .aliases [page]
+    !aliases [page]
 
 #### Aliases
 
-    .aliaslist
+    !aliaslist
 
 <a name="AddLevelRoleCommand"></a>
 ### Add Level Role
@@ -153,7 +153,7 @@ The **general.ban_members** permission is required to run this command.
 
 #### Usage
 
-    .ban <user> [reason]
+    !ban <user> [reason]
 
 <a name="CategoriesCommand"></a>
 ### Categories
