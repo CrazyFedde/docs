@@ -51,7 +51,7 @@ Displaying a given command's information can be done by using `help` followed by
 
 Toggles the AI module on or off for the current channel. If the module is enabled, users can tag the bot followed by a message or question and the bot will try and use its AI to process the message. By default AI messages will be enabled for all channels.
 
-The **general.manage_server** permission is required to run this command.
+The **Manage Server** permission is required to run this command.
 
 #### Usage
 
@@ -62,7 +62,7 @@ The **general.manage_server** permission is required to run this command.
 
 Creates and maps a custom aliases for a pre-existing command. If an alias that already exists is given with no additional command the alias will be unbound.
 
-The **general.manage_server** permission is required to run this command.
+The **Manage Server** permission is required to run this command.
 
 #### Usage
 
@@ -78,7 +78,7 @@ The **general.manage_server** permission is required to run this command.
 
 Lists all the existing command aliases and what they're bound to.
 
-The **general.manage_server** permission is required to run this command.
+The **Manage Server** permission is required to run this command.
 
 #### Usage
 
@@ -96,7 +96,7 @@ Adds a role to the leveling up table, roles on the table will be given to users 
  - [List Level Roles](#ListLevelRolesCommand)
  - [Remove Level Role](#RemoveLevelRoleCommand)
 
-The **general.administrator** permission is required to run this command.
+The **Server Administrator** permission is required to run this command.
 
 #### Usage
 
@@ -110,7 +110,7 @@ Adds a role to the self-assignable roles list, any role on the list can be claim
  - [List Self Assignable Roles](#ListSelfAssignableRolesCommand)
  - [Remove Self Assignable Role](#RemoveSelfAssignableRoleCommand)
 
-The **general.administrator** permission is required to run this command.
+The **Server Administrator** permission is required to run this command.
 
 #### Usage
 
@@ -121,7 +121,7 @@ The **general.administrator** permission is required to run this command.
 
 Automatically assigns a specified role to every user who joins the server, if no arguments is given the current auto assignable role will be given, if a name is given the role will be set as the auto assignable role, and if disabled is given the feature will be turned off.
 
-The **general.administrator** permission is required to run this command.
+The **Server Administrator** permission is required to run this command.
 
 #### Usage
 
@@ -147,7 +147,7 @@ Get the profile picture of someone on the server by name, id, or mentions.
 
 Bans the mentioned user from the server with the provided reason, all messages the user has sent in the last 7 days will also be deleted in the process.
 
-The **general.ban_members** permission is required to run this command.
+The **Ban Members** permission is required to run this command.
 
 > This action will be reported to any channel that has [modlogging](#modlog) enabled on the server.
 
@@ -184,7 +184,7 @@ The following categories can be affected by this command.
  - [Search](#search)
  - [Utility](#utility)
 
-The **general.administrator** permission is required to run this command.
+The **Server Administrator** permission is required to run this command.
 
 > {tip} It is not required to type out the full name of the category, just typing a few characters will get the category that starts with the given characters.<br>For example changing the prefix all the commands in the `Administration` category can be done by doing `!changeprefix a [prefix]` for short.
 
@@ -213,7 +213,7 @@ Change the DJ level requirement for the server, this changes what music commands
 
 Toggles the goodbye module on or off for the current channel. When the goodbye module is enabled, a message will be sent in the channel every time someone leaves the server.
 
-The **general.manage_server** permission is required to run this command.
+The **Manage Server** permission is required to run this command.
 
 #### Usage
 
@@ -228,7 +228,7 @@ The **general.manage_server** permission is required to run this command.
 
 Sets the message that should be sent when a user leaves the server, this command can only be used if the goodbye module is enabled for the current channel. You can customize how the goodbye message looks using [placeholders](/docs/{{version}}/placeholders).
 
-The **general.manage_server** permission is required to run this command.
+The **Manage Server** permission is required to run this command.
 
 #### Usage
 
@@ -267,7 +267,7 @@ Removes the role with the given name from you if it is in the self-assignable li
 
 Kicks the mentioned user from the server with the provided reason, this action will be reported to any channel that has modloging enabled.
 
-The **general.kick_members** permission is required to run this command.
+The **Kick Members** permission is required to run this command.
 
 > This action will be reported to any channel that has [modlogging](#modlog) enabled on the server.
 
@@ -280,7 +280,7 @@ The **general.kick_members** permission is required to run this command.
 
 Show a list of available languages or set a language that should be used for the server.
 
-The **general.administrator** permission is required to run this command.
+The **Server Administrator** permission is required to run this command.
 
 #### Usage
 
@@ -292,7 +292,7 @@ The **general.administrator** permission is required to run this command.
 
 Toggles the Leveling alerts system on or off for the current server or channel. When the level alerts are enabled the bot will send a message each time a user levels up, letting them know they leveled up and what level they are now.
 
-The **general.manage_server** permission is required to run this command.
+The **Manage Server** permission is required to run this command.
 
 #### Usage
 
@@ -332,7 +332,7 @@ List all the self-assignable roles, 10 per-page.
 
 Displays the NSFW status of the current channel, additionally on/off can be passed to the command to change the channels NSFW status.
 
-The **general.manage_channel** permission is required to run this command.
+The **Manage Channels** permission is required to run this command.
 
 #### Usage
 
@@ -346,7 +346,7 @@ The **general.manage_channel** permission is required to run this command.
 
 Displays the modlogging status for the server if no arguments is given, you can also mention a text channel to enable modlogging and set it to the mentioned channel.
 
-The **general.manage_server** permission is required to run this command.
+The **Manage Server** permission is required to run this command.
 
 #### Usage
 
@@ -359,7 +359,7 @@ The **general.manage_server** permission is required to run this command.
 
 Displays the modlog history for the mentioned user, this will display all past warnings, bans, soft bans, kicks, and voice kicks.
 
-The **general.manage_server** permission is required to run this command.
+The **Manage Server** permission is required to run this command.
 
 #### Usage
 
@@ -374,7 +374,7 @@ The **general.manage_server** permission is required to run this command.
 
 Deletes up to 100 chat messages in any channel, you can mention a user if you only want to delete messages by the mentioned user. Due to a restriction in the Discord API, the purge command will only work on messages sent in the last 14 days.
 
-The **text.manage_messages** permission is required to run this command.
+The **Manage Messages** permission is required to run this command.
 
 > {tip} Tagging a user will only delete any messages they have sent in the last `<amount>` of messages, for example `!purge 100 @JohnDoe#2854` will delete any messages the JohnDoe user has sent within the last 100 messages.
 
@@ -408,7 +408,7 @@ Remove a role from the leveling up role table.
  - [Add Level Role](#AddLevelRoleCommand)
  - [List Level Role](#ListLevelRolesCommand)
 
-The **general.administrator** permission is required to run this command.
+The **Server Administrator** permission is required to run this command.
 
 #### Usage
 
@@ -422,7 +422,7 @@ Removes the role from the self-assignable/claimable roles list, any role on the 
  - [Add Self Assignable Role](#AddSelfAssignableRoleCommand)
  - [List Self Assignable Role](#ListSelfAssignableRolesCommand)
 
-The **general.administrator** permission is required to run this command.
+The **Server Administrator** permission is required to run this command.
 
 #### Usage
 
@@ -431,9 +431,9 @@ The **general.administrator** permission is required to run this command.
 <a name="SlowmodeCommand"></a>
 ### Slowmode
 
-Disables the slowmode module or enables it with the given settings, users with the **text.manage_messages** permission are exempt from slowmode limits. The slowmode module can be disabled by running the command with no arguments; if the `limit` and `decay` arguments are given the module will be enabled with the given settings.
+Disables the slowmode module or enables it with the given settings, users with the **Manage Messages** permission are exempt from slowmode limits. The slowmode module can be disabled by running the command with no arguments; if the `limit` and `decay` arguments are given the module will be enabled with the given settings.
 
-The **general.manage_server** permission is required to run this command.
+The **Manage Server** permission is required to run this command.
 
 #### Usage
 
@@ -445,7 +445,7 @@ The **general.manage_server** permission is required to run this command.
 
 Bans the mentioned user from the server with the provided reason. Any messages the user might've sent won't be deleted, if you want to force delete any old messages the user has sent see the [ban command](#ban).
 
-The **text.ban_members** permission is required to run this command.
+The **Ban Members** permission is required to run this command.
 
 > This action will be reported to any channel that has [modlogging](#modlog) enabled on the server.
 
@@ -462,7 +462,7 @@ The **text.ban_members** permission is required to run this command.
 
 Toggles the given command category on or off for the given channel, optionally for the whole server. When a command category is disabled no one can run any commands in the command module, you can disable commands on a per-channel basis by tagging the channel you want to affect.
 
-The **general.administrator** permission is required to run this command.
+The **Server Administrator** permission is required to run this command.
 
 > {tip} If you want to affect the whole server, you can completely omit the channel argument and just pass [on|off].
 
@@ -481,7 +481,7 @@ The **general.administrator** permission is required to run this command.
 
 Toggles the leveling system on or off for the current server. When the leveling system is enabled users will slowly accumulate XP from being active in the chat and using commands, every minute the user is active they will receive 10-15 XP.
 
-The **general.manage_server** permission is required to run this command.
+The **Manage Server** permission is required to run this command.
 
 #### Usage
 
@@ -496,7 +496,7 @@ The **general.manage_server** permission is required to run this command.
 
 Kicks the mentioned user from the voice channel they're currently connected to, 
 
-The **general.kick_members** permission is required to run this command.
+The **Kick Members** permission is required to run this command.
 
 > This action will be reported to any channel that has [modlogging](#modlog) enabled on the server.
 
@@ -513,7 +513,7 @@ The **general.kick_members** permission is required to run this command.
 
 Warns a given user with a message, this action will be reported to any channel that has modloging enabled.
 
-The **text.manage_messages** permission is required to run this command.
+The **Manage Messages** permission is required to run this command.
 
 #### Usage
 
@@ -524,7 +524,7 @@ The **text.manage_messages** permission is required to run this command.
 
 Toggles the welcome module on or off for the current channel. When the welcome module is enabled, a message will be sent in the channel every time someone joins the server.
 
-The **general.manage_server** permission is required to run this command.
+The **Manage Server** permission is required to run this command.
 
 #### Usage
 
@@ -539,7 +539,7 @@ The **general.manage_server** permission is required to run this command.
 
 Sets the welcome message to the given message. If no arguments are passed the welcome message will be set back to the default welcome message. You can customize how the welcome message looks using [placeholders](/docs/{{version}}/placeholders).
 
-The **general.manage_server** permission is required to run this command.
+The **Manage Server** permission is required to run this command.
 
 #### Usage
 
