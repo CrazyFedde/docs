@@ -18,7 +18,7 @@
 <a name="introduction"></a>
 ## Introduction
 
-String placeholders are variables you can use in option-based commmands like the [.welcomemessage](/docs/{{version}}/commands#welcome-message) command, the placeholders gives you a wider range of customizability, allowing you to show information dynamically.
+String placeholders are variables you can use in option-based commmands like the [!welcomemessage](/docs/{{version}}/commands#WelcomeMessageCommand) command, the placeholders gives you a wider range of customizability, allowing you to show information dynamically.
 
 All placeholders starts and ends with a percentage sign (%), and wraps the variable name, in combination with each other it would look like `%username%` if you wanted to get the users username.
 
