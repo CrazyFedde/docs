@@ -1,6 +1,6 @@
 # Command List
 
-Below you'll find a list of all **123** commands that Ava has, along with a short description of what each command does. If you'd like to know more about the command, like what permissions or roles are required to run the command, different aliases or anything similar you can click on the command links and you'll be taken to a more descriptive version of the command, or use the help command for the given command in a Discord server.
+Below you'll find a list of all **128** commands that Ava has, along with a short description of what each command does. If you'd like to know more about the command, like what permissions or roles are required to run the command, different aliases or anything similar you can click on the command links and you'll be taken to a more descriptive version of the command, or use the help command for the given command in a Discord server.
 
 > All commands can be used by mentioning Ava first, followed by the command you want to run, for example `@AvaIre ping` will run the ping command, or `@AvaIre poke @Senither` will run the poke command for Senither.
 
@@ -52,7 +52,7 @@ Below you'll find a list of all **123** commands that Ava has, along with a shor
 | [!llr [page]](/docs/{{version}}/commands#ListLevelRolesCommand)  | List all the level roles, 10 per-page  |
 | [!lsar [page]](/docs/{{version}}/commands#ListClaimableRoleCommand)  | List all the self-assignable roles, 10 per-page  |
 | [!nsfw](/docs/{{version}}/commands#NSFWCommand)  | Displays the NSFW status of the current channel  |
-| [!modlog [channel\]](/docs/{{version}}/commands#ModlogCommand)  | Displays the modlog status and toggles it on/off  |
+| [!modlog \[channel\]](/docs/{{version}}/commands#ModlogCommand)  | Displays the modlog status and toggles it on/off  |
 | [!modloghistory <user\>](/docs/{{version}}/commands#ModlogHistoryCommand)  | Displays the modlog history for the user  |
 | [!purge <amount\> [user]](/docs/{{version}}/commands#PurgeCommand)  | Purge old messages from the current channel  |
 | [!reason <case id\> <reason\>](/docs/{{version}}/commands#ModlogReasonCommand)  | Changes the reason for the given modlog case id  |
@@ -119,6 +119,8 @@ Below you'll find a list of all **123** commands that Ava has, along with a shor
 | [!clearqueue](/docs/{{version}}/commands#ClearQueueCommand)  | Clears the music queue of all pending songs  |
 | [!default-volume](/docs/{{version}}/commands#SetDefaultVolumeCommand)  | Sets the default volume used by all the music  |
 | [!movehere](/docs/{{version}}/commands#MoveHereCommand)  | Moves the bot into the same voice channel you're in  |
+| [!musicchannel <type\> <channel\>](/docs/{{version}}/commands#MusicChannelCommand)  | Set the channel that should be used for music  |
+| [!musicmessages <on/off\>](/docs/{{version}}/commands#MusicMessagesCommand)  | Toggle music messages on/off  |
 | [!pause](/docs/{{version}}/commands#PauseCommand)  | Pauses the song that is currently playing  |
 | [!play <song\>](/docs/{{version}}/commands#PlayCommand)  | Adds the given song to the queue from YouTube, or by link  |
 | [!playlist](/docs/{{version}}/commands#PlaylistCommand)  | Main command used to manage the custom music playlists  |
@@ -160,6 +162,7 @@ Below you'll find a list of all **123** commands that Ava has, along with a shor
 | [!leaderboard](/docs/{{version}}/commands#LeaderboardCommand)  | Sends the level leaderboard for the current server  |
 | [!ping](/docs/{{version}}/commands#PingCommand)  | Ping, Pong  |
 | [!rank](/docs/{{version}}/commands#RankCommand)  | Displays the users rank, level and XP if Leveling is enabled  |
+| [!remindme <args\>](/docs/{{version}}/commands#RemindCommand)  | Set a message you would like to be reminded about  |
 | [!serverid](/docs/{{version}}/commands#ServerIdCommand)  | Shows the server ID |
 | [!serverinfo](/docs/{{version}}/commands#ServerInfoCommand)  | Shows information about the server  |
 | [!shards](/docs/{{version}}/commands#ShardCommand)  | Displays the bot shards, or the stats command if no shards are used  |

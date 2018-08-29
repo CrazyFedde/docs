@@ -802,6 +802,39 @@ The **DJ** role is required to run this command.
 
     !moveh
 
+<a name="MusicChannelCommand"></a>
+### Music Channel
+
+The music channel command can be used to define a text and voice channel that music should be linked to, if a text channel is set through the command, music commands will only work in the given channel, if a voice channel is set Ava will auto join the voice channel on the first music request.
+
+The **Administrator** permission is required to run this command.
+
+#### Usage
+
+    !musicchannel - Displays the current music channels.
+    !musicchannel <voice|text> - Disables the music text or voice channel.
+    !musicchannel <voice|text> <channel> - Sets the music text or voice channel.
+
+#### Aliases
+
+    !mchannel
+
+<a name="MusicMessagesCommand"></a>
+### Music Channel
+
+Toggles music messages on and off, when music messages are off, the "Now Playing" messages will no longer be sent, and messages that before would stay, will now be automatically be deleted after awhile. 
+
+The **Administrator** permission is required to run this command.
+
+#### Usage
+
+    !musicmessages - Displays the current music message status.
+    !musicmessages [on|off] - Toggles the music messages on/off.
+
+#### Aliases
+
+    !musicmessage
+
 <a name="PauseCommand"></a>
 ### Pause
 
@@ -1297,6 +1330,20 @@ The **[Levels & Experience](#level)** feature must be enabled to run this comman
 #### Aliases
 
     !level
+
+<a name="RemindCommand"></a>
+### Remind Me
+
+Reminds you of something after a certain amount of time.
+
+#### Usage
+
+    !remindme me <time> <message> - Reminds you about the message after the time is up in a DM.
+    !remindme here <time> <message> - Reminds you about the message after the time is up in the channel the command was used in.
+
+#### Aliases
+
+    !remind
 
 <a name="ServerIdCommand"></a>
 ### Server ID
