@@ -4,7 +4,7 @@
     - [Linux Server](#server)
     - [Software](#software)
 - [Installing Requirements](#install-requirements)
-    - [Java 9](#install-java)
+    - [Java 10](#install-java)
     - [Gradle - Build](#install-gradle)
     - [Git - Source Control](#install-git)
 - [MySQL](#install-mysql)
@@ -44,32 +44,39 @@
 <a name="install-requirements"></a>
 ## Installing Requirements
 
-Start by logging into your server via your SSH client.
+Start by logging into your server via your SSH client, we will be using [SDKMAN!](https://sdkman.io/) to download, install, and manage things like Gradle and Java so get that first if you don't already have it installed.
+
+    sudo apt install zip unzip
+    curl -s "https://get.sdkman.io" | bash
+    source "$HOME/.sdkman/bin/sdkman-init.sh"
 
 <a name="install-java"></a>
-### Installing Java - Oracle JVM
+### Installing Java
 
-We'll be using Java 9 to run Ava, if you don't already have Java installed, you can install it with the following commands.
+We'll be using Java 10+ to run Ava, if you don't already have Java installed, you can install it easily using [SDKMAN!](https://sdkman.io/), first check what versions of Java is available.
 
-    sudo apt install oracle-java9-installer
+    sdk list java
 
-If your server doesn't have the Oracle repositories saved you can try using updating the repositories and re-attempting to install Java using the command below.
+Then pick a version you'd like to use, and install it with.
 
-    sudo add-apt-repository ppa:webupd8team/java
-    sudo apt update
+    sdk install java <version>
+
+> {tip} If you already have Java installed using the OpenJDK, you can uninstall that first by using.
+```
+apt remove java*
+apt autoremove
+```
 
 <a name="install-gradle"></a>
 ### Installing Gradle
 
-To install Gradle 4.8 and be able to build your .jar file you'll need to install SDKMAN! first with the following:
+We'll be using Gradle 4.7+ to build and compile Ava, if you don't already have Gradle installed, you can install it easily using [SDKMAN!](https://sdkman.io/), first check what versions of Java is available.
 
-    sudo apt-get install zip unzip
-    curl -s "https://get.sdkman.io" | bash
-    source "$HOME/.sdkman/bin/sdkman-init.sh"
+    sdk list gradle
 
 Then Gradle itself:
 
-    sdk install gradle 4.8
+    sdk install gradle <version>
 
 <a name="install-git"></a>
 ### Installing Git (Optional)
@@ -93,7 +100,7 @@ We'll need to setup a database that Ava can use. Ava requires a database to stor
 
 First we need to download MySQL, doing the following:
 
-    sudo apt-get install mysql-server
+    sudo apt install mysql-server
 
 Then, go through the basic setup process using:
 
